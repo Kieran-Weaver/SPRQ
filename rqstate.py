@@ -1,5 +1,6 @@
 import json
 import collections
+import queue
 import threading
 import time
 DEBUG = 1
@@ -17,21 +18,19 @@ class PlayerState:
 	location = 'UTP Lounge'
 	items = {}
 	state = "map"
-	status = {"battle" : {}}
+	battle = {}
+	status = {}
 
 class RQState:
 	savedData = {}
 	players = {}
-	inqueue = collections.deque()
-	iqlock = threading.Lock()
-	outqueue = collections.deque()
-	oqlock = threading.Lock()
+	outqueue = queue.SimpleQueue()
 	def __init__(self,filename):
 		with open(filename,"r") as f:
 			self.savedData = json.load(f)
 		for player in self.savedData['players']:
 			self.loadPlayer(player)
-			
+
 	def savestate(self,filename):
 		for player in self.players:
 			self.savePlayer(player)
@@ -39,27 +38,28 @@ class RQState:
 			json.dump(self.savedData,f,indent=2)
 			
 	def writeMessage(self,message):
-		self.oqlock.acquire()
-		self.outqueue.append(message)
-		self.oqlock.release()
-		
-	def createPlayer(self,playerid):
-		self.players[playerid] = PlayerState()
-		self.savedData['players'][playerid] = {}
-		self.savedData['players'][playerid]['hp'] = 100
-		self.savedData['players'][playerid]['sp'] = 100
-		self.savedData['players'][playerid]['xp'] = 0
-		self.savePlayer(playerid)
-		
+		self.outqueue.put(message)
+
 	def loadPlayer(self,playerid):
-		self.players[playerid].hp = self.savedData['players'][playerid]['hp']
+		self.players[playerid] = PlayerState()
+		if not (playerid in self.savedData['players']):
+			self.savePlayer(playerid)
+		self.players[playerid].maxHP = self.savedData['players'][playerid]['hp']
+		self.players[playerid].hp = self.players[playerid].maxHP
 		self.players[playerid].sp = self.savedData['players'][playerid]['sp']
 		self.players[playerid].xp = self.savedData['players'][playerid]['xp']
+		self.players[playerid].atk = self.savedData['players'][playerid]['atk']
 		self.players[playerid].location = self.savedData['players'][playerid]['location']
 		self.players[playerid].money = self.savedData['players'][playerid]['money']
 		self.players[playerid].items = self.savedData['players'][playerid]['items']
+		return True
 		
-	def savePlayer(self,playerid):
+	def savePlayer(self,playerid):		
+		self.savedData['players'][playerid] = {}
+		self.savedData['players'][playerid]['hp'] = self.players[playerid].maxHP
+		self.savedData['players'][playerid]['sp'] = self.players[playerid].sp
+		self.savedData['players'][playerid]['xp'] = self.players[playerid].xp
+		self.savedData['players'][playerid]['atk'] = self.players[playerid].atk
 		self.savedData['players'][playerid]['items'] = self.players[playerid].items
 		self.savedData['players'][playerid]['xp'] = self.players[playerid].xp
 		self.savedData['players'][playerid]['money'] = self.players[playerid].money
@@ -71,71 +71,64 @@ class RQState:
 			exitindex = directions.index(exitname) % 4
 			if (self.savedData['rooms'][self.players[playerid].location]['exits'][exitindex] == "none"):
 				self.writeMessage("That is not an exit")
-				return
+				return False
 			else:
 				self.players[playerid].location = self.savedData['rooms'][self.players[playerid].location]['exits'][exitindex]
 		elif exitname in self.savedData['rooms'][self.players[playerid].location]['exits']:
 			self.players[playerid].location = exitname
 		else:
 			self.writeMessage("That is not an exit")
+			return False
+		return True
 
 	def handleRoom(self, playerid):
 		room = self.savedData['rooms'][self.players[playerid].location]
 		if (room["npcs"]):
-			self.players[playerid].status["battle"] = self.savedData["npcs"][room["npcs"][0]].copy()
-			self.players[playerid].state = "battle"
-			self.oqlock.acquire()
-			self.outqueue.append(self.players[playerid].status["battle"]["text"]["entry"])
-			self.oqlock.release()
+			self.setState(playerid, "battle")
+			self.writeMessage(self.players[playerid].battle["text"]["entry"])
 
 	def handleBattle(self,playerid, message):
 		messagelist = message.split()
+
 		if ((messagelist[0] == "attack") and (self.players[playerid].sp >= attackCost)):
-			self.players[playerid].status["battle"]["hp"] -= (self.players[playerid].atk - self.players[playerid].status["battle"]["def"])
+			self.players[playerid].battle["hp"] -= (self.players[playerid].atk - self.players[playerid].battle["def"])
 			self.players[playerid].sp -= attackCost
 		elif ((messagelist[0] == "heal") and (self.players[playerid].sp >= healCost)):
 			self.players[playerid].hp = self.players[playerid].maxHP
 			self.players[playerid].sp -= healCost
-		if (self.players[playerid].status["battle"]["hp"] < 0):
-			self.oqlock.acquire()
-			self.outqueue.append(self.players[playerid].status["battle"]["text"]["win"])
-			self.oqlock.release()
-			self.players[playerid].status["battle"] = {}
-			self.players[playerid].state = "map"
-			self.players[playerid].sp = 100
-			self.players[playerid].hp = self.players[playerid].maxHP
+
+		if (self.players[playerid].battle["hp"] <= 0):
+			self.outqueue.put(self.players[playerid].battle["text"]["win"])
+			self.setState(playerid, "map")
 			return
 		defMul = 1.0
 		if ((messagelist[0] == "block") and (self.players[playerid].sp >= blockCost)):
 			defMul = 0.5
 			self.players[playerid].sp -= blockCost
-		self.players[playerid].hp -= defMul*self.players[playerid].status["battle"]["atk"]
-		self.oqlock.acquire()
+		self.players[playerid].hp -= round(defMul*self.players[playerid].battle["atk"]*(time.monotonic() - self.players[playerid].battle["time"]))
 		if (self.players[playerid].hp <= 0):
-			self.outqueue.append(self.players[playerid].status["battle"]["text"]["lose"])
-			self.oqlock.release()
-			self.players[playerid].state = "map"
+			self.writeMessage(self.players[playerid].status["battle"]["text"]["lose"])
 			self.killPlayer(playerid)
 			return
 		else:
-			self.outqueue.append(self.players[playerid].status["battle"]["text"]["turn"])
-			self.oqlock.release()
-		self.printState(playerid)
-		self.printNPC(playerid)
+			self.writeMessage(self.players[playerid].battle["text"]["turn"])
+		self.players[playerid].battle['time'] = time.monotonic()
 		
-	def printRoom(self,playerid):
-		room = self.savedData['rooms'][self.players[playerid].location]
-		rmessage = [room['name'],room['info'],'Items:'] + room['items']
-#		rmessage = rmessage + ['People Here:'] + rooms['players']
-		rmessage.append('Region: ' + room['region'])
-		self.writeMessage("\n".join(rmessage))
-	
-	def printNPC(self, playerid):
-		self.oqlock.acquire()
-		self.outqueue.append("NPC Name: " + self.players[playerid].status["battle"]["name"])
-		self.outqueue.append("NPC HP: {}".format(self.players[playerid].status["battle"]["hp"]))
-		self.oqlock.release()
-		
+	def setState(self, playerid, state):
+		if (state == "map"):
+			self.players[playerid].battle = {}
+			self.players[playerid].state = "map"
+			self.players[playerid].sp = 100
+			self.players[playerid].hp = self.players[playerid].maxHP
+		elif (state == "battle"):
+			room = self.savedData['rooms'][self.players[playerid].location]
+			self.players[playerid].battle = self.savedData["npcs"][room["npcs"][0]].copy()
+			self.players[playerid].battle['time'] = time.monotonic()
+			self.players[playerid].state = "battle"
+		else:
+			if (DEBUG == 1):
+				self.writeMessage("Invalid state: " + str(state))
+
 	def killPlayer(self,playerid):
 		room = self.savedData['rooms'][self.players[playerid].location]
 		for key in self.players[playerid].items:
@@ -143,24 +136,31 @@ class RQState:
 				self.savedData['rooms'][room['name']]['items'].append(key)
 		self.players[playerid].items = {}
 		self.players[playerid].location = self.savedData['respawn'][room['region']]['room']
+		self.setState(playerid, "map")
 		self.writeMessage(self.savedData['respawn'][room['region']]['message'])
 
 	def printState(self, playerid):
 		player = self.players[playerid]
-		self.oqlock.acquire()
-		self.outqueue.append("HP: {}".format(player.hp))
-		self.outqueue.append("SP: {}".format(player.sp))
-		self.oqlock.release()
+		if (player.state == "map"):
+			room = self.savedData['rooms'][self.players[playerid].location]
+			rmessage = [room['name'],room['info'],'Items:'] + room['items']
+#			rmessage = rmessage + ['People Here:'] + rooms['players']
+			rmessage.append('Region: ' + room['region'])
+			self.writeMessage("\n".join(rmessage))
+		elif (player.state == "battle"):
+			self.writeMessage("HP: {}".format(player.hp))
+			self.writeMessage("SP: {}".format(player.sp))
+			self.writeMessage("NPC Name: " + self.players[playerid].battle["name"])
+			self.writeMessage("NPC HP: {}".format(self.players[playerid].battle["hp"]))
 		
 	def printInventory(self,playerid):
-		self.oqlock.acquire()
-		self.outqueue.append("Money: {}".format(self.players[playerid].money))
-		self.outqueue.append("Items: ")
+		self.writeMessage("Money: {}".format(self.players[playerid].money))
+		self.writeMessage("Items: ")
 		for key in self.players[playerid].items:
-			self.outqueue.append(str(key))
+			keystr = str(key);
 			if (self.players[playerid].items[key] > 1):
-				self.outqueue[-1] += ' x {}\n'.format(self.players[playerid].items[key])
-		self.oqlock.release()
+				keystr += ' x {}\n'.format(self.players[playerid].items[key])
+			self.writeMessage(keystr)
 		
 	def fastTravel(self,playerid,message):
 		if (message in self.savedData['fast-travel']):
@@ -196,8 +196,7 @@ class RQState:
 				self.printInventory(playerid)
 			elif (messagelist[0] == "panic"):
 				self.killPlayer(playerid)
-			else:
-				self.movePlayer(playerid,message)
+			elif self.movePlayer(playerid,message):
 				self.handleRoom(playerid)
 		elif (self.players[playerid].state == "battle"):
 			if (messagelist[0][:4] == "inv"):
