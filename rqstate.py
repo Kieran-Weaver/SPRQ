@@ -3,6 +3,7 @@ import collections
 import queue
 import threading
 import time
+import random
 DEBUG = 1
 #PlayerState is dynamic data, the saved json is static data
 healCost = 20
@@ -39,6 +40,21 @@ class RQState:
 			
 	def writeMessage(self,message):
 		self.outqueue.put(message)
+
+	def addItem(self, playerid, item):
+		if item in self.players[playerid].items.keys():
+			self.players[playerid].items[item] += 1
+		else:
+			self.players[playerid].items[item] = 1
+	
+	def removeItem(self, playerid, item):
+		if item in self.players[playerid].items.keys():
+			self.players[playerid].items[item] -= 1
+			if self.players[playerid].items[item] == 0:
+				del self.players[playerid].items[item]
+			return True
+		else:
+			return False
 
 	def loadPlayer(self,playerid):
 		self.players[playerid] = PlayerState()
@@ -99,6 +115,10 @@ class RQState:
 
 		if (self.players[playerid].battle["hp"] <= 0):
 			self.outqueue.put(self.players[playerid].battle["text"]["win"])
+			self.players[playerid].money += self.players[playerid].battle["money"]
+			for item in self.players[playerid].battle["drops"]:
+				if (random.randrange(0, 256) <= self.players[playerid].battle["drops"][item]):
+					self.addItem(playerid, item)
 			self.setState(playerid, "map")
 			return
 		defMul = 1.0
@@ -118,8 +138,6 @@ class RQState:
 		if (state == "map"):
 			self.players[playerid].battle = {}
 			self.players[playerid].state = "map"
-			self.players[playerid].sp = 100
-			self.players[playerid].hp = self.players[playerid].maxHP
 		elif (state == "battle"):
 			room = self.savedData['rooms'][self.players[playerid].location]
 			self.players[playerid].battle = self.savedData["npcs"][room["npcs"][0]].copy()
@@ -178,6 +196,50 @@ class RQState:
 				self.writeMessage("You cannot ride that here!")
 		else:
 			self.writeMessage("{} is not a route".format(message))
+	
+	def handleShop(self, playerid, command, items):
+		room = self.savedData['rooms'][self.players[playerid].location]
+		if room["name"] in self.savedData['shops']:
+			shopdata = self.savedData['shops'][room["name"]]
+			nonexistentItems = []
+			if command == "buy":
+				for item in items:
+					if item not in shopdata:
+						self.writeMessage("Item {} is not in this shop".format(item))
+					elif self.savedData['items'][item]['cost'] > self.players[playerid].money:
+						self.writeMessage("You can't afford {}!!".format(item))
+					else:
+						self.players[playerid].money -= self.savedData['items'][item]['cost']
+						self.addItem(playerid, item)
+			else:
+				for item in items:
+					if not removeItem(playerid, item):
+						nonexistentItems.append(item)
+					else:
+						self.players[playerid].money += self.savedData['items'][item]['cost']//2
+				if nonexistentItems:
+					self.writeMessage("Error: Items {} not found".format(", ".join(nonexistentItems)))
+		else:
+			self.writeMessage("{} is not a shop".format(room))
+
+	def handleItems(self, playerid, command, items):
+		room = self.savedData['rooms'][self.players[playerid].location]
+		nonexistentItems = []
+		if command == "get":
+			for item in items:
+				if item in room["items"]:
+					self.addItem(playerid, item)
+					room["items"].remove(item)
+				else:
+					nonexistentItems.append(item)
+		else:
+			for item in items:
+				if not self.removeItem(playerid, item):
+					nonexistentItems.append(item)
+				elif command == "drop":
+					room["items"].append(item)
+		if nonexistentItems:
+			self.writeMessage("Error: Items {} not found".format(", ".join(nonexistentItems)))
 		
 	def parseMessage(self,playerid,message):
 		messagelist = message.split()
@@ -196,6 +258,14 @@ class RQState:
 				self.printInventory(playerid)
 			elif (messagelist[0] == "panic"):
 				self.killPlayer(playerid)
+			elif messagelist[0] in ["buy", "sell"]:
+				command = messagelist[0]
+				items = " ".join(messagelist[1:]).split(",")
+				self.handleShop(playerid, command, items)
+			elif messagelist[0] in ["get", "drop", "destroy"]:
+				command = messagelist[0]
+				items = " ".join(messagelist[1:]).split(",")
+				self.handleItems(playerid, command, items)
 			elif self.movePlayer(playerid,message):
 				self.handleRoom(playerid)
 		elif (self.players[playerid].state == "battle"):

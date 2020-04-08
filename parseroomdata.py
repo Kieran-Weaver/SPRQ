@@ -106,6 +106,7 @@ rooms = [re.sub(r'"\)','"]',room) for room in rooms]
 rooms = [re.sub(r'\n','',room) for room in rooms]
 rooms = [re.sub(r'"\+"\\n"\.join\[([^\)]*)\)',lambda match: eval('"\\\\n".join(' + match.group(1) + ')') + '\"', room) for room in rooms]
 
+#drops out of 256
 gamedata = {
 	'rooms' : {
 	},
@@ -127,6 +128,10 @@ gamedata = {
 				"turn" : "DiWheel used quick attack! It isn't very effective",
 				"win" : "I think I heard Irena scream in the distance",
 				"lose" : "You blacked out! Jim put your body in a sleeping bag and mailed you home."
+			},
+			"money" : 5,
+			"drops" : {
+				"soup" : 16
 			}
 		},
 		"Box Robot": {
@@ -140,6 +145,10 @@ gamedata = {
 				"turn" : "The robot charges at you and tries to knock you down",
 				"win" : "The robot violently exploded. Nice.",
 				"lose" : "You blacked out! The robot taunts you, spinning in circles"
+			},
+			"money" : 5,
+			"drops" : {
+				"soup" : 16
 			}
 		},
 		"Student": {
@@ -153,6 +162,10 @@ gamedata = {
 				"turn": "Tobias shot lightning at you, but you are wearing a metal jacket",
 				"win": "You're already a better fighter than most of the Agency",
 				"lose": """ "You're still so weak, Laura," Tobias said """
+			},
+			"money" : 10,
+			"drops" : {
+				"soup" : 16
 			}
 		},
 		"Seagull": {
@@ -166,6 +179,10 @@ gamedata = {
 				"turn": "Birds are jerks! It rammed right into your face",
 				"win": "Now you can have lunch in peace",
 				"lose": "You blacked out!"
+			},
+			"money" : 20,
+			"drops" : {
+				"soup" : 16
 			}
 		},
 		"Pigeon": {
@@ -179,6 +196,10 @@ gamedata = {
 				"turn": "Instead of running away, you're coming closer?",
 				"win": "Why are all the bosses birds, anyway",
 				"lose": "This isn't a pidgeon! It's me, DIO!"
+			},
+			"money" : 25,
+			"drops" : {
+				"soup" : 16
 			}
 		},
 		"Crow": {
@@ -192,6 +213,10 @@ gamedata = {
 				"turn": "It attempted to crush you under its massive weight",
 				"win": "Stop this animal abuse!",
 				"lose": "You blacked out! Wait until items are implemented next time"
+			},
+			"money" : 50,
+			"drops" : {
+				"soup" : 16
 			}
 		},
 		"Cookie": {
@@ -205,34 +230,84 @@ gamedata = {
 				"turn": "IT GREW FOUR HUNDRED EYES AND THEY ALL STARED AT YOU",
 				"win": "See? Good thing you defeated it quickly...",
 				"lose": "You blacked out and it bit you as revenge"
+			},
+			"money" : 1,
+			"drops" : {
+				"soup" : 16
 			}
 		}
-	}
-}
-items = {
-	'soup' : {
-		'type' : 'edible',
-		'cost' : 0,
-		'hp' : 0,
-		'sp' : 10,
-		'atk' : 0,
-		'status' : {}
 	},
-	'health_soup' : {
-		'type' : 'edible',
-		'cost' : 0,
-		'hp' : 10,
-		'sp' : 0,
-		'atk' : 0,
-		'status' : {}
+	"items" : {
+		'soup' : {
+			'type' : 'any',
+			'cost' : 1,
+			'hp' : 0,
+			'sp' : 10,
+			'atk' : 0
+		},
+		'health_soup' : {
+			'type' : 'any',
+			'cost' : 10,
+			'hp' : 10,
+			'sp' : 0,
+			'atk' : 0
+		},
+		'souper_soup' : {
+			'type' : 'any',
+			'cost' : 20,
+			'hp' : 50,
+			'sp' : 50,
+			'atk' : 1
+		},
+		'battle_soup' : {
+			'type' : 'battle',
+			'cost' : 10,
+			'atk' : 10
+		},
+		'bus_pass' : {
+			'type' : 'powerup',
+			'cost' : 25
+		},
+		'repel' : {
+			'type' : 'powerup',
+			'cost' : 50
+		},
+		'flashlight' : {
+			'type' : 'special',
+			'cost' : 50
+		},
+		'bag' : {
+			'type' : 'powerup',
+			'cost' : 100
+		},
+		'lock' : {
+			'type' : 'powerup',
+			'cost' : 200
+		},
+		'suitcase' : {
+			'type' : 'powerup',
+			'cost' : 500
+		},
+		'satellite' : {
+			'type' : 'powerup',
+			'cost' : 1000
+		}
 	},
-	'souper_soup' : {
-		'type' : 'edible',
-		'cost' : 50,
-		'hp' : 50,
-		'sp' : 50,
-		'atk' : 1,
-		'status' : {}
+	'shops' : {
+		"UBC Bookstore" : ["soup", "health_soup", "souper_soup", "flashlight", "bus_pass"],
+		"YuBot Gift Shop Downtown Vancouver" : ["soup", "souper_soup", "flashlight", "bus_pass"],
+		"YuBot Gift Shop Granville Island" : ["soup", "souper_soup", "flashlight", "bus_pass"],
+		"YuBot Gift Shop False Creek South" : ["soup", "souper_soup", "flashlight", "bus_pass"],
+		"rqSHOP False Creek South" : ["satellite"],
+		"RQ Storage Solutions False Creek South" : ["bag", "briefcase"],
+		"YuBot Gift Shop Kerrisdale" : ["soup", "souper_soup", "flashlight", "bus_pass"],
+		"rqSHOP Kerrisdale" : ["repel"],
+		"YuBot Gift Shop Brighouse" : ["soup", "souper_soup", "flashlight", "bus_pass"],
+		"rqSHOP Brighouse" : ["lock", "briefcase", "sattelite"],
+		"rqSHOP Wesbrook Village" : ["soup", "souper_soup", "battle_soup", "health_soup"],
+		"YuBot Gift Shop Commercial-Broadway" : ["soup", "souper_soup", "flashlight", "bus_pass"],
+		"YuBot Gift Shop Crystal Mall" : ["soup", "souper_soup", "flashlight", "bus_pass"],
+		"rqSHOP Crystal Mall" : ["soup", "flashlight", "briefcase"]
 	}
 }
 with open("fullrooms.py","w") as fullroomfile:
