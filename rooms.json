@@ -476,6 +476,198 @@
       "spawner": null,
       "items": []
     },
+    "Pacific Spirit Maze \u200b": {
+      "name": "Pacific Spirit Maze \u200b",
+      "exits": [
+        "Pacific Spirit Maze    \u200b",
+        "Pacific Spirit Maze\u200b",
+        "Pacific Spirit Maze        \u200b",
+        "none"
+      ],
+      "info": "You are in a twisty, winding maze with walls of dense trees. Everything looks the same.",
+      "npcs": [
+        "Student"
+      ],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "Pacific Spirit Maze  \u200b": {
+      "name": "Pacific Spirit Maze  \u200b",
+      "exits": [
+        "Pacific Spirit Maze          \u200b",
+        "Pacific Spirit Maze           \u200b",
+        "none",
+        "Pacific Spirit Maze\u200b"
+      ],
+      "info": "You are in a twisty, winding maze with walls of dense trees. Everything looks the same.",
+      "npcs": [
+        "Student"
+      ],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "Pacific Spirit Maze   \u200b": {
+      "name": "Pacific Spirit Maze   \u200b",
+      "exits": [
+        "Pacific Spirit Maze\u200b",
+        "none",
+        "Pacific Spirit Maze            \u200b",
+        "none"
+      ],
+      "info": "You are in a twisty, winding maze with walls of dense trees. Everything looks the same.",
+      "npcs": [
+        "Student"
+      ],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "Pacific Spirit Maze    \u200b": {
+      "name": "Pacific Spirit Maze    \u200b",
+      "exits": [
+        "none",
+        "Pacific Spirit Maze \u200b",
+        "Pacific Spirit Maze     \u200b",
+        "none"
+      ],
+      "info": "You are in a twisty, winding maze with walls of dense trees. Everything looks the same.",
+      "npcs": [
+        "Student"
+      ],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "Pacific Spirit Maze     \u200b": {
+      "name": "Pacific Spirit Maze     \u200b",
+      "exits": [
+        "none",
+        "Pacific Spirit Maze      \u200b",
+        "none",
+        "Pacific Spirit Maze    \u200b"
+      ],
+      "info": "You are in a twisty, winding maze with walls of dense trees. Everything looks the same.",
+      "npcs": [
+        "Student"
+      ],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "Pacific Spirit Maze      \u200b": {
+      "name": "Pacific Spirit Maze      \u200b",
+      "exits": [
+        "Pacific Spirit Maze     \u200b",
+        "Pacific Spirit Maze       \u200b",
+        "none",
+        "Pacific Spirit Maze        \u200b"
+      ],
+      "info": "You are in a twisty, winding maze with walls of dense trees. Everything looks the same.",
+      "npcs": [
+        "Student"
+      ],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "Pacific Spirit Maze       \u200b": {
+      "name": "Pacific Spirit Maze       \u200b",
+      "exits": [
+        "Pacific Spirit Maze      \u200b",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in a twisty, winding maze with walls of dense trees. Everything looks the same.",
+      "npcs": [
+        "Student"
+      ],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "Pacific Spirit Maze        \u200b": {
+      "name": "Pacific Spirit Maze        \u200b",
+      "exits": [
+        "none",
+        "Pacific Spirit Maze         \u200b",
+        "Pacific Spirit Maze      \u200b",
+        "Pacific Spirit Maze \u200b"
+      ],
+      "info": "You are in a twisty, winding maze with walls of dense trees. Everything looks the same.",
+      "npcs": [
+        "Student"
+      ],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "Pacific Spirit Maze         \u200b": {
+      "name": "Pacific Spirit Maze         \u200b",
+      "exits": [
+        "Pacific Spirit Maze        \u200b",
+        "none",
+        "none",
+        "Pacific Spirit Maze          \u200b"
+      ],
+      "info": "You are in a twisty, winding maze with walls of dense trees. Everything looks the same. There is a closed box here.",
+      "npcs": [
+        "Treasure Hunter Student"
+      ],
+      "region": "UBC",
+      "spawner": "\ud83d\udd6f",
+      "items": []
+    },
+    "Pacific Spirit Maze          \u200b": {
+      "name": "Pacific Spirit Maze          \u200b",
+      "exits": [
+        "none",
+        "Pacific Spirit Maze  \u200b",
+        "Pacific Spirit Maze         \u200b",
+        "none"
+      ],
+      "info": "You are in a twisty, winding maze with walls of dense trees. Everything looks the same.",
+      "npcs": [
+        "Student"
+      ],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "Pacific Spirit Maze           \u200b": {
+      "name": "Pacific Spirit Maze           \u200b",
+      "exits": [
+        "Pacific Spirit Maze  \u200b",
+        "none",
+        "none",
+        "Pacific Spirit Maze            \u200b"
+      ],
+      "info": "You are in a twisty, winding maze with walls of dense trees. Everything looks the same.",
+      "npcs": [
+        "Student"
+      ],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "Pacific Spirit Maze            \u200b": {
+      "name": "Pacific Spirit Maze            \u200b",
+      "exits": [
+        "none",
+        "none",
+        "Pacific Spirit Maze           \u200b",
+        "Pacific Spirit Maze   \u200b"
+      ],
+      "info": "You are in a twisty, winding maze with walls of dense trees. Everything looks the same.",
+      "npcs": [
+        "Student"
+      ],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
     "Memorial at West": {
       "name": "Memorial at West",
       "exits": [
@@ -519,6 +711,53 @@
         "Student"
       ],
       "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "68": {
+      "name": "68",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "UBC Bus Loop",
+        "Memorial at West"
+      ],
+      "info": "You are in a bus running route 68. You can go to the following destinations:\n\nMemorial at West\nUBC Bus Loop",
+      "npcs": [],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "Chalkboard": {
+      "name": "Chalkboard",
+      "exits": [
+        "UTP Hallway",
+        "none",
+        "none",
+        "none",
+        "Canada Place"
+      ],
+      "info": "You went inside the chalkboard and realized it was a teleporter. You can see portals leading to the following locations here:\n\nCanada Place\n\nTo the north is the way back into the hallway.",
+      "npcs": [],
+      "region": "UBC",
+      "spawner": null,
+      "items": []
+    },
+    "44": {
+      "name": "44",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "UBC Bus Loop",
+        "Waterfront Station"
+      ],
+      "info": "You are in a bus running route 44. You can go to the following destinations:\n\nUBC Bus Loop\nWaterfront Station",
+      "npcs": [],
+      "region": "Downtown Vancouver",
       "spawner": null,
       "items": []
     },
@@ -1209,6 +1448,42 @@
       "spawner": null,
       "items": []
     },
+    "250": {
+      "name": "250",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "Georgia at Granville",
+        "Georgia at Homer"
+      ],
+      "info": "You are in a bus running route 250. You can go to the following destinations:\n\nGeorgia at Homer\nGeorgia at Granville",
+      "npcs": [],
+      "region": "Downtown Vancouver",
+      "spawner": null,
+      "items": []
+    },
+    "10": {
+      "name": "10",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "Hastings at Granville",
+        "Waterfront Station",
+        "5th at Granville",
+        "41st at Granville",
+        "Robson at Granville",
+        "Marine at Cambie"
+      ],
+      "info": "You are in a bus running route 10. You can go to the following destinations:\n\nWaterfront Station\nHastings at Granville\nRobson at Granville\n5th at Granville\n41st at Granville\nMarine at Cambie",
+      "npcs": [],
+      "region": "Downtown Vancouver",
+      "spawner": null,
+      "items": []
+    },
     "YuBot Gift Shop Downtown Vancouver": {
       "name": "YuBot Gift Shop Downtown Vancouver",
       "exits": [
@@ -1294,6 +1569,23 @@
         "none"
       ],
       "info": "You are at the intersection of 4th Avenue and Fir Street. There is a bus stop here for \n\n84",
+      "npcs": [],
+      "region": "Granville Island",
+      "spawner": null,
+      "items": []
+    },
+    "84": {
+      "name": "84",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "4th at Fir",
+        "UBC Bus Loop",
+        "500 Block 2nd Avenue"
+      ],
+      "info": "You are in a bus running route 84. You can go to the following destinations:\n\nUBC Bus Loop\n4th at Fir\n500 Block 2nd Avenue",
       "npcs": [],
       "region": "Granville Island",
       "spawner": null,
@@ -1811,6 +2103,22 @@
       "spawner": null,
       "items": []
     },
+    "50": {
+      "name": "50",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "Lamey's Mill at Anderson",
+        "500 Block 2nd Avenue"
+      ],
+      "info": "You are in a bus running route 50. You can go to the following destinations:\n\nLamey's Mill at Anderson\n500 Block 2nd Avenue",
+      "npcs": [],
+      "region": "False Creek South",
+      "spawner": null,
+      "items": []
+    },
     "YuBot Bank False Creek South": {
       "name": "YuBot Bank False Creek South",
       "exits": [
@@ -1862,6 +2170,22 @@
         "2400 Block Cambie Street"
       ],
       "info": "You are in a small storage shop. To the west is Cambie Street. There is a sign here that says:\n\nAvailable for 7000 coins:\ud83d\udc5c\nAvailable for 100000 coins:\ud83d\udec4",
+      "npcs": [],
+      "region": "False Creek South",
+      "spawner": null,
+      "items": []
+    },
+    "99": {
+      "name": "99",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "UBC Bus Loop",
+        "Broadway at Cambie"
+      ],
+      "info": "You are in a bus running route 99. You can go to the following destinations:\n\nUBC Bus Loop\nBroadway at Cambie",
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
@@ -1923,6 +2247,24 @@
       ],
       "region": "41st @ Granville",
       "spawner": "\ud83e\udd56",
+      "items": []
+    },
+    "43": {
+      "name": "43",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "41st at Granville",
+        "41st at West Boulevard",
+        "41st at Cambie",
+        "UBC Bus Loop"
+      ],
+      "info": "You are in a bus running route 43. You can go to the following destinations:\n\nUBC Bus Loop\n41st at West Boulevard\n41st at Granville\n41st at Cambie",
+      "npcs": [],
+      "region": "41st @ Granville",
+      "spawner": null,
       "items": []
     },
     "Arbutus Greenway": {
@@ -2227,6 +2569,30 @@
       "spawner": null,
       "items": []
     },
+    "Canada Line": {
+      "name": "Canada Line",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "Waterfront Station",
+        "Broadway-City Hall Station",
+        "Vancouver City Centre Station",
+        "Olympic Village Station",
+        "Oakridge-41st Station",
+        "Lansdowne Station",
+        "Bridgeport Station",
+        "Marine Drive Station",
+        "Brighouse Station",
+        "Aberdeen Station"
+      ],
+      "info": "You are in an above-ground subway train running a route called the Canada Line. You can go to the following destinations:\n\nWaterfront Station\nVancouver City Centre Station\nOlympic Village Station\nBroadway-City Hall Station\nOakridge-41st Station\nMarine Drive Station\nBridgeport Station\nAberdeen Station\nLansdowne Station\nBrighouse Station",
+      "npcs": [],
+      "region": "Oakridge",
+      "spawner": null,
+      "items": []
+    },
     "Marine at Cambie": {
       "name": "Marine at Cambie",
       "exits": [
@@ -2294,6 +2660,23 @@
         "North Lagoon Drive"
       ],
       "info": "You are at the intersection of Pipeline Road and Stanley Park Drive. There is a bus stop here for\n\n19",
+      "npcs": [],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "19": {
+      "name": "19",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "Pipeline at Stanley Park",
+        "Stanley Park Loop",
+        "Pender at Granville"
+      ],
+      "info": "You are in a bus running route 19. You can go to the following destinations:\n\nPender at Granville\nPipeline at Stanley Park\nStanley Park Loop",
       "npcs": [],
       "region": "Stanley Park",
       "spawner": null,
@@ -2396,7 +2779,7 @@
     "Stanley Park-Maze Entrance": {
       "name": "Stanley Park-Maze Entrance",
       "exits": [
-        "Stanley Park Maze",
+        "Stanley Park Maze 0",
         "Tatlow at North Lagoon",
         "none",
         "none"
@@ -2409,8 +2792,8 @@
       "spawner": null,
       "items": []
     },
-    "Stanley Park Maze": {
-      "name": "Stanley Park Maze",
+    "Stanley Park Maze 0": {
+      "name": "Stanley Park Maze 0",
       "exits": [
         "Stanley Park-Maze Entrance",
         "Stanley Park Maze 1",
@@ -2418,6 +2801,512 @@
         "Stanley Park Maze 3",
         "Stanley Park Maze 4",
         "Stanley Park Maze 5",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 1": {
+      "name": "Stanley Park Maze 1",
+      "exits": [
+        "none",
+        "Stanley Park Maze 0",
+        "Stanley Park Maze 2",
+        "Stanley Park Maze 3",
+        "Stanley Park Maze 4",
+        "Stanley Park Maze 5",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 2": {
+      "name": "Stanley Park Maze 2",
+      "exits": [
+        "none",
+        "Stanley Park Maze 0",
+        "Stanley Park Maze 1",
+        "Stanley Park Maze 3",
+        "Stanley Park Maze 4",
+        "Stanley Park Maze 5",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 3": {
+      "name": "Stanley Park Maze 3",
+      "exits": [
+        "none",
+        "Stanley Park Maze 0",
+        "Stanley Park Maze 2",
+        "Stanley Park Maze 1",
+        "Stanley Park Maze 4",
+        "Stanley Park Maze 5",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 4": {
+      "name": "Stanley Park Maze 4",
+      "exits": [
+        "Stanley Park Maze 0",
+        "Stanley Park Maze 2",
+        "Stanley Park Maze 3",
+        "Stanley Park Maze 1",
+        "Stanley Park Maze 5",
+        "none",
+        "none",
+        "none",
+        "none",
+        "Stanley Park Maze 10"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 5": {
+      "name": "Stanley Park Maze 5",
+      "exits": [
+        "none",
+        "Stanley Park Maze 0",
+        "Stanley Park Maze 2",
+        "Stanley Park Maze 3",
+        "Stanley Park Maze 4",
+        "Stanley Park Maze 1",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 6": {
+      "name": "Stanley Park Maze 6",
+      "exits": [
+        "none",
+        "Stanley Park Maze 11",
+        "Stanley Park Maze 7",
+        "Stanley Park Maze 8",
+        "Stanley Park Maze 9",
+        "Stanley Park Maze 10",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 7": {
+      "name": "Stanley Park Maze 7",
+      "exits": [
+        "Stanley Park Maze 11",
+        "Stanley Park Maze 6",
+        "Stanley Park Maze 8",
+        "Stanley Park Maze 9",
+        "Stanley Park Maze 10",
+        "none",
+        "none",
+        "none",
+        "none",
+        "Stanley Park Maze 14"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 8": {
+      "name": "Stanley Park Maze 8",
+      "exits": [
+        "none",
+        "Stanley Park Maze 11",
+        "Stanley Park Maze 7",
+        "Stanley Park Maze 6",
+        "Stanley Park Maze 9",
+        "Stanley Park Maze 10",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 9": {
+      "name": "Stanley Park Maze 9",
+      "exits": [
+        "none",
+        "Stanley Park Maze 11",
+        "Stanley Park Maze 7",
+        "Stanley Park Maze 8",
+        "Stanley Park Maze 6",
+        "Stanley Park Maze 10",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 10": {
+      "name": "Stanley Park Maze 10",
+      "exits": [
+        "Stanley Park Maze 11",
+        "Stanley Park Maze 7",
+        "Stanley Park Maze 8",
+        "Stanley Park Maze 9",
+        "Stanley Park Maze 6",
+        "none",
+        "none",
+        "none",
+        "none",
+        "Stanley Park Maze 4"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 11": {
+      "name": "Stanley Park Maze 11",
+      "exits": [
+        "none",
+        "Stanley Park Maze 6",
+        "Stanley Park Maze 7",
+        "Stanley Park Maze 8",
+        "Stanley Park Maze 9",
+        "Stanley Park Maze 10",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 12": {
+      "name": "Stanley Park Maze 12",
+      "exits": [
+        "none",
+        "Stanley Park Maze 13",
+        "Stanley Park Maze 14",
+        "Stanley Park Maze 15",
+        "Stanley Park Maze 16",
+        "Stanley Park Maze 17",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 13": {
+      "name": "Stanley Park Maze 13",
+      "exits": [
+        "none",
+        "Stanley Park Maze 12",
+        "Stanley Park Maze 14",
+        "Stanley Park Maze 15",
+        "Stanley Park Maze 16",
+        "Stanley Park Maze 17",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 14": {
+      "name": "Stanley Park Maze 14",
+      "exits": [
+        "Stanley Park Maze 13",
+        "Stanley Park Maze 12",
+        "Stanley Park Maze 15",
+        "Stanley Park Maze 16",
+        "Stanley Park Maze 17",
+        "none",
+        "none",
+        "none",
+        "none",
+        "Stanley Park Maze 7"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 15": {
+      "name": "Stanley Park Maze 15",
+      "exits": [
+        "none",
+        "Stanley Park Maze 13",
+        "Stanley Park Maze 14",
+        "Stanley Park Maze 12",
+        "Stanley Park Maze 16",
+        "Stanley Park Maze 17",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 16": {
+      "name": "Stanley Park Maze 16",
+      "exits": [
+        "Stanley Park Maze 13",
+        "Stanley Park Maze 14",
+        "Stanley Park Maze 15",
+        "Stanley Park Maze 12",
+        "Stanley Park Maze 17",
+        "none",
+        "none",
+        "none",
+        "none",
+        "Stanley Park Maze 21"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 17": {
+      "name": "Stanley Park Maze 17",
+      "exits": [
+        "none",
+        "Stanley Park Maze 13",
+        "Stanley Park Maze 14",
+        "Stanley Park Maze 15",
+        "Stanley Park Maze 16",
+        "Stanley Park Maze 12",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 18": {
+      "name": "Stanley Park Maze 18",
+      "exits": [
+        "none",
+        "Stanley Park Maze 19",
+        "Stanley Park Maze 20",
+        "Stanley Park Maze 21",
+        "Stanley Park Maze 22",
+        "Stanley Park Maze 23",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow Flock"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 19": {
+      "name": "Stanley Park Maze 19",
+      "exits": [
+        "none",
+        "Stanley Park Maze 18",
+        "Stanley Park Maze 20",
+        "Stanley Park Maze 21",
+        "Stanley Park Maze 22",
+        "Stanley Park Maze 23",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 20": {
+      "name": "Stanley Park Maze 20",
+      "exits": [
+        "none",
+        "Stanley Park Maze 19",
+        "Stanley Park Maze 18",
+        "Stanley Park Maze 21",
+        "Stanley Park Maze 22",
+        "Stanley Park Maze 23",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 21": {
+      "name": "Stanley Park Maze 21",
+      "exits": [
+        "Stanley Park Maze 16",
+        "Stanley Park Maze 19",
+        "Stanley Park Maze 20",
+        "Stanley Park Maze 18",
+        "Stanley Park Maze 22",
+        "Stanley Park Maze 23",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 22": {
+      "name": "Stanley Park Maze 22",
+      "exits": [
+        "none",
+        "Stanley Park Maze 19",
+        "Stanley Park Maze 20",
+        "Stanley Park Maze 21",
+        "Stanley Park Maze 18",
+        "Stanley Park Maze 23",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in the Stanley Park Maze. All paths seem the same.",
+      "npcs": [
+        "Crow"
+      ],
+      "region": "Stanley Park",
+      "spawner": null,
+      "items": []
+    },
+    "Stanley Park Maze 23": {
+      "name": "Stanley Park Maze 23",
+      "exits": [
+        "none",
+        "Stanley Park Maze 19",
+        "Stanley Park Maze 20",
+        "Stanley Park Maze 21",
+        "Stanley Park Maze 22",
+        "Stanley Park Maze 18",
         "none",
         "none",
         "none",
@@ -2454,6 +3343,22 @@
         "none"
       ],
       "info": "You are at the Bridgeport bus loop. To the east is a Canada Line station. There are bus stops here for\n\n403\n480\n601",
+      "npcs": [],
+      "region": "Bridgeport",
+      "spawner": null,
+      "items": []
+    },
+    "480": {
+      "name": "480",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "UBC Bus Loop",
+        "Bridgeport Station Bus Loop"
+      ],
+      "info": "You are in a bus running route 480. You can go to the following destinations:\n\nUBC Bus Loop\nBridgeport Station Bus Loop",
       "npcs": [],
       "region": "Bridgeport",
       "spawner": null,
@@ -2586,6 +3491,27 @@
         "Bowling Entrance"
       ],
       "info": "You are at a bowling alley. There is a scanner for tickets here.",
+      "npcs": [],
+      "region": "Riverport",
+      "spawner": null,
+      "items": []
+    },
+    "403": {
+      "name": "403",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "Entertainment Roundabout",
+        "Bridgeport Station Bus Loop",
+        "Granville at No. 3",
+        "Cook at No. 3",
+        "Westminster at No. 3",
+        "Aberdeen Station",
+        "Lansdowne at No. 3"
+      ],
+      "info": "You are in a bus running route 403. You can go to the following destinations:\n\nEntertainment Roundabout\nGranville at No. 3\nCook at No. 3\nWestminster at No. 3\nLansdowne at No. 3\nAberdeen Station\nBridgeport Station Bus Loop",
       "npcs": [],
       "region": "Riverport",
       "spawner": null,
@@ -5459,6 +6385,402 @@
       "spawner": null,
       "items": []
     },
+    "u1": {
+      "name": "u1",
+      "exits": [
+        "none",
+        "none",
+        "u36",
+        "u29"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u2": {
+      "name": "u2",
+      "exits": [
+        "none",
+        "none",
+        "u3",
+        "u1"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u3": {
+      "name": "u3",
+      "exits": [
+        "none",
+        "none",
+        "u4",
+        "u2"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u4": {
+      "name": "u4",
+      "exits": [
+        "none",
+        "u5",
+        "none",
+        "u3"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u5": {
+      "name": "u5",
+      "exits": [
+        "u4",
+        "u35",
+        "u6",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u6": {
+      "name": "u6",
+      "exits": [
+        "none",
+        "none",
+        "u5",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u7": {
+      "name": "u7",
+      "exits": [
+        "u6",
+        "u8",
+        "none",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u8": {
+      "name": "u8",
+      "exits": [
+        "u7",
+        "u37",
+        "none",
+        "u9"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u9": {
+      "name": "u9",
+      "exits": [
+        "none",
+        "u10",
+        "u8",
+        "u34"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u10": {
+      "name": "u10",
+      "exits": [
+        "u9",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u11": {
+      "name": "u11",
+      "exits": [
+        "none",
+        "u12",
+        "u10",
+        "u13"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u12": {
+      "name": "u12",
+      "exits": [
+        "u11",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u13": {
+      "name": "u13",
+      "exits": [
+        "none",
+        "none",
+        "u11",
+        "u14"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u14": {
+      "name": "u14",
+      "exits": [
+        "none",
+        "none",
+        "u13",
+        "u15"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u15": {
+      "name": "u15",
+      "exits": [
+        "none",
+        "none",
+        "u14",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u16": {
+      "name": "u16",
+      "exits": [
+        "u17",
+        "u15",
+        "u31",
+        "u18"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u17": {
+      "name": "u17",
+      "exits": [
+        "none",
+        "u16",
+        "none",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u18": {
+      "name": "u18",
+      "exits": [
+        "u19",
+        "none",
+        "u16",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
     "u19": {
       "name": "u19",
       "exits": [
@@ -5470,6 +6792,424 @@
       "info": "You are in a dark tunnel.",
       "npcs": [
         "Programmer"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u20": {
+      "name": "u20",
+      "exits": [
+        "u22",
+        "u21",
+        "u19",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u21": {
+      "name": "u21",
+      "exits": [
+        "u20",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u22": {
+      "name": "u22",
+      "exits": [
+        "u38",
+        "u20",
+        "u24",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u23": {
+      "name": "u23",
+      "exits": [
+        "none",
+        "u24",
+        "u25",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u24": {
+      "name": "u24",
+      "exits": [
+        "u23",
+        "u19",
+        "u26",
+        "u22"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u25": {
+      "name": "u25",
+      "exits": [
+        "none",
+        "u26",
+        "u30",
+        "u23"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u26": {
+      "name": "u26",
+      "exits": [
+        "u25",
+        "u27",
+        "none",
+        "u24"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u27": {
+      "name": "u27",
+      "exits": [
+        "u26",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u28": {
+      "name": "u28",
+      "exits": [
+        "u29",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u29": {
+      "name": "u29",
+      "exits": [
+        "u30",
+        "u28",
+        "u26",
+        "u1"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u30": {
+      "name": "u30",
+      "exits": [
+        "none",
+        "u29",
+        "none",
+        "u25"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u31": {
+      "name": "u31",
+      "exits": [
+        "u0",
+        "u32",
+        "none",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u32": {
+      "name": "u32",
+      "exits": [
+        "u34",
+        "none",
+        "u31",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u33": {
+      "name": "u33",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "u0"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u34": {
+      "name": "u34",
+      "exits": [
+        "u35",
+        "u32",
+        "u9",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u35": {
+      "name": "u35",
+      "exits": [
+        "u36",
+        "u34",
+        "none",
+        "u33"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u38": {
+      "name": "u38",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u37": {
+      "name": "u37",
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
+      ],
+      "region": "Brighouse",
+      "spawner": null,
+      "items": []
+    },
+    "u36": {
+      "name": "u36",
+      "exits": [
+        "none",
+        "u35",
+        "none",
+        "u1"
+      ],
+      "info": "You are in a dark tunnel.",
+      "npcs": [
+        "Box Robot",
+        "Student",
+        "Seagull",
+        "Pigeon",
+        "Crow",
+        "Cookie",
+        "Diwheel"
       ],
       "region": "Brighouse",
       "spawner": null,
@@ -5806,22 +7546,27 @@
     },
     "flashlight": {
       "type": "special",
+      "atk": 10,
       "cost": 50
     },
     "bag": {
       "type": "powerup",
+      "data": 20,
       "cost": 100
     },
     "lock": {
       "type": "powerup",
+      "data": 20,
       "cost": 200
     },
     "suitcase": {
       "type": "powerup",
+      "data": 100,
       "cost": 500
     },
     "satellite": {
       "type": "powerup",
+      "data": 0,
       "cost": 1000
     }
   },
@@ -5856,7 +7601,7 @@
     ],
     "RQ Storage Solutions False Creek South": [
       "bag",
-      "briefcase"
+      "suitcase"
     ],
     "YuBot Gift Shop Kerrisdale": [
       "soup",
@@ -5875,7 +7620,7 @@
     ],
     "rqSHOP Brighouse": [
       "lock",
-      "briefcase",
+      "suitcase",
       "sattelite"
     ],
     "rqSHOP Wesbrook Village": [
@@ -5899,7 +7644,7 @@
     "rqSHOP Crystal Mall": [
       "soup",
       "flashlight",
-      "briefcase"
+      "suitcase"
     ]
   }
 }

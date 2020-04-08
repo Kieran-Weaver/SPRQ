@@ -274,22 +274,27 @@ gamedata = {
 		},
 		'flashlight' : {
 			'type' : 'special',
+			'atk' : 10,
 			'cost' : 50
 		},
 		'bag' : {
 			'type' : 'powerup',
+			'data' : 20,
 			'cost' : 100
 		},
 		'lock' : {
 			'type' : 'powerup',
+			'data' : 20,
 			'cost' : 200
 		},
 		'suitcase' : {
 			'type' : 'powerup',
+			'data' : 100,
 			'cost' : 500
 		},
 		'satellite' : {
 			'type' : 'powerup',
+			'data' : 0,
 			'cost' : 1000
 		}
 	},
@@ -299,15 +304,15 @@ gamedata = {
 		"YuBot Gift Shop Granville Island" : ["soup", "souper_soup", "flashlight", "bus_pass"],
 		"YuBot Gift Shop False Creek South" : ["soup", "souper_soup", "flashlight", "bus_pass"],
 		"rqSHOP False Creek South" : ["satellite"],
-		"RQ Storage Solutions False Creek South" : ["bag", "briefcase"],
+		"RQ Storage Solutions False Creek South" : ["bag", "suitcase"],
 		"YuBot Gift Shop Kerrisdale" : ["soup", "souper_soup", "flashlight", "bus_pass"],
 		"rqSHOP Kerrisdale" : ["repel"],
 		"YuBot Gift Shop Brighouse" : ["soup", "souper_soup", "flashlight", "bus_pass"],
-		"rqSHOP Brighouse" : ["lock", "briefcase", "sattelite"],
+		"rqSHOP Brighouse" : ["lock", "suitcase", "sattelite"],
 		"rqSHOP Wesbrook Village" : ["soup", "souper_soup", "battle_soup", "health_soup"],
 		"YuBot Gift Shop Commercial-Broadway" : ["soup", "souper_soup", "flashlight", "bus_pass"],
 		"YuBot Gift Shop Crystal Mall" : ["soup", "souper_soup", "flashlight", "bus_pass"],
-		"rqSHOP Crystal Mall" : ["soup", "flashlight", "briefcase"]
+		"rqSHOP Crystal Mall" : ["soup", "flashlight", "suitcase"]
 	}
 }
 with open("fullrooms.py","w") as fullroomfile:
