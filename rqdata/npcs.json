@@ -1,0 +1,756 @@
+{
+  "npcs": {
+    "Box Robot": {
+      "name": "Box Robot",
+      "hp": 10,
+      "atk": 4,
+      "def": 0,
+      "xp": 5,
+      "text": {
+        "entry": "Out of nowhere, a small aluminum cube with four wheels attached to it moves in front of you. It begins to slowly approach you. If you do not act, you will likely be hit by the oddly sharpened corners.",
+        "turn": "The Box Robot stands in front of you menacingly",
+        "lose": "You lunge at the robot. Unfortunately, that was a mistake. The cube spikes you and you faint.",
+        "win": "You lunge at the robot. It gets startled and drives away. You have won and received **10** coins.",
+        "norun": "You run away from the robot, but it moves faster than you. It spikes you and you faint.",
+        "run": "You manage to outrun the robot. You have won and received **10** coins.",
+        "ilose": "You used {} on the robot. However, it is not scared of it. It spikes you and you faint.",
+        "iwin": "You used {} on the robot. The robot explodes. You have won and received **10** coins.",
+        "plose": "You took no action. The cube spikes you and you faint."
+      },
+      "money": 5,
+      "drops": {
+        "soup" : 16
+      }
+    },
+    "Student": {
+      "name": "Student",
+      "hp": 40,
+      "atk": 2,
+      "def": 0,
+      "xp": 20,
+      "text": {
+        "entry": "A mysterious student appears. They begin to hysterically wave their elongated arms in the air as they run toward you.",
+        "turn": "The Student stands in front of you menacingly",
+        "lose": "You run toward the student. Unfortunately, that was a mistake. The next thing you know, you are knocked out cold.",
+        "win": "You run toward the student. Scared, the student runs away. You have won and received **10** coins.",
+        "norun": "You run away from the student, but they run faster than you. The next thing you know, you are knocked out cold.",
+        "run": "You manage to outrun the student. You have won and received **10** coins.",
+        "ilose": "You used {} on the student. However, they are not scared of it. The next thing you know, you are knocked out cold.",
+        "iwin": "You used {} on the student. They consumed it and took off. You have won and received **10** coins.",
+        "plose": "You took no action. The student knocks you out."
+      },
+      "money": 10,
+      "drops": {
+        "soup" : 16
+      }
+    },
+    "Seagull": {
+      "name": "Seagull",
+      "hp": 5,
+      "atk": 8,
+      "def": 2,
+      "xp": 2,
+      "text": {
+        "entry": "A seagull swoops down from the air toward you.",
+        "turn": "The Seagull stands in front of you menacingly",
+        "lose": "You run toward the seagull. Unfortunately, that was a mistake. The seagull whacks you in the face.",
+        "win": "You run toward the seagull. Scared, the seagull disappears. You have won and received **10** coins.",
+        "norun": "You run away from the seagull, but they catch up and knock you down.",
+        "run": "You manage to outrun the seagull. You have won and received **10** coins.",
+        "ilose": "You used {} on the seagull. However, they are not scared of it. It hits you.",
+        "iwin": "You used {} on the seagull. They consumed it and took off. You have won and received **10** coins.",
+        "plose": "You took no action. The seagull hits you."
+      },
+      "money": 10,
+      "drops": {
+        "soup" : 16
+      }
+    },
+    "Pigeon": {
+      "name": "Pigeon",
+      "hp": 60,
+      "atk": 10,
+      "def": 0,
+      "xp": 20,
+      "text": {
+        "entry": "A pigeon swoops down from the air toward you.",
+        "turn": "The Pigeon stands in front of you menacingly",
+        "lose": "You run toward the pigeon. Unfortunately, that was a mistake. The pigeon whacks you in the face.",
+        "win": "You run toward the pigeon. Scared, the pigeon disappears. You have won and received **10** coins.",
+        "norun": "You run away from the pigeon, but they catch up and knock you down.",
+        "run": "You manage to outrun the pigeon. You have won and received **10** coins.",
+        "ilose": "You used {} on the pigeon. However, they are not scared of it. It hits you.",
+        "iwin": "You used {} on the pigeon. They consumed it and took off. You have won and received **10** coins.",
+        "plose": "You took no action. The pigeon hits you."
+      },
+      "money": 25,
+      "drops": {
+        "soup" : 16
+      }
+    },
+    "Crow": {
+      "name": "Crow",
+      "hp": 100,
+      "atk": 15,
+      "def": 0,
+      "xp": 40,
+      "text": {
+        "entry": "A crow swoops down from the air toward you.",
+        "turn": "The Crow stands in front of you menacingly",
+        "lose": "You run toward the crow. Unfortunately, that was a mistake. The crow whacks you in the face.",
+        "win": "You run toward the crow. Scared, the crow disappears. You have won and received **10** coins.",
+        "norun": "You run away from the crow, but they catch up and knock you down.",
+        "run": "You manage to outrun the crow. You have won and received **10** coins.",
+        "ilose": "You used {} on the crow. However, they are not scared of it. It hits you.",
+        "iwin": "You used {} on the crow. They consumed it and took off. You have won and received **10** coins.",
+        "plose": "You took no action. The crow hits you."
+      },
+      "money": 10,
+      "drops": {}
+    },
+    "Cookie": {
+      "name": "Cookie",
+      "hp": 2,
+      "atk": 255,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "A cookie rolls toward you.",
+        "turn": "The Cookie stands in front of you menacingly",
+        "lose": "You run toward the cookie. That was a mistake. It trips you.",
+        "win": "You run toward the cookie and step on it. It is immobilized. You have won and received **10** coins.",
+        "norun": "You run away from the cookie, but it catches up to you and you trip on it.",
+        "run": "You manage to outrun the cookie. You have won and received **10** coins.",
+        "ilose": "You used {} on the cookie. However, it is not scared of it. It hits you.",
+        "iwin": "You used {} on the cookie. They melted. You have won and received **10** coins.",
+        "plose": "You took no action. The cookie trips you."
+      },
+      "money": 1,
+      "drops": {
+        "soup" : 16
+      }
+    },
+    "Diwheel": {
+      "name": "Diwheel",
+      "hp": 20,
+      "atk": 1,
+      "def": 0,
+      "xp": 1,
+      "text": {
+        "entry": "A tiny robot on two wheels races toward you. It shows no sign of stopping and is getting progressively faster.",
+        "turn": "The Diwheel stands in front of you menacingly",
+        "lose": "You run toward the diwheel. Unfortunately, that was a mistake. It pushes you over and you faint.",
+        "win": "You run toward the diwheel. The diwheel immediately turns and flees. You have won and received **10** coins.",
+        "norun": "You run away from the diwheel, but it runs faster than you. It pushes you over and you faint.",
+        "run": "You manage to outrun the diwheel. You have won and received **10** coins.",
+        "ilose": "You used {} on the diwheel. However, it is not scared of it. It continues racing toward you and knocks you over, causing you to faint.",
+        "iwin": "You used {} on the diwheel. The diwheel explodes. You have won and received **10** coins.",
+        "plose": "You took no action. The diwheel pushes you over and you faint."
+      },
+      "money": 5,
+      "drops": {
+        "soup" : 16
+      }
+    },
+    "Squirrel": {
+      "name": "Squirrel",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "A squirrel runs toward you.",
+        "turn": "The Squirrel stands in front of you menacingly",
+        "lose": null,
+        "win": null,
+        "norun": null,
+        "run": null,
+        "ilose": "You used {} on the squirrel. However, it is not scared of it. It continues running toward you and knocks you over, causing you to faint.",
+        "iwin": "You used {} on the squirrel. They consume it and leave. You have won and received **10** coins.",
+        "plose": "You took no action. The squirrel pushes you over and you faint."
+      },
+      "money": 10,
+      "drops": {}
+    }
+  },
+  "bosses": {
+    "Bagle": {
+      "name": "Bagle",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "Out from the shadows of the ELI, a human-sized robot with twin rollers on a single, extended arm emerges. As it moves, the ground shakes, causing part of a ceiling tile to fall into the rollers. The tile is immediately disintegrated.",
+        "turn": "The Bagle stands in front of you menacingly",
+        "lose": "You {} the robot. That did nothing to frighten it and it took you down.",
+        "win": "You used {} on the robot. Damaged, it deactivated and contracted into a small cube. You have won.",
+        "ilose": "You {} the robot. That did nothing to frighten it and it took you down.",
+        "iwin": "You used {} on the robot. Damaged, it deactivated and contracted into a small cube. You have won.",
+        "plose": "You took no action. The enormous robot moves toward you."
+      },
+      "money": 50,
+      "drops": {},
+      "weakness": "soup"
+    },
+    "Diwheel Transformer": {
+      "name": "Diwheel Transformer",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "You look around and see hundreds of tiny two-wheeled robots entering the fountain through a crack in the ice. Once they disappear, all is silent. Suddenly, a figure ten times your height breaks through the centre of the fountain. Composed of the hundreds of tiny robots, it steps out and moves toward you.",
+        "turn": "The Diwheel Transformer stands in front of you menacingly",
+        "lose": "You {} the robot. That did nothing to frighten it and it took you down.",
+        "win": "You used {} on the robot. Damaged, it fell apart back into the tiny two-wheeled robots. The robots disperse. You have won.",
+        "ilose": "You {} the robot. That did nothing to frighten it and it took you down.",
+        "iwin": "You used {} on the robot. Damaged, it fell apart back into the tiny two-wheeled robots. The robots disperse. You have won.",
+        "plose": "You took no action. The massive robotic beast steps on you."
+      },
+      "money": 50,
+      "drops": {},
+      "weakness": "soup"
+    },
+    "Hungry Student": {
+      "name": "Hungry Student",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "A large student crosses your path. They look hungry.",
+        "turn": "The Hungry Student stands in front of you menacingly",
+        "lose": "You {} the student. That did nothing to frighten them. It turned into an enormous ball and rolled you over.",
+        "win": "You used {} on the student. Tired of eating, they began to roll away. You have won.",
+        "ilose": "You {} the student. That did nothing to frighten them. It turned into an enormous ball and rolled you over.",
+        "iwin": "You used {} on the student. Tired of eating, they began to roll away. You have won.",
+        "plose": "You took no action. The student turned into an enormous ball and rolled you over."
+      },
+      "money": 50,
+      "drops": {},
+      "weakness": "soup"
+    },
+    "Obsessed Comic Fan": {
+      "name": "Obsessed Comic Fan",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "A person holding a bunch of comic books crosses your path. They begin to pester you with facts.",
+        "turn": "The Obsessed Comic Fan stands in front of you menacingly",
+        "lose": "You {} the person. That did nothing to frighten them. Angry, they knock you out.",
+        "win": "You used {} on the person. Annoyed, they walk away. You have won.",
+        "ilose": "You {} the person. That did nothing to frighten them. Angry, they knock you out.",
+        "iwin": "You used {} on the person. Annoyed, they walk away. You have won.",
+        "plose": "You took no action. The person continues telling you facts until you panic."
+      },
+      "money": 200,
+      "drops": {},
+      "weakness": "megaphone"
+    },
+    "Flying Doge": {
+      "name": "Flying Doge",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "Out from the clouds, a dog with wings descends toward you. It shoots a laser. The laser is quickly approaching you.",
+        "turn": "The Flying Doge stands in front of you menacingly",
+        "lose": "You {} the laser. That doesn't block it at all. It hits you and you faint.",
+        "win": "You used {} on the laser. It reflects the laser back toward the flying dog. Tired, the dog retreats back into the clouds as the laser shoots into the air. You have won.",
+        "ilose": "You {} the laser. That doesn't block it at all. It hits you and you faint.",
+        "iwin": "You used {} on the laser. It reflects the laser back toward the flying dog. Tired, the dog retreats back into the clouds as the laser shoots into the air. You have won.",
+        "plose": "You took no action. The laser hits you and you faint."
+      },
+      "money": 100,
+      "drops": {},
+      "weakness": "shield"
+    },
+    "Lovesick Student": {
+      "name": "Lovesick Student",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "You look around and find a student sitting by some flowers. The student seemed to be daydreaming about something. You walk toward them to investigate. You startle the student and they get angry. They begin to run toward you.",
+        "turn": "The Lovesick Student stands in front of you menacingly",
+        "lose": "You {} the student. That did nothing to frightem them. They continue running toward you and knock you out.",
+        "win": "You used {} on the student. Reminded of their past, they take the letters with them and walk away. You have won.",
+        "ilose": "You {} the student. That did nothing to frightem them. They continue running toward you and knock you out.",
+        "iwin": "You used {} on the student. Reminded of their past, they take the letters with them and walk away. You have won.",
+        "plose": "You took no action. Blinded by rejection, the student knocks you out."
+      },
+      "money": 100,
+      "drops": {},
+      "weakness": "letter"
+    },
+    "Treasure Hunter Student": {
+      "name": "Treasure Hunter Student",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "From behind one of the many identical trees, a shadowy figure emerges. The figure appears to be a student. They see you and are angry. They begin to charge at you.",
+        "turn": "The Treasure Hunter Student stands in front of you menacingly",
+        "lose": "You {} the student. That did nothing to frightem them. They continue charging and knock you out.",
+        "win": "You used {} on the student. Full, they begin to walk back into the forest. You have won.",
+        "ilose": "You {} the student. That did nothing to frightem them. They continue charging and knock you out.",
+        "iwin": "You used {} on the student. Full, they begin to walk back into the forest. You have won.",
+        "plose": "You took no action. In a fit of rage, the student knocks you out."
+      },
+      "money": 150,
+      "drops": {},
+      "weakness": "cake"
+    },
+    "Skater": {
+      "name": "Skater",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "You look at the ice rink and see a person skating on it. You step onto the ice and the person notices you. Angry for losing their private skating space, they begin to skate toward you.",
+        "turn": "The Skater stands in front of you menacingly",
+        "lose": "You {} the skater. That did nothing to frightem them. They continue moving towards you and knock you over.",
+        "win": "You used {} on the skater. The ice beneath them has completely turned to water. Prevented from skating, the skater gives up and leaves.",
+        "ilose": "You {} the skater. That did nothing to frightem them. They continue moving towards you and knock you over.",
+        "iwin": "You used {} on the skater. The ice beneath them has completely turned to water. Prevented from skating, the skater gives up and leaves.",
+        "plose": "You took no action. The skater pushes you over. You slip and fall on the ice."
+      },
+      "money": 200,
+      "drops": {},
+      "weakness": "candle"
+    },
+    "Athlete": {
+      "name": "Athlete",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "You look across the field and see a person running. They aren't running toward you, but rather exercising. However, when they notice you there they begin to run towards you.",
+        "turn": "The Athlete stands in front of you menacingly",
+        "lose": "You {} the runner. That did nothing to frightem them. They continue running towards you and knock you over.",
+        "win": "You used {} on the runner. Unable to keep running, they turn around and leave. You have won.",
+        "ilose": "You {} the runner. That did nothing to frightem them. They continue running towards you and knock you over.",
+        "iwin": "You used {} on the runner. Unable to keep running, they turn around and leave. You have won.",
+        "plose": "You took no action. The runner runs you over."
+      },
+      "money": 250,
+      "drops": {},
+      "weakness": "snowflake"
+    },
+    "Duck": {
+      "name": "Duck",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "There is a duck in the middle of the open space. It sees you and flies toward you.",
+        "turn": "The Duck stands in front of you menacingly",
+        "lose": "You {} the duck. That did nothing to frightem them. They run into your face.",
+        "win": "You used {} on the duck. Having eaten too much to keep flying, they waddle away. You have won.",
+        "ilose": "You {} the duck. That did nothing to frightem them. They run into your face.",
+        "iwin": "You used {} on the duck. Having eaten too much to keep flying, they waddle away. You have won.",
+        "plose": "You took no action. The duck runs into your face."
+      },
+      "money": 300,
+      "drops": {},
+      "weakness": "leaf"
+    },
+    "Crow Flock": {
+      "name": "Crow Flock",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "Out from the shadows of the identical trees comes a flock of crows.",
+        "turn": "The Crow Flock stands in front of you menacingly",
+        "lose": "You {} the crows. That did nothing to frightem them. They attack.",
+        "win": "You used {} on the crows. Distracted, they are no longer interested in attacking you. You have won.",
+        "ilose": "You {} the crows. That did nothing to frightem them. They attack.",
+        "iwin": "You used {} on the crows. Distracted, they are no longer interested in attacking you. You have won.",
+        "plose": "You took no action. The crows surround you and attack."
+      },
+      "money": 100000,
+      "drops": {},
+      "weakness": "seed"
+    },
+    "Crow Flock Redux": {
+      "name": "Crow Flock Redux",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "Out from the shadows of the trees in the park comes a flock of crows.",
+        "turn": "The Crow Flock Redux stands in front of you menacingly",
+        "lose": "You {} the crows. That did nothing to frightem them. They attack.",
+        "win": "You used {} on the crows. Distracted, they are no longer interested in attacking you. You have won.",
+        "ilose": "You {} the crows. That did nothing to frightem them. They attack.",
+        "iwin": "You used {} on the crows. Distracted, they are no longer interested in attacking you. You have won.",
+        "plose": "You took no action. The crows surround you and attack."
+      },
+      "money": 350,
+      "drops": {},
+      "weakness": "seed"
+    },
+    "Duck Redux": {
+      "name": "Duck Redux",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "There is a duck in the middle of the park. It sees you and flies toward you.",
+        "turn": "The Duck Redux stands in front of you menacingly",
+        "lose": "You {} the duck. That did nothing to frightem them. They run into your face.",
+        "win": "You used {} on the duck. Having eaten too much to keep flying, they waddle away. You have won.",
+        "ilose": "You {} the duck. That did nothing to frightem them. They run into your face.",
+        "iwin": "You used {} on the duck. Having eaten too much to keep flying, they waddle away. You have won.",
+        "plose": "You took no action. The duck runs into your face."
+      },
+      "money": 400,
+      "drops": {},
+      "weakness": "leaf"
+    },
+    "Leaf Pile": {
+      "name": "Leaf Pile",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "There is a leaf pile in front of you. It appears to be sentient and is slowly drifting toward you.",
+        "turn": "The Leaf Pile stands in front of you menacingly",
+        "lose": "You {} the leaf pile. That didn't stop it. It absorbs you.",
+        "win": "You used {} on the leaf pile. It stops completely. You have won.",
+        "ilose": "You {} the leaf pile. That didn't stop it. It absorbs you.",
+        "iwin": "You used {} on the leaf pile. It stops completely. You have won.",
+        "plose": "You took no action. You get absorbed into the leaf pile."
+      },
+      "money": 450,
+      "drops": {},
+      "weakness": "flower"
+    },
+    "Actor": {
+      "name": "Actor",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "You look across the parking lot and see a single car parked at the very end. A person steps out of the car, all decked out in a costume for some sort of play. They notice you on the parking lot and are angered by your presence. They begin to run toward you.",
+        "turn": "The Actor stands in front of you menacingly",
+        "lose": "You attack the actor. They back up in surprise before resuming.",
+        "win": "You defend yourself from the actor. They back up in surprise before resuming.",
+        "ilose": "You attack the actor. They back up in surprise before resuming.",
+        "iwin": "You defend yourself from the actor. They back up in surprise before resuming.",
+        "plose": "You took no action. The actor knocks you out."
+      },
+      "money": 500,
+      "drops": {}
+    },
+    "Actor Redux": {
+      "name": "Actor Redux",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "You look across the intersection and see a person all decked out in a costume for some sort of play. They notice you and are angered by your presence. They begin to run toward you.",
+        "turn": "The Actor Redux stands in front of you menacingly",
+        "lose": "You attack the actor. They back up in surprise before resuming.",
+        "win": "You defend yourself from the actor. They back up in surprise before resuming.",
+        "ilose": "You attack the actor. They back up in surprise before resuming.",
+        "iwin": "You defend yourself from the actor. They back up in surprise before resuming.",
+        "plose": "You took no action. The actor knocks you out."
+      },
+      "money": 1000,
+      "drops": {}
+    },
+    "Pigeon Flock": {
+      "name": "Pigeon Flock",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "On the other end of the driveway is a flock of pigeons. You look at them and they look at you back. Startled, they flock toward you.",
+        "turn": "The Pigeon Flock stands in front of you menacingly",
+        "lose": "You attack the pigeons. They defend themselves before resuming.",
+        "win": "You defend yourself from the pigeons. They pause before resuming.",
+        "ilose": "You attack the pigeons. They defend themselves before resuming.",
+        "iwin": "You defend yourself from the pigeons. They pause before resuming.",
+        "plose": "You took no action. You are now surrounded by pigeons. They attack."
+      },
+      "money": 500,
+      "drops": {}
+    },
+    "Seagull Flock": {
+      "name": "Seagull Flock",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "On the side of the road is a flock of seagulls. You look at them and they look at you back. Startled, they flock toward you.",
+        "turn": "The Seagull Flock stands in front of you menacingly",
+        "lose": "You attack. The seagulls pause in surprise before resuming.",
+        "win": "You defend yourself. The seagulls pause in surprise before resuming.",
+        "ilose": "You attack. The seagulls pause in surprise before resuming.",
+        "iwin": "You defend yourself. The seagulls pause in surprise before resuming.",
+        "plose": "You took no action. You are now surrounded by seagulls. They attack."
+      },
+      "money": 1000,
+      "drops": {}
+    },
+    "Pigeon Flock Redux": {
+      "name": "Pigeon Flock Redux",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "Across the grassy expanse you see a flock of pigeons. The pigeons notice you across the grass and begin to fly toward you in a crazed blob.",
+        "turn": "The Pigeon Flock Redux stands in front of you menacingly",
+        "lose": "You attack the pigeons. They defend themselves before resuming.",
+        "win": "You defend yourself from the pigeons. They pause before resuming.",
+        "ilose": "You attack the pigeons. They defend themselves before resuming.",
+        "iwin": "You defend yourself from the pigeons. They pause before resuming.",
+        "plose": "You took no action. You are now surrounded by pigeons. They attack."
+      },
+      "money": 1000,
+      "drops": {}
+    },
+    "Obese Crow": {
+      "name": "Obese Crow",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "On a nearby railing, you see a fairly large crow sitting there. The crow turns its head toward you. Astonishingly, it flies up into the air and begins to attack.",
+        "turn": "The Obese Crow stands in front of you menacingly",
+        "lose": "You attack the crow. It backs up in surprise before resuming.",
+        "win": "You defend yourself from the crow. The crow backs up in surprise before resuming.",
+        "ilose": "You attack the crow. It backs up in surprise before resuming.",
+        "iwin": "You defend yourself from the crow. The crow backs up in surprise before resuming.",
+        "plose": "You took no action. The crow sits on you."
+      },
+      "money": 1000,
+      "drops": {}
+    },
+    "Cougar": {
+      "name": "Cougar",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "On the field at the school you notice a cougar walking around. It notices you and begins to run toward you.",
+        "turn": "The Cougar stands in front of you menacingly",
+        "lose": "You attack the cougar. It backs up before resuming.",
+        "win": "You defend yourself from the cougar. The cougar backs up in surprise before resuming.",
+        "ilose": "You attack the cougar. It backs up before resuming.",
+        "iwin": "You defend yourself from the cougar. The cougar backs up in surprise before resuming.",
+        "plose": "You took no action. The cougar reaches you and attacks."
+      },
+      "money": 1500,
+      "drops": {}
+    },
+    "Goose": {
+      "name": "Goose",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "At the center of the field is a goose. It is guarding a box.",
+        "turn": "The Goose stands in front of you menacingly",
+        "lose": "You attack the goose. It backs up, but doesn't seem to do anything else.",
+        "win": "You defend yourself from the goose. It backs up, but doesn't seem to do anything else.",
+        "ilose": "You attack the goose. It backs up, but doesn't seem to do anything else.",
+        "iwin": "You defend yourself from the goose. It backs up, but doesn't seem to do anything else.",
+        "plose": "You took no action. The goose leaves, but not before knocking you out."
+      },
+      "money": 0,
+      "drops": {}
+    },
+    "Squirrel Army": {
+      "name": "Squirrel Army",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "An army of squirrels crosses your path.",
+        "turn": "The Squirrel Army stands in front of you menacingly",
+        "lose": "You {} the squirrels. That did nothing to frighten them. They knock you out.",
+        "win": "You used {} on the squirrels. All of them are now distracted and completely forget about you. You have won.",
+        "ilose": "You {} the squirrels. That did nothing to frighten them. They knock you out.",
+        "iwin": "You used {} on the squirrels. All of them are now distracted and completely forget about you. You have won.",
+        "plose": "You took no action. The squirrels attack you and knock you out."
+      },
+      "money": 50,
+      "drops": {
+        "battery": 256
+      },
+      "weakness": "salad"
+    },
+    "Seagull Flock Redux": {
+      "name": "Seagull Flock Redux",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "A seagull flock crosses your path. They remember you.",
+        "turn": "The Seagull Flock Redux stands in front of you menacingly",
+        "lose": "You {} the seagulls. That did nothing to frighten them. They knock you out.",
+        "win": "You used {} on the seagulls. All of them are now confused and retreat. You have won.",
+        "ilose": "You {} the seagulls. That did nothing to frighten them. They knock you out.",
+        "iwin": "You used {} on the seagulls. All of them are now confused and retreat. You have won.",
+        "plose": "You took no action. Hungry for revenge, the seagulls knock you out."
+      },
+      "money": 100,
+      "drops": {
+        "cheese": 256
+      },
+      "weakness": "battery"
+    },
+    "Flying Doge Redux": {
+      "name": "Flying Doge Redux",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "Out from the clouds comes a familiar dog with wings. They shoot a laser at you.",
+        "turn": "The Flying Doge Redux stands in front of you menacingly",
+        "lose": "You {} the laser. That didn't stop it at all. It hits you.",
+        "win": "You used {} on the laser. The laser gets absorbed. Tired of firing lasers, the dog retreats into the sky. You have won.",
+        "ilose": "You {} the laser. That didn't stop it at all. It hits you.",
+        "iwin": "You used {} on the laser. The laser gets absorbed. Tired of firing lasers, the dog retreats into the sky. You have won.",
+        "plose": "You took no action. The laser hits you."
+      },
+      "money": 50,
+      "drops": {
+        "glass": 256
+      },
+      "weakness": "salad"
+    },
+    "Obsessed Comic Fan Redux": {
+      "name": "Obsessed Comic Fan Redux",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "Across the street you see a person holding a bunch of comic books. They remember you. They angrily run toward you.",
+        "turn": "The Obsessed Comic Fan Redux stands in front of you menacingly",
+        "lose": "You {} the comic fan. That did absolutely nothing. They knock you out.",
+        "win": "You used {} on the comic fan. Appreciating the {}s you gave them, they walk away. You have won.",
+        "ilose": "You {} the comic fan. That did absolutely nothing. They knock you out.",
+        "iwin": "You used {} on the comic fan. Appreciating the {}s you gave them, they walk away. You have won.",
+        "plose": "You took no action. The comic fan knocks you out."
+      },
+      "money": 100,
+      "drops": {
+        "notebook": 256
+      },
+      "weakness": "glass"
+    },
+    "Raccoon": {
+      "name": "Raccoon",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "You look across the street and see a raccoon.",
+        "turn": "The Raccoon stands in front of you menacingly",
+        "lose": "You {} the raccoon. That did absolutely nothing. They knock you out.",
+        "win": "You use {} on the raccoon. Tired of eating, they leave. You have won.",
+        "ilose": "You {} the raccoon. That did absolutely nothing. They knock you out.",
+        "iwin": "You use {} on the raccoon. Tired of eating, they leave. You have won.",
+        "plose": "You took no action. The raccoon knocks you out."
+      },
+      "money": 50,
+      "drops": {
+        "crayon": 256
+      },
+      "weakness": "salad"
+    },
+    "Leaf Pile Redux": {
+      "name": "Leaf Pile Redux",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "There is a leaf pile in front of you. It appears to be sentient and is slowly drifting toward you. You recall seeing this before.",
+        "turn": "The Leaf Pile Redux stands in front of you menacingly",
+        "lose": "You {} the leaf pile. That didn't stop it. It absorbs you.",
+        "win": "You used {} on the leaf pile. It stops completely. You have won.",
+        "ilose": "You {} the leaf pile. That didn't stop it. It absorbs you.",
+        "iwin": "You used {} on the leaf pile. It stops completely. You have won.",
+        "plose": "You took no action. You get absorbed into the leaf pile."
+      },
+      "money": 100,
+      "drops": {
+        "clover": 256
+      },
+      "weakness": "crayon"
+    },
+    "Pelican": {
+      "name": "Pelican",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "You look across the street and see a pelican.",
+        "turn": "The Pelican stands in front of you menacingly",
+        "lose": "You {} the pelican. That did absolutely nothing. They knock you out.",
+        "win": "You use {} on the pelican. Tired of eating, they leave. You have won.",
+        "ilose": "You {} the pelican. That did absolutely nothing. They knock you out.",
+        "iwin": "You use {} on the pelican. Tired of eating, they leave. You have won.",
+        "plose": "You took no action. The pelican knocks you out."
+      },
+      "money": 50,
+      "drops": {
+        "fish": 256
+      },
+      "weakness": "salad"
+    },
+    "Pelican Redux": {
+      "name": "Pelican Redux",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "xp": 0,
+      "text": {
+        "entry": "You look across the street and see a pelican.",
+        "turn": "The Pelican Redux stands in front of you menacingly",
+        "lose": "You {} the pelican. That did absolutely nothing. They knock you out.",
+        "win": "You use {} on the pelican. Tired of eating, they leave. You have won.",
+        "ilose": "You {} the pelican. That did absolutely nothing. They knock you out.",
+        "iwin": "You use {} on the pelican. Tired of eating, they leave. You have won.",
+        "plose": "You took no action. The pelican knocks you out."
+      },
+      "money": 100,
+      "drops": {
+        "rare fish": 256
+      },
+      "weakness": "fish"
+    }
+  }
+}

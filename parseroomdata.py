@@ -116,127 +116,6 @@ gamedata = {
 	},
 	'players' : {
 	},
-	'npcs' : {
-		"Diwheel": {
-			"name" : "DiWheel",
-			"hp" : 20,
-			"atk" : 1,
-			"def" : 0,
-			"xp" : 1,
-			"text": {
-				"entry" : "Jim is in the room, driving his DiWheel robot towards you",
-				"turn" : "DiWheel used quick attack! It isn't very effective",
-				"win" : "I think I heard Irena scream in the distance",
-				"lose" : "You blacked out! Jim put your body in a sleeping bag and mailed you home."
-			},
-			"money" : 5,
-			"drops" : {
-				"soup" : 16
-			}
-		},
-		"Box Robot": {
-			"name" : "Box Robot",
-			"hp" : 10,
-			"atk" : 4,
-			"def" : 0,
-			"xp" : 5,
-			"text": {
-				"entry" : "There is a box-shaped robot on the floor.\n It's staring at you menacingly",
-				"turn" : "The robot charges at you and tries to knock you down",
-				"win" : "The robot violently exploded. Nice.",
-				"lose" : "You blacked out! The robot taunts you, spinning in circles"
-			},
-			"money" : 5,
-			"drops" : {
-				"soup" : 16
-			}
-		},
-		"Student": {
-			"name" : "Student",
-			"hp" : 40,
-			"atk" : 2,
-			"def" : 0,
-			"xp" : 20,
-			"text": {
-				"entry": "Tobias fell out of the sky and his arms returned to their normal size.",
-				"turn": "Tobias shot lightning at you, but you are wearing a metal jacket",
-				"win": "You're already a better fighter than most of the Agency",
-				"lose": """ "You're still so weak, Laura," Tobias said """
-			},
-			"money" : 10,
-			"drops" : {
-				"soup" : 16
-			}
-		},
-		"Seagull": {
-			"name" : "Seagull",
-			"hp" : 5,
-			"atk" : 8,
-			"def" : 2,
-			"xp" : 2,
-			"text": {
-				"entry": "A seagull decided you tasted better than some guy's fries.",
-				"turn": "Birds are jerks! It rammed right into your face",
-				"win": "Now you can have lunch in peace",
-				"lose": "You blacked out!"
-			},
-			"money" : 20,
-			"drops" : {
-				"soup" : 16
-			}
-		},
-		"Pigeon": {
-			"name" : "Pidgeon",
-			"hp" : 60,
-			"atk" : 10,
-			"def" : 0,
-			"xp" : 20,
-			"text": {
-				"entry": "You're approaching me?",
-				"turn": "Instead of running away, you're coming closer?",
-				"win": "Why are all the bosses birds, anyway",
-				"lose": "This isn't a pidgeon! It's me, DIO!"
-			},
-			"money" : 25,
-			"drops" : {
-				"soup" : 16
-			}
-		},
-		"Crow": {
-			"name" : "Crow",
-			"hp" : 100,
-			"atk" : 15,
-			"def" : 0,
-			"xp" : 40,
-			"text": {
-				"entry": "There's a crow the size of a cow sitting in front of you",
-				"turn": "It attempted to crush you under its massive weight",
-				"win": "Stop this animal abuse!",
-				"lose": "You blacked out! Wait until items are implemented next time"
-			},
-			"money" : 50,
-			"drops" : {
-				"soup" : 16
-			}
-		},
-		"Cookie": {
-			"name" : "Cookie",
-			"hp" : 2,
-			"atk" : 255,
-			"def" : 0,
-			"xp" : 0,
-			"text": {
-				"entry": "It's a cookie, how tough could it be?",
-				"turn": "IT GREW FOUR HUNDRED EYES AND THEY ALL STARED AT YOU",
-				"win": "See? Good thing you defeated it quickly...",
-				"lose": "You blacked out and it bit you as revenge"
-			},
-			"money" : 1,
-			"drops" : {
-				"soup" : 16
-			}
-		}
-	},
 	"items" : {
 		'soup' : {
 			'type' : 'any',
@@ -338,6 +217,11 @@ with open("fullrooms.py","w") as fullroomfile:
 gamedata['respawn'] = GenRespawnJSON(respawnlists[0],respawnlists[1])
 
 gamedata['fast-travel'] = GenBusJSON(ast.literal_eval(busdata))
+
+with open("rqdata/npcs.json", "r") as room_json:
+	npcdict = json.load(room_json)
+	gamedata["npcs"] = npcdict["npcs"]
+	gamedata["bosses"] = npcdict["bosses"]
 
 with open("rooms.json","w") as room_json:
 	json.dump(gamedata,room_json,indent=2)
