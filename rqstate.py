@@ -365,11 +365,25 @@ class RQState:
 				command = messagelist[0]
 				items = " ".join(messagelist[1:]).split(", ")
 				self.handleItems(playerid, command, items)
+			elif messagelist[0] == "profile":
+				player = self.players[playerid]
+				self.writeMessage("HP: {}".format(player.hp))
+				self.writeMessage("SP: {}".format(player.sp))
+				self.writeMessage("XP: {}".format(player.xp))
+				self.writeMessage("Money: {}".format(player.money))
 			elif self.movePlayer(playerid,message):
 				self.handleRoom(playerid)
 		elif (self.players[playerid].state == "battle"):
 			if (messagelist[0][:4] == "inv"):
 				self.printState(playerid)
 				self.printInventory(playerid)
+			elif messagelist[0] in ["attack", "heal", "block"]:
+				self.handleBattle(playerid, message, False)
+			elif random.randrange(0, 256) > 100:
+				self.writeMessage(self.players[playerid].battle["text"]["norun"])
+				self.killPlayer(playerid)
+			elif self.movePlayer(playerid, message): 
+				self.writeMessage(self.players[playerid].battle["text"]["run"])
+				self.setState(playerid, "map")
 			else:
 				self.handleBattle(playerid, message, False)
