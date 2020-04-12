@@ -4,6 +4,7 @@ import queue
 import threading
 import time
 import random
+import inspect
 DEBUG = 1
 #PlayerState is dynamic data, the saved json is static data
 class PlayerState:
@@ -70,33 +71,22 @@ class RQState:
 		self.players[playerid] = PlayerState()
 		if not (playerid in self.savedData['players']):
 			self.savePlayer(playerid)
-		self.players[playerid].maxHP = self.savedData['players'][playerid]['hp']
-		self.players[playerid].hp = self.players[playerid].maxHP
-		self.players[playerid].maxSP = self.savedData['players'][playerid]['sp']
-		self.players[playerid].sp = self.savedData['players'][playerid]['sp']
-		self.players[playerid].xp = self.savedData['players'][playerid]['xp']
-		self.players[playerid].defMul = self.savedData['players'][playerid]['defMul']
-		self.players[playerid].atk = self.savedData['players'][playerid]['atk']
-		self.players[playerid].location = self.savedData['players'][playerid]['location']
-		self.players[playerid].money = self.savedData['players'][playerid]['money']
-		self.players[playerid].items = self.savedData['players'][playerid]['items']
-		self.players[playerid].itemCapacity = self.savedData['players'][playerid]['itemCapacity']
+		for pkey in self.savedData['players'][playerid]:
+			setattr(self.players[playerid], pkey, self.savedData['players'][playerid][pkey])
 		self.players[playerid].powerups = set(self.savedData['players'][playerid]['powerups'])
-		return True
+		if self.players[playerid].state == 'battle':
+			self.players[playerid].battle['time'] = time.monotonic()
 		
 	def savePlayer(self,playerid):		
 		self.savedData['players'][playerid] = {}
-		self.savedData['players'][playerid]['hp'] = self.players[playerid].maxHP
-		self.savedData['players'][playerid]['sp'] = self.players[playerid].maxSP
-		self.savedData['players'][playerid]['xp'] = self.players[playerid].xp
-		self.savedData['players'][playerid]['defMul'] = self.players[playerid].defMul
-		self.savedData['players'][playerid]['atk'] = self.players[playerid].atk
-		self.savedData['players'][playerid]['items'] = self.players[playerid].items
-		self.savedData['players'][playerid]['xp'] = self.players[playerid].xp
-		self.savedData['players'][playerid]['money'] = self.players[playerid].money
-		self.savedData['players'][playerid]['location'] = self.players[playerid].location
-		self.savedData['players'][playerid]['itemCapacity'] = self.players[playerid].itemCapacity
-		self.savedData['players'][playerid]['powerups'] = list(self.players[playerid].powerups)
+		playerstate = self.savedData['players'][playerid]
+		playerdata = inspect.getmembers(self.players[playerid], lambda a:not(inspect.isroutine(a)))
+		for data in playerdata:
+			if not(data[0].startswith('_')):
+				if type(data[1]) == set:
+					playerstate[data[0]] = list(data[1])
+				else:
+					playerstate[data[0]] = data[1]
 		
 	def movePlayer(self,playerid, exitname):
 		directions = ["north","south","east","west","n","s","e","w"]
