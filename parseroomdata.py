@@ -218,6 +218,12 @@ gamedata['respawn'] = GenRespawnJSON(respawnlists[0],respawnlists[1])
 
 gamedata['fast-travel'] = GenBusJSON(ast.literal_eval(busdata))
 
+gamedata['costs'] = {
+	"heal" : 20,
+	"attack" : 0,
+	"block" : 5
+}
+
 with open("rqdata/npcs.json", "r") as room_json:
 	npcdict = json.load(room_json)
 	gamedata["npcs"] = npcdict["npcs"]

@@ -6,12 +6,10 @@ import time
 import random
 DEBUG = 1
 #PlayerState is dynamic data, the saved json is static data
-healCost = 20
-attackCost = 0
-blockCost = 5
 class PlayerState:
 	hp = 20 # Goes down over time in battle
 	sp = 10 # For using "attack", "block", and "heal"
+	defMul = 1.0
 	maxSP = 10
 	maxHP = 20
 	itemCapacity = 10
@@ -77,6 +75,7 @@ class RQState:
 		self.players[playerid].maxSP = self.savedData['players'][playerid]['sp']
 		self.players[playerid].sp = self.savedData['players'][playerid]['sp']
 		self.players[playerid].xp = self.savedData['players'][playerid]['xp']
+		self.players[playerid].defMul = self.savedData['players'][playerid]['defMul']
 		self.players[playerid].atk = self.savedData['players'][playerid]['atk']
 		self.players[playerid].location = self.savedData['players'][playerid]['location']
 		self.players[playerid].money = self.savedData['players'][playerid]['money']
@@ -90,6 +89,7 @@ class RQState:
 		self.savedData['players'][playerid]['hp'] = self.players[playerid].maxHP
 		self.savedData['players'][playerid]['sp'] = self.players[playerid].maxSP
 		self.savedData['players'][playerid]['xp'] = self.players[playerid].xp
+		self.savedData['players'][playerid]['defMul'] = self.players[playerid].defMul
 		self.savedData['players'][playerid]['atk'] = self.players[playerid].atk
 		self.savedData['players'][playerid]['items'] = self.players[playerid].items
 		self.savedData['players'][playerid]['xp'] = self.players[playerid].xp
@@ -154,32 +154,29 @@ class RQState:
 		else:
 			return False
 
+	def doMove(self, playerid, message):
+		if message in self.savedData["costs"]:
+			cost = self.savedData["costs"][message]
+			if (self.players[playerid].sp >= cost):
+				self.players[playerid].sp -= cost
+				return True
+			else:
+				self.writeMessage("You don't have enough sp to {}".format(message))
+		return False
+		
 	def handleBattle(self,playerid, message, usedItem):
 		messagelist = message.split()
-
-		if (messagelist[0] == "attack"):
-			if (self.players[playerid].sp >= attackCost):
+		defMul = self.players[playerid].defMul
+		if self.doMove(playerid, messagelist[0]):
+			if messagelist[0] == "attack":
 				self.damageNPC(playerid, self.players[playerid].atk)
-				self.players[playerid].sp -= attackCost
-			else:
-				self.writeMessage("You don't have enough sp to attack")
-		elif (messagelist[0] == "heal"):
-			if (self.players[playerid].sp >= healCost):
+			elif messagelist[0] == "heal":
 				self.players[playerid].hp = self.players[playerid].maxHP
-				self.players[playerid].sp -= healCost
-			else:
-				self.writeMessage("You don't have enough sp to heal")
+			elif messagelist[0] == "block":
+				defMul = self.players[playerid].defMul/2
 
 		if self.checkWin(playerid, usedItem):
 			return
-
-		defMul = 1.0
-		if (messagelist[0] == "block"):
-			if (self.players[playerid].sp >= blockCost):
-				defMul = 0.5
-				self.players[playerid].sp -= blockCost
-			else:
-				self.writeMessage("You don't have enough sp to block")
 
 		self.players[playerid].hp -= round(defMul*self.players[playerid].battle["atk"]*(time.monotonic() - self.players[playerid].battle["time"]))
 		if not self.checkLose(playerid, usedItem):
