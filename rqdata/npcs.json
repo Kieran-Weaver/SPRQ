@@ -2,10 +2,11 @@
   "npcs": {
     "Box Robot": {
       "name": "Box Robot",
-      "hp": 10,
-      "atk": 4,
+      "hp": 4,
+      "atk": 3,
       "def": 0,
       "xp": 5,
+      "level" : 1,
       "text": {
         "entry": "Out of nowhere, a small aluminum cube with four wheels attached to it moves in front of you. It begins to slowly approach you. If you do not act, you will likely be hit by the oddly sharpened corners.",
         "turn": "The Box Robot stands in front of you menacingly",
@@ -17,17 +18,18 @@
         "iwin": "You used {} on the robot. The robot explodes. You have won and received **10** coins.",
         "plose": "You took no action. The cube spikes you and you faint."
       },
-      "money": 5,
+      "money": 1,
       "drops": {
         "soup" : 16
       }
     },
     "Student": {
       "name": "Student",
-      "hp": 40,
-      "atk": 2,
+      "hp": 10,
+      "atk": 1,
       "def": 0,
-      "xp": 20,
+      "xp": 5,
+      "level" : 1,
       "text": {
         "entry": "A mysterious student appears. They begin to hysterically wave their elongated arms in the air as they run toward you.",
         "turn": "The Student stands in front of you menacingly",
@@ -39,7 +41,7 @@
         "iwin": "You used {} on the student. They consumed it and took off. You have won and received **10** coins.",
         "plose": "You took no action. The student knocks you out."
       },
-      "money": 10,
+      "money": 2,
       "drops": {
         "soup" : 16
       }
@@ -48,8 +50,9 @@
       "name": "Seagull",
       "hp": 5,
       "atk": 8,
-      "def": 2,
+      "def": 1,
       "xp": 2,
+      "level" : 2,
       "text": {
         "entry": "A seagull swoops down from the air toward you.",
         "turn": "The Seagull stands in front of you menacingly",
@@ -68,10 +71,11 @@
     },
     "Pigeon": {
       "name": "Pigeon",
-      "hp": 60,
-      "atk": 10,
+      "hp": 10,
+      "atk": 5,
       "def": 0,
       "xp": 20,
+      "level" : 5,
       "text": {
         "entry": "A pigeon swoops down from the air toward you.",
         "turn": "The Pigeon stands in front of you menacingly",
@@ -83,17 +87,18 @@
         "iwin": "You used {} on the pigeon. They consumed it and took off. You have won and received **10** coins.",
         "plose": "You took no action. The pigeon hits you."
       },
-      "money": 25,
+      "money": 15,
       "drops": {
         "soup" : 16
       }
     },
     "Crow": {
       "name": "Crow",
-      "hp": 100,
-      "atk": 15,
+      "hp": 20,
+      "atk": 10,
       "def": 0,
       "xp": 40,
+      "level" : 10,
       "text": {
         "entry": "A crow swoops down from the air toward you.",
         "turn": "The Crow stands in front of you menacingly",
@@ -105,15 +110,16 @@
         "iwin": "You used {} on the crow. They consumed it and took off. You have won and received **10** coins.",
         "plose": "You took no action. The crow hits you."
       },
-      "money": 10,
+      "money": 25,
       "drops": {}
     },
     "Cookie": {
       "name": "Cookie",
       "hp": 2,
       "atk": 255,
-      "def": 0,
+      "def": 1,
       "xp": 0,
+      "level" : 1,
       "text": {
         "entry": "A cookie rolls toward you.",
         "turn": "The Cookie stands in front of you menacingly",
@@ -136,6 +142,7 @@
       "atk": 1,
       "def": 0,
       "xp": 1,
+      "level" : 1,
       "text": {
         "entry": "A tiny robot on two wheels races toward you. It shows no sign of stopping and is getting progressively faster.",
         "turn": "The Diwheel stands in front of you menacingly",
@@ -154,7 +161,7 @@
     },
     "Squirrel": {
       "name": "Squirrel",
-      "hp": 0,
+      "hp": 1,
       "atk": 0,
       "def": 0,
       "xp": 0,
@@ -176,10 +183,11 @@
   "bosses": {
     "Bagle": {
       "name": "Bagle",
-      "hp": 0,
-      "atk": 0,
+      "hp": 10,
+      "atk": 5,
       "def": 0,
-      "xp": 0,
+      "xp": 10,
+      "level" : 1,
       "text": {
         "entry": "Out from the shadows of the ELI, a human-sized robot with twin rollers on a single, extended arm emerges. As it moves, the ground shakes, causing part of a ceiling tile to fall into the rollers. The tile is immediately disintegrated.",
         "turn": "The Bagle stands in front of you menacingly",
@@ -189,16 +197,17 @@
         "iwin": "You used {} on the robot. Damaged, it deactivated and contracted into a small cube. You have won.",
         "plose": "You took no action. The enormous robot moves toward you."
       },
-      "money": 50,
+      "money": 10,
       "drops": {},
       "weakness": "soup"
     },
     "Diwheel Transformer": {
       "name": "Diwheel Transformer",
-      "hp": 0,
-      "atk": 0,
+      "hp": 20,
+      "atk": 1,
       "def": 0,
-      "xp": 0,
+      "xp": 20,
+      "level" : 1,
       "text": {
         "entry": "You look around and see hundreds of tiny two-wheeled robots entering the fountain through a crack in the ice. Once they disappear, all is silent. Suddenly, a figure ten times your height breaks through the centre of the fountain. Composed of the hundreds of tiny robots, it steps out and moves toward you.",
         "turn": "The Diwheel Transformer stands in front of you menacingly",
@@ -208,16 +217,17 @@
         "iwin": "You used {} on the robot. Damaged, it fell apart back into the tiny two-wheeled robots. The robots disperse. You have won.",
         "plose": "You took no action. The massive robotic beast steps on you."
       },
-      "money": 50,
+      "money": 15,
       "drops": {},
       "weakness": "soup"
     },
     "Hungry Student": {
       "name": "Hungry Student",
-      "hp": 0,
+      "hp": 100,
       "atk": 0,
-      "def": 0,
-      "xp": 0,
+      "def": -4,
+      "xp": 20,
+      "level" : 3,
       "text": {
         "entry": "A large student crosses your path. They look hungry.",
         "turn": "The Hungry Student stands in front of you menacingly",
@@ -227,16 +237,16 @@
         "iwin": "You used {} on the student. Tired of eating, they began to roll away. You have won.",
         "plose": "You took no action. The student turned into an enormous ball and rolled you over."
       },
-      "money": 50,
+      "money": 20,
       "drops": {},
       "weakness": "soup"
     },
     "Obsessed Comic Fan": {
       "name": "Obsessed Comic Fan",
-      "hp": 0,
-      "atk": 0,
+      "hp": 40,
+      "atk": 2,
       "def": 0,
-      "xp": 0,
+      "xp": 20,
       "text": {
         "entry": "A person holding a bunch of comic books crosses your path. They begin to pester you with facts.",
         "turn": "The Obsessed Comic Fan stands in front of you menacingly",
@@ -246,15 +256,15 @@
         "iwin": "You used {} on the person. Annoyed, they walk away. You have won.",
         "plose": "You took no action. The person continues telling you facts until you panic."
       },
-      "money": 200,
+      "money": 20,
       "drops": {},
       "weakness": "megaphone"
     },
     "Flying Doge": {
       "name": "Flying Doge",
-      "hp": 0,
-      "atk": 0,
-      "def": 0,
+      "hp": 10,
+      "atk": 1,
+      "def": -1,
       "xp": 0,
       "text": {
         "entry": "Out from the clouds, a dog with wings descends toward you. It shoots a laser. The laser is quickly approaching you.",
@@ -265,7 +275,7 @@
         "iwin": "You used {} on the laser. It reflects the laser back toward the flying dog. Tired, the dog retreats back into the clouds as the laser shoots into the air. You have won.",
         "plose": "You took no action. The laser hits you and you faint."
       },
-      "money": 100,
+      "money": 10,
       "drops": {},
       "weakness": "shield"
     },

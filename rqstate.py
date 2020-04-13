@@ -5,17 +5,27 @@ import threading
 import time
 import random
 import inspect
+import math
 DEBUG = 1
 #PlayerState is dynamic data, the saved json is static data
+levelupTable = {
+	"HP" : ("maxHP", 10),
+	"SP" : ("maxSP", 5),
+	"ATTACK" : ("atk", 1),
+	"DEFENSE" : ("defStat", 1)
+}
 class PlayerState:
 	hp = 20 # Goes down over time in battle
 	sp = 10 # For using "attack", "block", and "heal"
 	defMul = 1.0
+	defStat = 0
 	maxSP = 10
 	maxHP = 20
 	itemCapacity = 10
-	atk = 4
+	atk = 1
 	xp = 0
+	level = 1
+	levelpoints = 0
 	money = 0
 	location = 'UTP Lounge'
 	items = {}
@@ -67,6 +77,35 @@ class RQState:
 		else:
 			return False
 
+	def addXP(self, playerid, xp, level):
+		playerdata = self.players[playerid]
+		if (playerdata.level > level):
+			playerdata.xp += math.ceil(xp / (playerdata.level - level))
+		else:
+			playerdata.xp += xp
+		if (playerdata.xp >= 100):
+			playerdata.level += 1
+			playerdata.levelpoints += 1
+			playerdata.xp -= 100
+			self.writeMessage("You received one level point!")
+			self.writeMessage("Type levelup STAT to increase one of your stats")
+			self.writeMessage("Stats you can level up:")
+			self.writeMessage("HP, SP, Attack, and Defense")
+	
+	def levelUp(self, playerid, stat):
+		if (self.players[playerid].levelpoints == 0):
+			self.writeMessage("You have 0 level points and cannot level up a stat!")
+		elif stat.upper() in levelupTable:
+			self.writeMessage("You leveled up: "+stat)
+			statboost = levelupTable[stat.upper()]
+			setattr(self.players[playerid], statboost[0], getattr(self.players[playerid], statboost[0]) + statboost[1])
+			self.players[playerid].hp = self.players[playerid].maxHP
+			self.players[playerid].sp = self.players[playerid].maxSP
+			self.players[playerid].levelpoints -= 1
+			self.printInventory(playerid)
+		else:
+			self.writeMessage(stat + " is not a stat you can level up!")
+		
 	def loadPlayer(self,playerid):
 		self.players[playerid] = PlayerState()
 		if not (playerid in self.savedData['players']):
@@ -131,6 +170,7 @@ class RQState:
 			for item in self.players[playerid].battle["drops"]:
 				if (random.randrange(0, 256) <= self.players[playerid].battle["drops"][item]):
 					self.addItem(playerid, item)
+			self.addXP(playerid, self.players[playerid].battle["xp"], self.players[playerid].battle["level"])
 			self.setState(playerid, "map")
 			return True
 		else:
@@ -349,6 +389,12 @@ class RQState:
 			elif (messagelist[0] == "modgive"):
 				self.addItem(playerid, messagelist[1])
 				return
+			elif (messagelist[0] == "modxp"):
+				self.addXP(playerid, int(messagelist[1]), 1)
+				return
+			elif (messagelist[0] == "modlevel"):
+				self.players[playerid].level = int(messagelist[1])
+				return
 		
 		if (messagelist[0] == "use"):
 			self.useItems(playerid, " ".join(messagelist[1:]))
@@ -374,6 +420,8 @@ class RQState:
 				self.writeMessage("SP: {}".format(player.sp))
 				self.writeMessage("XP: {}".format(player.xp))
 				self.writeMessage("Money: {}".format(player.money))
+			elif messagelist[0] == "levelup":
+				self.levelUp(playerid, messagelist[1])
 			elif self.movePlayer(playerid,message):
 				self.handleRoom(playerid)
 		elif (self.players[playerid].state == "battle"):
