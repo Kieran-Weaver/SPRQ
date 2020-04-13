@@ -73,7 +73,7 @@
         "Bagle"
       ],
       "region": "UBC",
-      "spawner": "\ud83d\udc8c",
+      "spawner": "letter",
       "items": []
     },
     "UTP Balcony": {
@@ -273,7 +273,7 @@
         "Diwheel Transformer"
       ],
       "region": "UBC",
-      "spawner": "\ud83d\udee1",
+      "spawner": null,
       "items": []
     },
     "The Cairn": {
@@ -289,7 +289,7 @@
         "Flying Doge"
       ],
       "region": "UBC",
-      "spawner": "\ud83c\udf70",
+      "spawner": "cake",
       "items": []
     },
     "Rose Garden": {
@@ -305,7 +305,7 @@
         "Lovesick Student"
       ],
       "region": "UBC",
-      "spawner": "\ud83d\udea9",
+      "spawner": "flag",
       "items": []
     },
     "The Nest": {
@@ -321,7 +321,7 @@
         "Hungry Student"
       ],
       "region": "UBC",
-      "spawner": "\ud83d\udc8c",
+      "spawner": "letter",
       "items": []
     },
     "East Mall": {
@@ -617,7 +617,7 @@
         "Treasure Hunter Student"
       ],
       "region": "UBC",
-      "spawner": "\ud83d\udd6f",
+      "spawner": null,
       "items": []
     },
     "Pacific Spirit Maze          \u200b": {
@@ -721,8 +721,8 @@
         "none",
         "none",
         "none",
-        "Memorial at West",
-        "UBC Bus Loop"
+        "UBC Bus Loop",
+        "Memorial at West"
       ],
       "info": "You are in a bus running route 68. You can go to the following destinations:\n\nMemorial at West\nUBC Bus Loop",
       "npcs": [],
@@ -752,8 +752,8 @@
         "none",
         "none",
         "none",
-        "Waterfront Station",
-        "UBC Bus Loop"
+        "UBC Bus Loop",
+        "Waterfront Station"
       ],
       "info": "You are in a bus running route 44. You can go to the following destinations:\n\nUBC Bus Loop\nWaterfront Station",
       "npcs": [],
@@ -1048,7 +1048,7 @@
         "Obsessed Comic Fan"
       ],
       "region": "Downtown Vancouver",
-      "spawner": "\ud83d\udcf0",
+      "spawner": "news",
       "items": []
     },
     "Canada Place": {
@@ -1305,7 +1305,7 @@
         "Skater"
       ],
       "region": "Downtown Vancouver",
-      "spawner": "\u2744",
+      "spawner": null,
       "items": []
     },
     "600 Block Robson Street": {
@@ -1455,8 +1455,8 @@
         "none",
         "none",
         "none",
-        "Georgia at Homer",
-        "Georgia at Granville"
+        "Georgia at Granville",
+        "Georgia at Homer"
       ],
       "info": "You are in a bus running route 250. You can go to the following destinations:\n\nGeorgia at Homer\nGeorgia at Granville",
       "npcs": [],
@@ -1471,12 +1471,12 @@
         "none",
         "none",
         "none",
-        "5th at Granville",
+        "41st at Granville",
         "Hastings at Granville",
         "Robson at Granville",
         "Marine at Cambie",
-        "Waterfront Station",
-        "41st at Granville"
+        "5th at Granville",
+        "Waterfront Station"
       ],
       "info": "You are in a bus running route 10. You can go to the following destinations:\n\nWaterfront Station\nHastings at Granville\nRobson at Granville\n5th at Granville\n41st at Granville\nMarine at Cambie",
       "npcs": [],
@@ -1582,8 +1582,8 @@
         "none",
         "none",
         "UBC Bus Loop",
-        "500 Block 2nd Avenue",
-        "4th at Fir"
+        "4th at Fir",
+        "500 Block 2nd Avenue"
       ],
       "info": "You are in a bus running route 84. You can go to the following destinations:\n\nUBC Bus Loop\n4th at Fir\n500 Block 2nd Avenue",
       "npcs": [],
@@ -1932,7 +1932,7 @@
         "Actor"
       ],
       "region": "Granville Island",
-      "spawner": "\ud83d\udcdd",
+      "spawner": "script",
       "items": []
     },
     "Olympic Village Station": {
@@ -2246,7 +2246,7 @@
         "Pigeon Flock"
       ],
       "region": "41st @ Granville",
-      "spawner": "\ud83e\udd56",
+      "spawner": "baguette",
       "items": []
     },
     "43": {
@@ -2256,10 +2256,10 @@
         "none",
         "none",
         "none",
-        "41st at West Boulevard",
-        "41st at Granville",
         "UBC Bus Loop",
-        "41st at Cambie"
+        "41st at West Boulevard",
+        "41st at Cambie",
+        "41st at Granville"
       ],
       "info": "You are in a bus running route 43. You can go to the following destinations:\n\nUBC Bus Loop\n41st at West Boulevard\n41st at Granville\n41st at Cambie",
       "npcs": [],
@@ -2524,7 +2524,7 @@
         "Athlete"
       ],
       "region": "Kerrisdale",
-      "spawner": "\ud83c\udf43",
+      "spawner": "leaf",
       "items": []
     },
     "41st at Cambie": {
@@ -2576,16 +2576,16 @@
         "none",
         "none",
         "none",
-        "Vancouver City Centre Station",
-        "Oakridge-41st Station",
-        "Bridgeport Station",
         "Brighouse Station",
-        "Waterfront Station",
-        "Broadway-City Hall Station",
-        "Marine Drive Station",
+        "Oakridge-41st Station",
         "Aberdeen Station",
+        "Bridgeport Station",
+        "Broadway-City Hall Station",
         "Lansdowne Station",
-        "Olympic Village Station"
+        "Olympic Village Station",
+        "Marine Drive Station",
+        "Vancouver City Centre Station",
+        "Waterfront Station"
       ],
       "info": "You are in an above-ground subway train running a route called the Canada Line. You can go to the following destinations:\n\nWaterfront Station\nVancouver City Centre Station\nOlympic Village Station\nBroadway-City Hall Station\nOakridge-41st Station\nMarine Drive Station\nBridgeport Station\nAberdeen Station\nLansdowne Station\nBrighouse Station",
       "npcs": [],
@@ -2648,7 +2648,7 @@
         "Duck"
       ],
       "region": "Marine Drive",
-      "spawner": "\ud83c\udf31",
+      "spawner": "seed",
       "items": []
     },
     "Pipeline at Stanley Park": {
@@ -2673,8 +2673,8 @@
         "none",
         "none",
         "Stanley Park Loop",
-        "Pipeline at Stanley Park",
-        "Pender at Granville"
+        "Pender at Granville",
+        "Pipeline at Stanley Park"
       ],
       "info": "You are in a bus running route 19. You can go to the following destinations:\n\nPender at Granville\nPipeline at Stanley Park\nStanley Park Loop",
       "npcs": [],
@@ -2773,7 +2773,7 @@
         "Obese Crow"
       ],
       "region": "Stanley Park",
-      "spawner": "\ud83c\udf69",
+      "spawner": "donut",
       "items": []
     },
     "Stanley Park-Maze Entrance": {
@@ -3503,13 +3503,13 @@
         "none",
         "none",
         "none",
-        "Cook at No. 3",
-        "Bridgeport Station Bus Loop",
         "Lansdowne at No. 3",
         "Granville at No. 3",
+        "Aberdeen Station",
+        "Bridgeport Station Bus Loop",
         "Westminster at No. 3",
         "Entertainment Roundabout",
-        "Aberdeen Station"
+        "Cook at No. 3"
       ],
       "info": "You are in a bus running route 403. You can go to the following destinations:\n\nEntertainment Roundabout\nGranville at No. 3\nCook at No. 3\nWestminster at No. 3\nLansdowne at No. 3\nAberdeen Station\nBridgeport Station Bus Loop",
       "npcs": [],
@@ -3866,7 +3866,7 @@
         "Actor Redux"
       ],
       "region": "Brighouse",
-      "spawner": "\u270f",
+      "spawner": null,
       "items": []
     },
     "5800 Block No. 3 Road": {
@@ -4755,7 +4755,7 @@
         "Seagull Flock"
       ],
       "region": "Brighouse",
-      "spawner": "\ud83c\udf3e",
+      "spawner": "plant",
       "items": []
     },
     "Cook Crescent E Corner": {
@@ -5812,7 +5812,7 @@
         "Leaf Pile"
       ],
       "region": "Brighouse",
-      "spawner": "\ud83c\udfc0",
+      "spawner": "basketball",
       "items": []
     },
     "6900 Block No. 3 Road": {
@@ -6273,7 +6273,7 @@
         "Pigeon Flock Redux"
       ],
       "region": "Brighouse",
-      "spawner": "\ud83c\udf42",
+      "spawner": "leaf",
       "items": []
     },
     "Garden City Park": {
@@ -6289,7 +6289,7 @@
         "Crow Flock Redux"
       ],
       "region": "Brighouse",
-      "spawner": "\ud83c\udf41",
+      "spawner": "leaf",
       "items": []
     },
     "Lang Park": {
@@ -6306,7 +6306,7 @@
         "Duck Redux"
       ],
       "region": "Brighouse",
-      "spawner": "\ud83c\udf3b",
+      "spawner": "flower",
       "items": []
     },
     "William Cook Elementary": {
@@ -6322,7 +6322,7 @@
         "Cougar"
       ],
       "region": "Brighouse",
-      "spawner": "\u26bd",
+      "spawner": "soccer_ball",
       "items": []
     },
     "Brighouse Park": {
@@ -6338,7 +6338,7 @@
         "Goose"
       ],
       "region": "Brighouse",
-      "spawner": "\ud83d\udd11",
+      "spawner": "key",
       "items": []
     },
     "Terracotta Warrior": {
@@ -7388,67 +7388,6 @@
     ]
   },
   "players": {},
-  "items": {
-    "soup": {
-      "type": "any",
-      "cost": 1,
-      "hp": 0,
-      "sp": 10,
-      "atk": 0
-    },
-    "health_soup": {
-      "type": "any",
-      "cost": 10,
-      "hp": 10,
-      "sp": 0,
-      "atk": 0
-    },
-    "souper_soup": {
-      "type": "any",
-      "cost": 20,
-      "hp": 50,
-      "sp": 50,
-      "atk": 1
-    },
-    "battle_soup": {
-      "type": "battle",
-      "cost": 10,
-      "atk": 10
-    },
-    "bus_pass": {
-      "type": "powerup",
-      "cost": 25
-    },
-    "repel": {
-      "type": "powerup",
-      "cost": 50
-    },
-    "flashlight": {
-      "type": "special",
-      "atk": 10,
-      "cost": 50
-    },
-    "bag": {
-      "type": "powerup",
-      "data": 20,
-      "cost": 100
-    },
-    "lock": {
-      "type": "powerup",
-      "data": 20,
-      "cost": 200
-    },
-    "suitcase": {
-      "type": "powerup",
-      "data": 100,
-      "cost": 500
-    },
-    "satellite": {
-      "type": "powerup",
-      "data": 0,
-      "cost": 1000
-    }
-  },
   "shops": {
     "UBC Bookstore": [
       "soup",
@@ -7530,6 +7469,260 @@
     "heal": 20,
     "attack": 0,
     "block": 5
+  },
+  "items": {
+    "cake": {
+      "type": "battle",
+      "cost": 8,
+      "atk": 4
+    },
+    "letter": {
+      "type": "battle",
+      "cost": 5,
+      "atk": 3
+    },
+    "shield": {
+      "type": "battle",
+      "cost": 20,
+      "atk": 3
+    },
+    "candle": {
+      "type": "battle",
+      "cost": 10,
+      "atk": 5
+    },
+    "snowflake": {
+      "type": "battle",
+      "cost": 10,
+      "atk": 6
+    },
+    "script": {
+      "type": "battle",
+      "cost": 8,
+      "atk": 4
+    },
+    "leaf": {
+      "type": "battle",
+      "cost": 15,
+      "atk": 7
+    },
+    "seed": {
+      "type": "battle",
+      "cost": 25,
+      "atk": 8
+    },
+    "flag": {
+      "type": "battle",
+      "cost": 5,
+      "atk": 3
+    },
+    "donut": {
+      "type": "any",
+      "cost": 20,
+      "hp": 50,
+      "sp": 50,
+      "atk": 0
+    },
+    "news": {
+      "type": "battle",
+      "cost": 10,
+      "atk": 6
+    },
+    "baguette": {
+      "type": "battle",
+      "cost": 8,
+      "atk": 4
+    },
+    "pencil": {
+      "type": "battle",
+      "cost": 8,
+      "atk": 4
+    },
+    "flower": {
+      "type": "battle",
+      "cost": 25,
+      "atk": 8
+    },
+    "plant": {
+      "type": "battle",
+      "cost": 20,
+      "atk": 7
+    },
+    "soccer_ball": {
+      "type": "battle",
+      "cost": 50,
+      "atk": 10
+    },
+    "basketball": {
+      "type": "battle",
+      "cost": 50,
+      "atk": 10
+    },
+    "key": {
+      "type": "battle",
+      "cost": 1,
+      "atk": -1
+    },
+    "megaphone": {
+      "type": "battle",
+      "cost": 8,
+      "atk": 4
+    },
+    "hole": {
+      "type": "hole",
+      "cost": 10000
+    },
+    "ticket": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "ball": {
+      "type": "battle",
+      "cost": 15,
+      "atk": 15
+    },
+    "bowling": {
+      "type": "powerup",
+      "cost": 100,
+      "atk": 0
+    },
+    "shoe": {
+      "type": "powerup",
+      "cost": 0,
+      "atk": 0
+    },
+    "salad": {
+      "type": "any",
+      "cost": 5,
+      "hp": 10,
+      "sp": 10,
+      "atk": 0
+    },
+    "snowcloud": {
+      "type": "powerup",
+      "cost": 0,
+      "atk": 0
+    },
+    "disk": {
+      "type": "battle",
+      "cost": 100,
+      "atk": 20
+    },
+    "battery": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "cheese": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "glass": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "notebook": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "crayon": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "clover": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "fish": {
+      "type": "battle",
+      "cost": 2,
+      "atk": 1
+    },
+    "rare fish": {
+      "type": "battle",
+      "cost": 20,
+      "atk": 2
+    },
+    "balloon": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "milk": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "heart": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "soup": {
+      "type": "any",
+      "cost": 1,
+      "hp": 0,
+      "sp": 10,
+      "atk": 2
+    },
+    "health_soup": {
+      "type": "any",
+      "cost": 1,
+      "hp": 10,
+      "sp": 0,
+      "atk": 0
+    },
+    "souper_soup": {
+      "type": "any",
+      "cost": 50,
+      "hp": 50,
+      "sp": 50,
+      "atk": 1
+    },
+    "battle_soup": {
+      "type": "battle",
+      "cost": 10,
+      "atk": 5
+    },
+    "bus_pass": {
+      "type": "powerup",
+      "cost": 25
+    },
+    "repel": {
+      "type": "powerup",
+      "cost": 50
+    },
+    "flashlight": {
+      "type": "special",
+      "atk": 10,
+      "cost": 50
+    },
+    "bag": {
+      "type": "powerup",
+      "data": 20,
+      "cost": 100
+    },
+    "lock": {
+      "type": "powerup",
+      "data": 20,
+      "cost": 200
+    },
+    "suitcase": {
+      "type": "powerup",
+      "data": 100,
+      "cost": 500
+    },
+    "satellite": {
+      "type": "powerup",
+      "data": 0,
+      "cost": 1000
+    }
   },
   "npcs": {
     "Box Robot": {

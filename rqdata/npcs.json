@@ -752,5 +752,259 @@
       },
       "weakness": "fish"
     }
+  },
+  "items": {
+    "cake": {
+      "type": "battle",
+      "cost": 8,
+      "atk": 4
+    },
+    "letter": {
+      "type": "battle",
+      "cost": 5,
+      "atk": 3
+    },
+    "shield": {
+      "type": "battle",
+      "cost": 20,
+      "atk": 3
+    },
+    "candle": {
+      "type": "battle",
+      "cost": 10,
+      "atk": 5
+    },
+    "snowflake": {
+      "type": "battle",
+      "cost": 10,
+      "atk": 6
+    },
+    "script": {
+      "type": "battle",
+      "cost": 8,
+      "atk": 4
+    },
+    "leaf": {
+      "type": "battle",
+      "cost": 15,
+      "atk": 7
+    },
+    "seed": {
+      "type": "battle",
+      "cost": 25,
+      "atk": 8
+    },
+    "flag": {
+      "type": "battle",
+      "cost": 5,
+      "atk": 3
+    },
+    "donut": {
+      "type": "any",
+      "cost": 20,
+      "hp": 50,
+      "sp": 50,
+      "atk": 0
+    },
+    "news": {
+      "type": "battle",
+      "cost": 10,
+      "atk": 6
+    },
+    "baguette": {
+      "type": "battle",
+      "cost": 8,
+      "atk": 4
+    },
+    "pencil": {
+      "type": "battle",
+      "cost": 8,
+      "atk": 4
+    },
+    "flower": {
+      "type": "battle",
+      "cost": 25,
+      "atk": 8
+    },
+    "plant": {
+      "type": "battle",
+      "cost": 20,
+      "atk": 7
+    },
+    "soccer_ball": {
+      "type": "battle",
+      "cost": 50,
+      "atk": 10
+    },
+    "basketball": {
+      "type": "battle",
+      "cost": 50,
+      "atk": 10
+    },
+    "key": {
+      "type": "battle",
+      "cost": 1,
+      "atk": -1
+    },
+    "megaphone": {
+      "type": "battle",
+      "cost": 8,
+      "atk": 4
+    },
+    "hole": {
+      "type": "hole",
+      "cost": 10000
+    },
+    "ticket": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "ball": {
+      "type": "battle",
+      "cost": 15,
+      "atk": 15
+    },
+    "bowling": {
+      "type": "powerup",
+      "cost": 100,
+      "atk": 0
+    },
+    "shoe": {
+      "type": "powerup",
+      "cost": 0,
+      "atk": 0
+    },
+    "salad": {
+      "type": "any",
+      "cost": 5,
+      "hp": 10,
+      "sp": 10,
+      "atk": 0
+    },
+    "snowcloud": {
+      "type": "powerup",
+      "cost": 0,
+      "atk": 0
+    },
+    "disk": {
+      "type": "battle",
+      "cost": 100,
+      "atk": 20
+    },
+    "battery": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "cheese": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "glass": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "notebook": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "crayon": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "clover": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "fish": {
+      "type": "battle",
+      "cost": 2,
+      "atk" : 1
+    },
+    "rare fish": {
+      "type": "battle",
+      "cost": 20,
+      "atk": 2
+    },
+    "balloon": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "milk": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "heart": {
+      "type": "battle",
+      "cost": 0,
+      "atk": 0
+    },
+    "soup": {
+      "type": "any",
+      "cost": 1,
+      "hp": 0,
+      "sp": 10,
+      "atk": 2
+    },
+    "health_soup": {
+      "type": "any",
+      "cost": 1,
+      "hp": 10,
+      "sp": 0,
+      "atk": 0
+    },
+    "souper_soup": {
+      "type": "any",
+      "cost": 50,
+      "hp": 50,
+      "sp": 50,
+      "atk": 1
+    },
+    "battle_soup": {
+      "type": "battle",
+      "cost": 10,
+      "atk": 5
+    },
+    "bus_pass": {
+      "type": "powerup",
+      "cost": 25
+    },
+    "repel": {
+      "type": "powerup",
+      "cost": 50
+    },
+    "flashlight": {
+      "type": "special",
+      "atk": 10,
+      "cost": 50
+    },
+    "bag": {
+      "type": "powerup",
+      "data": 20,
+      "cost": 100
+    },
+    "lock": {
+      "type": "powerup",
+      "data": 20,
+      "cost": 200
+    },
+    "suitcase": {
+      "type": "powerup",
+      "data": 100,
+      "cost": 500
+    },
+    "satellite": {
+      "type": "powerup",
+      "data": 0,
+      "cost": 1000
+    }
   }
 }

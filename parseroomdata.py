@@ -4,6 +4,57 @@ import json
 import ast
 import string
 import collections
+itemtable = {
+	"🍰" : "cake",
+	"🥘" : "soup",
+	"💌" : "letter",
+	"🛡️" : "shield",
+	"🕯️" : "candle",
+	"❄️" : "snowflake",
+	"📝" : "script",
+	"🍃" : "leaf",
+	"🌱" : "seed",
+	"🚩" : "flag",
+	"🍩" : "donut",
+	"📰" : "news",
+	"🥖" : "baguette",
+	"🍂" : "leaf",
+	"✏️" : "pencil",
+	"🌻" : "flower",
+	"🌾" : "plant",
+	"⚽" : "soccer_ball",
+	"🏀" : "basketball",
+	"🔑" : "key",
+	"🍁" : "leaf",
+	"📣" : "megaphone",
+	"🔦" : "flashlight",
+	"📇" : "bus_pass",
+	"🕳️" : "hole",
+	"👜" : "bag",
+	"🛄" : "suitcase",
+	"♨️" : "repel",
+	"🎟️" : "ticket",
+	"🎱" : "ball",
+	"🎳" : "bowling",
+	"👟" : "shoe",
+	"🔓" : "lock",
+	"🛒" : "cart",
+	"📡" : "satellite",
+	"🥗" : "salad",
+	"🌨️" : "snowcloud",
+	"📀" : "disk",
+	"🔋" : "battery",
+	"🧀" : "cheese",
+	"🔍" : "glass",
+	"📔" : "notebook",
+	"🖍️" : "crayon",
+	"☘️" : "clover",
+	"🐟" : "fish",
+	"🐠" : "rare fish",
+	"🎈" : "balloon",
+	"🥛" : "milk",
+	"❤️" : "heart"
+}
 def PrintRoom(roomdict):
 	numbers = ['zero','one','two','three','four','five','six','seven','eight','nine']
 	roomname = re.sub(' ','_',roomdict['name']).lower()
@@ -48,7 +99,7 @@ def GenRoomJSON(room):
 	roomdict['region'] = literal_room[5]
 	roomdict['items'] = []
 	try:
-		roomdict['spawner'] = literal_room[6]
+		roomdict['spawner'] = itemtable[literal_room[6]]
 	except:
 		roomdict['spawner'] = None
 	return (PrintRoom(roomdict),roomdict)
@@ -116,67 +167,6 @@ gamedata = {
 	},
 	'players' : {
 	},
-	"items" : {
-		'soup' : {
-			'type' : 'any',
-			'cost' : 1,
-			'hp' : 0,
-			'sp' : 10,
-			'atk' : 0
-		},
-		'health_soup' : {
-			'type' : 'any',
-			'cost' : 10,
-			'hp' : 10,
-			'sp' : 0,
-			'atk' : 0
-		},
-		'souper_soup' : {
-			'type' : 'any',
-			'cost' : 20,
-			'hp' : 50,
-			'sp' : 50,
-			'atk' : 1
-		},
-		'battle_soup' : {
-			'type' : 'battle',
-			'cost' : 10,
-			'atk' : 10
-		},
-		'bus_pass' : {
-			'type' : 'powerup',
-			'cost' : 25
-		},
-		'repel' : {
-			'type' : 'powerup',
-			'cost' : 50
-		},
-		'flashlight' : {
-			'type' : 'special',
-			'atk' : 10,
-			'cost' : 50
-		},
-		'bag' : {
-			'type' : 'powerup',
-			'data' : 20,
-			'cost' : 100
-		},
-		'lock' : {
-			'type' : 'powerup',
-			'data' : 20,
-			'cost' : 200
-		},
-		'suitcase' : {
-			'type' : 'powerup',
-			'data' : 100,
-			'cost' : 500
-		},
-		'satellite' : {
-			'type' : 'powerup',
-			'data' : 0,
-			'cost' : 1000
-		}
-	},
 	'shops' : {
 		"UBC Bookstore" : ["soup", "health_soup", "souper_soup", "flashlight", "bus_pass"],
 		"YuBot Gift Shop Downtown Vancouver" : ["soup", "souper_soup", "flashlight", "bus_pass"],
@@ -226,6 +216,7 @@ gamedata['costs'] = {
 
 with open("rqdata/npcs.json", "r") as room_json:
 	npcdict = json.load(room_json)
+	gamedata["items"] = npcdict["items"]
 	gamedata["npcs"] = npcdict["npcs"]
 	gamedata["bosses"] = npcdict["bosses"]
 

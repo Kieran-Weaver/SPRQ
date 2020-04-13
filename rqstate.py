@@ -112,7 +112,10 @@ class RQState:
 
 	def damageNPC(self, playerid, atk):
 		if self.players[playerid].state == "battle":
-			self.players[playerid].battle["hp"] -= max(atk - self.players[playerid].battle["def"], 0)
+			if atk >= 0:
+				self.players[playerid].battle["hp"] -= max(atk - self.players[playerid].battle["def"], 0)
+			else:
+				self.players[playerid].battle["hp"] += atk
 		else:
 			self.writeMessage("There is nothing to attack")
 
@@ -286,6 +289,15 @@ class RQState:
 		if nonexistentItems:
 			self.writeMessage("Error: Items {} not found".format(", ".join(nonexistentItems)))
 		
+	def attackItem(self, playerid, item):
+		damage = self.savedData["items"][item]["atk"]
+		weakness = "soup"
+		if "weakness" in self.players[playerid].battle:
+			weakness = self.players[playerid].battle["weakness"]
+		if weakness == item:
+			damage = damage * 2
+		self.damageNPC(playerid, damage)
+
 	def useItems(self, playerid, message):
 		items = message.split(", ")
 		nonexistentItems = []
@@ -297,16 +309,16 @@ class RQState:
 					self.players[playerid].hp = min(self.players[playerid].maxHP, self.players[playerid].hp + itemdata['hp'])
 					self.players[playerid].sp = min(self.players[playerid].maxSP, self.players[playerid].sp + itemdata['sp'])
 					if self.players[playerid].state == "battle":
-						self.damageNPC(playerid, itemdata['atk'])
+						self.attackItem(playerid, item)
 						lastItem = item
 				elif itemdata['type'] == "special":
 					if self.players[playerid].state == 'battle':
-						self.damageNPC(playerid, itemdata['atk'])
+						self.attackItem(playerid, item)
 						lastItem = item
 					else:
 						self.players[playerid].powerups.add(item)
 				elif (itemdata['type'] == "battle") and (self.players[playerid].state == "battle"):
-					self.damageNPC(playerid, itemdata['atk'])
+					self.attackItem(playerid, itemdata['atk'])
 					lastItem = item
 				elif itemdata['type'] == "powerup":
 					if item in ["bag", "suitcase"]:
@@ -314,6 +326,7 @@ class RQState:
 					self.players[playerid].powerups.add(item)
 				else:
 					self.writeMessage("Error: invalid item {}".format(item))
+				self.removeItem(playerid, item)
 			else:
 				nonexistentItems.append(item)
 		if nonexistentItems:
