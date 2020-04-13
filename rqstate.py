@@ -263,7 +263,7 @@ class RQState:
 							break
 			else:
 				for item in items:
-					if not removeItem(playerid, item):
+					if not self.removeItem(playerid, item):
 						nonexistentItems.append(item)
 					else:
 						self.players[playerid].money += self.savedData['items'][item]['cost']//2
