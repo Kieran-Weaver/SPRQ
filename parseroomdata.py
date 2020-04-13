@@ -108,7 +108,7 @@ def GenRespawnJSON(spawnpoints,rmessages):
 	regions = spawnpoints.keys()
 	rdata = {}
 	for key in regions:
-		rdata[key] = {'room':spawnpoints[key],'message':rmessages[key]}
+		rdata[key] = {'room':spawnpoints[key],'message':rmessages[key], 'npcrate' : 26}
 	return rdata
 
 def GenBusJSON(busdict):
@@ -161,7 +161,7 @@ rooms = [re.sub(r'"\+"\\n"\.join\[([^\)]*)\)',lambda match: eval('"\\\\n".join('
 gamedata = {
 	'rooms' : {
 	},
-	'respawn' : {
+	'regions' : {
 	},
 	'fast-travel' : {
 	},
@@ -204,7 +204,7 @@ with open("fullrooms.py","w") as fullroomfile:
 		fullroomfile.write(tmp[0])
 		fullroomfile.write('\n\n')
 
-gamedata['respawn'] = GenRespawnJSON(respawnlists[0],respawnlists[1])
+gamedata['regions'] = GenRespawnJSON(respawnlists[0],respawnlists[1])
 
 gamedata['fast-travel'] = GenBusJSON(ast.literal_eval(busdata))
 

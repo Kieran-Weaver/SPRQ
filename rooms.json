@@ -721,8 +721,8 @@
         "none",
         "none",
         "none",
-        "UBC Bus Loop",
-        "Memorial at West"
+        "Memorial at West",
+        "UBC Bus Loop"
       ],
       "info": "You are in a bus running route 68. You can go to the following destinations:\n\nMemorial at West\nUBC Bus Loop",
       "npcs": [],
@@ -1455,8 +1455,8 @@
         "none",
         "none",
         "none",
-        "Georgia at Granville",
-        "Georgia at Homer"
+        "Georgia at Homer",
+        "Georgia at Granville"
       ],
       "info": "You are in a bus running route 250. You can go to the following destinations:\n\nGeorgia at Homer\nGeorgia at Granville",
       "npcs": [],
@@ -1473,10 +1473,10 @@
         "none",
         "41st at Granville",
         "Hastings at Granville",
-        "Robson at Granville",
+        "Waterfront Station",
         "Marine at Cambie",
-        "5th at Granville",
-        "Waterfront Station"
+        "Robson at Granville",
+        "5th at Granville"
       ],
       "info": "You are in a bus running route 10. You can go to the following destinations:\n\nWaterfront Station\nHastings at Granville\nRobson at Granville\n5th at Granville\n41st at Granville\nMarine at Cambie",
       "npcs": [],
@@ -1582,8 +1582,8 @@
         "none",
         "none",
         "UBC Bus Loop",
-        "4th at Fir",
-        "500 Block 2nd Avenue"
+        "500 Block 2nd Avenue",
+        "4th at Fir"
       ],
       "info": "You are in a bus running route 84. You can go to the following destinations:\n\nUBC Bus Loop\n4th at Fir\n500 Block 2nd Avenue",
       "npcs": [],
@@ -2110,8 +2110,8 @@
         "none",
         "none",
         "none",
-        "Lamey's Mill at Anderson",
-        "500 Block 2nd Avenue"
+        "500 Block 2nd Avenue",
+        "Lamey's Mill at Anderson"
       ],
       "info": "You are in a bus running route 50. You can go to the following destinations:\n\nLamey's Mill at Anderson\n500 Block 2nd Avenue",
       "npcs": [],
@@ -2256,10 +2256,10 @@
         "none",
         "none",
         "none",
+        "41st at Granville",
         "UBC Bus Loop",
         "41st at West Boulevard",
-        "41st at Cambie",
-        "41st at Granville"
+        "41st at Cambie"
       ],
       "info": "You are in a bus running route 43. You can go to the following destinations:\n\nUBC Bus Loop\n41st at West Boulevard\n41st at Granville\n41st at Cambie",
       "npcs": [],
@@ -2576,16 +2576,16 @@
         "none",
         "none",
         "none",
-        "Brighouse Station",
+        "Vancouver City Centre Station",
+        "Lansdowne Station",
         "Oakridge-41st Station",
         "Aberdeen Station",
+        "Waterfront Station",
+        "Brighouse Station",
         "Bridgeport Station",
-        "Broadway-City Hall Station",
-        "Lansdowne Station",
         "Olympic Village Station",
-        "Marine Drive Station",
-        "Vancouver City Centre Station",
-        "Waterfront Station"
+        "Broadway-City Hall Station",
+        "Marine Drive Station"
       ],
       "info": "You are in an above-ground subway train running a route called the Canada Line. You can go to the following destinations:\n\nWaterfront Station\nVancouver City Centre Station\nOlympic Village Station\nBroadway-City Hall Station\nOakridge-41st Station\nMarine Drive Station\nBridgeport Station\nAberdeen Station\nLansdowne Station\nBrighouse Station",
       "npcs": [],
@@ -2672,8 +2672,8 @@
         "none",
         "none",
         "none",
-        "Stanley Park Loop",
         "Pender at Granville",
+        "Stanley Park Loop",
         "Pipeline at Stanley Park"
       ],
       "info": "You are in a bus running route 19. You can go to the following destinations:\n\nPender at Granville\nPipeline at Stanley Park\nStanley Park Loop",
@@ -3355,8 +3355,8 @@
         "none",
         "none",
         "none",
-        "UBC Bus Loop",
-        "Bridgeport Station Bus Loop"
+        "Bridgeport Station Bus Loop",
+        "UBC Bus Loop"
       ],
       "info": "You are in a bus running route 480. You can go to the following destinations:\n\nUBC Bus Loop\nBridgeport Station Bus Loop",
       "npcs": [],
@@ -3503,13 +3503,13 @@
         "none",
         "none",
         "none",
-        "Lansdowne at No. 3",
-        "Granville at No. 3",
-        "Aberdeen Station",
         "Bridgeport Station Bus Loop",
-        "Westminster at No. 3",
+        "Aberdeen Station",
+        "Granville at No. 3",
+        "Cook at No. 3",
+        "Lansdowne at No. 3",
         "Entertainment Roundabout",
-        "Cook at No. 3"
+        "Westminster at No. 3"
       ],
       "info": "You are in a bus running route 403. You can go to the following destinations:\n\nEntertainment Roundabout\nGranville at No. 3\nCook at No. 3\nWestminster at No. 3\nLansdowne at No. 3\nAberdeen Station\nBridgeport Station Bus Loop",
       "npcs": [],
@@ -7216,78 +7216,96 @@
       "items": []
     }
   },
-  "respawn": {
+  "regions": {
     "UBC": {
       "room": "UTP Lounge",
-      "message": " When you wake up, you find yourself back in the small room with tables and a fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the small room with tables and a fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "Downtown Vancouver": {
       "room": "Robson Square",
-      "message": " When you wake up, you find yourself back in the expansive patio with tables and a fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the expansive patio with tables and a fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "Granville Island": {
       "room": "Granville Island Public Market",
-      "message": " When you wake up, you find yourself back in the Granville Island market with the free samples cart. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the Granville Island market with the free samples cart. Your pockets are empty.",
+      "npcrate": 26
     },
     "False Creek South": {
       "room": "Olympic Village Station",
-      "message": " When you wake up, you find yourself back in the Canada Line station with the info table and fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the Canada Line station with the info table and fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "41st @ Granville": {
       "room": "Food Cart 41st/Granville",
-      "message": " When you wake up, you find yourself back at the food cart with a fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back at the food cart with a fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "Kerrisdale": {
       "room": "Arbutus Greenway",
-      "message": " When you wake up, you find yourself back at the wide path with tables and a fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back at the wide path with tables and a fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "Oakridge": {
       "room": "Oakridge-41st Station",
-      "message": " When you wake up, you find yourself back in the Canada Line station with the info table and fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the Canada Line station with the info table and fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "Marine Drive": {
       "room": "Marine Drive Station",
-      "message": " When you wake up, you find yourself back in the Canada Line station with the info table and fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the Canada Line station with the info table and fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "Stanley Park": {
       "room": "Stanley Park Loop",
-      "message": " When you wake up, you find yourself back in the small bus loop with a pavilion and fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the small bus loop with a pavilion and fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "Bridgeport": {
       "room": "Bridgeport Station",
-      "message": " When you wake up, you find yourself back in the Canada Line station with the info table and fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the Canada Line station with the info table and fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "Riverport": {
       "room": "Theatres",
-      "message": " When you wake up, you find yourself back at the movie theatre. Your pockets are empty."
+      "message": " When you wake up, you find yourself back at the movie theatre. Your pockets are empty.",
+      "npcrate": 26
     },
     "Brighouse": {
       "room": "Richmond Public Library Brighouse Branch",
-      "message": " When you wake up, you find yourself back in the library with a fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the library with a fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "Hamilton": {
       "room": "UTP Lounge",
-      "message": " When you wake up, you find yourself back in the small room with tables and a fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the small room with tables and a fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "South Campus": {
       "room": "UHill Cafeteria",
-      "message": " When you wake up, you find yourself back in the cafeteria with a fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the cafeteria with a fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "Ladner": {
       "room": "Magee Park",
-      "message": " When you wake up, you find yourself back in the small park with a nearby fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the small park with a nearby fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "Tsawwassen": {
       "room": "South Delta Recreation Centre",
-      "message": " When you wake up, you find yourself back in the rec centre with a fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the rec centre with a fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "White Rock": {
       "room": "Southmere Village Park",
-      "message": " When you wake up, you find yourself back in the park with two lakes and a nearby fridge. Your pockets are empty."
+      "message": " When you wake up, you find yourself back in the park with two lakes and a nearby fridge. Your pockets are empty.",
+      "npcrate": 26
     },
     "Crescent Beach": {
       "room": "Sullivan Street E",
-      "message": "When you wake up, you find yourself back in the east section of an east-west road. Your pockets are empty."
+      "message": "When you wake up, you find yourself back in the east section of an east-west road. Your pockets are empty.",
+      "npcrate": 26
     }
   },
   "fast-travel": {

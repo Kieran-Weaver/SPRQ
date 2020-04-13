@@ -106,9 +106,11 @@ class RQState:
 
 	def handleRoom(self, playerid):
 		room = self.savedData['rooms'][self.players[playerid].location]
-		if (room["npcs"]):
+		if (room["npcs"]) and (random.randrange(0, 256) <= self.savedData['regions'][room["region"]]['npcrate']):
 			self.setState(playerid, "battle")
 			self.writeMessage(self.players[playerid].battle["text"]["entry"])
+		if (room["spawner"]) and (room["spawner"] not in room["items"]):
+			room["items"].append(room["spawner"])
 
 	def damageNPC(self, playerid, atk):
 		if self.players[playerid].state == "battle":
@@ -197,9 +199,10 @@ class RQState:
 			for i in range(self.players[playerid].items[key]):
 				self.savedData['rooms'][room['name']]['items'].append(key)
 		self.players[playerid].items = {}
-		self.players[playerid].location = self.savedData['respawn'][room['region']]['room']
+		self.players[playerid].money = 0
+		self.players[playerid].location = self.savedData['regions'][room['region']]['room']
 		self.setState(playerid, "map")
-		self.writeMessage(self.savedData['respawn'][room['region']]['message'])
+		self.writeMessage(self.savedData['regions'][room['region']]['message'])
 		self.players[playerid].hp = self.players[playerid].maxHP
 		self.players[playerid].sp = self.players[playerid].maxSP
 
