@@ -62,6 +62,7 @@ class RQState:
 	def addItem(self, playerid, item):
 		if self.numItems(playerid) < self.players[playerid].itemCapacity:
 			self.players[playerid].items[item] = self.players[playerid].items.get(item, 0) + 1
+			self.writeMessage(playerid, f"You got a {item}!")
 			return True
 		else:
 			self.writeMessage(playerid, "You cannot pick up any more items!")
