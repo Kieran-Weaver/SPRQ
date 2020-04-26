@@ -721,8 +721,8 @@
         "none",
         "none",
         "none",
-        "UBC Bus Loop",
-        "Memorial at West"
+        "Memorial at West",
+        "UBC Bus Loop"
       ],
       "info": "You are in a bus running route 68. You can go to the following destinations:\n\nMemorial at West\nUBC Bus Loop",
       "npcs": [],
@@ -1471,12 +1471,12 @@
         "none",
         "none",
         "none",
-        "Robson at Granville",
-        "41st at Granville",
         "Waterfront Station",
-        "5th at Granville",
         "Hastings at Granville",
-        "Marine at Cambie"
+        "5th at Granville",
+        "Robson at Granville",
+        "Marine at Cambie",
+        "41st at Granville"
       ],
       "info": "You are in a bus running route 10. You can go to the following destinations:\n\nWaterfront Station\nHastings at Granville\nRobson at Granville\n5th at Granville\n41st at Granville\nMarine at Cambie",
       "npcs": [],
@@ -1581,9 +1581,9 @@
         "none",
         "none",
         "none",
+        "500 Block 2nd Avenue",
         "4th at Fir",
-        "UBC Bus Loop",
-        "500 Block 2nd Avenue"
+        "UBC Bus Loop"
       ],
       "info": "You are in a bus running route 84. You can go to the following destinations:\n\nUBC Bus Loop\n4th at Fir\n500 Block 2nd Avenue",
       "npcs": [],
@@ -2110,8 +2110,8 @@
         "none",
         "none",
         "none",
-        "Lamey's Mill at Anderson",
-        "500 Block 2nd Avenue"
+        "500 Block 2nd Avenue",
+        "Lamey's Mill at Anderson"
       ],
       "info": "You are in a bus running route 50. You can go to the following destinations:\n\nLamey's Mill at Anderson\n500 Block 2nd Avenue",
       "npcs": [],
@@ -2182,8 +2182,8 @@
         "none",
         "none",
         "none",
-        "UBC Bus Loop",
-        "Broadway at Cambie"
+        "Broadway at Cambie",
+        "UBC Bus Loop"
       ],
       "info": "You are in a bus running route 99. You can go to the following destinations:\n\nUBC Bus Loop\nBroadway at Cambie",
       "npcs": [],
@@ -2256,9 +2256,9 @@
         "none",
         "none",
         "none",
+        "41st at West Boulevard",
         "41st at Cambie",
         "41st at Granville",
-        "41st at West Boulevard",
         "UBC Bus Loop"
       ],
       "info": "You are in a bus running route 43. You can go to the following destinations:\n\nUBC Bus Loop\n41st at West Boulevard\n41st at Granville\n41st at Cambie",
@@ -2576,16 +2576,16 @@
         "none",
         "none",
         "none",
-        "Bridgeport Station",
-        "Olympic Village Station",
-        "Vancouver City Centre Station",
-        "Broadway-City Hall Station",
         "Waterfront Station",
-        "Aberdeen Station",
+        "Marine Drive Station",
+        "Vancouver City Centre Station",
         "Oakridge-41st Station",
         "Brighouse Station",
-        "Marine Drive Station",
-        "Lansdowne Station"
+        "Lansdowne Station",
+        "Olympic Village Station",
+        "Aberdeen Station",
+        "Bridgeport Station",
+        "Broadway-City Hall Station"
       ],
       "info": "You are in an above-ground subway train running a route called the Canada Line. You can go to the following destinations:\n\nWaterfront Station\nVancouver City Centre Station\nOlympic Village Station\nBroadway-City Hall Station\nOakridge-41st Station\nMarine Drive Station\nBridgeport Station\nAberdeen Station\nLansdowne Station\nBrighouse Station",
       "npcs": [],
@@ -2672,9 +2672,9 @@
         "none",
         "none",
         "none",
-        "Pender at Granville",
+        "Pipeline at Stanley Park",
         "Stanley Park Loop",
-        "Pipeline at Stanley Park"
+        "Pender at Granville"
       ],
       "info": "You are in a bus running route 19. You can go to the following destinations:\n\nPender at Granville\nPipeline at Stanley Park\nStanley Park Loop",
       "npcs": [],
@@ -3503,13 +3503,13 @@
         "none",
         "none",
         "none",
-        "Bridgeport Station Bus Loop",
         "Cook at No. 3",
-        "Lansdowne at No. 3",
-        "Granville at No. 3",
+        "Entertainment Roundabout",
         "Westminster at No. 3",
         "Aberdeen Station",
-        "Entertainment Roundabout"
+        "Lansdowne at No. 3",
+        "Bridgeport Station Bus Loop",
+        "Granville at No. 3"
       ],
       "info": "You are in a bus running route 403. You can go to the following destinations:\n\nEntertainment Roundabout\nGranville at No. 3\nCook at No. 3\nWestminster at No. 3\nLansdowne at No. 3\nAberdeen Station\nBridgeport Station Bus Loop",
       "npcs": [],
@@ -7487,6 +7487,46 @@
     "heal": 20,
     "attack": 0,
     "block": 5
+  },
+  "dispensers": {
+    "rooms": {
+      "fish": [
+        "UTP Office"
+      ],
+      "fridge": [
+        "UTP Lounge",
+        "Robson Square",
+        "Granville Island Public Market",
+        "Olympic Village Station",
+        "Food Cart 41st/Granville",
+        "Arbutus Greenway",
+        "Oakridge-41st Station",
+        "Marine Drive Station",
+        "Stanley Park Loop",
+        "Bridgeport Station",
+        "Theatres",
+        "Richmond Public Library Brighouse Branch",
+        "UTP Lounge",
+        "UHill Cafeteria",
+        "Magee Park",
+        "South Delta Recreation Centre",
+        "Southmere Village Park",
+        "Sullivan Street E"
+      ]
+    },
+    "fish": {
+      "trash": 750,
+      "fish": 150,
+      "rare fish": 90,
+      "souper_soup": 10
+    },
+    "fridge": {
+      "soup": 50,
+      "healthy soup": 50,
+      "salad": 25,
+      "battle soup": 20,
+      "souper_soup": 10
+    }
   },
   "items": {
     "cake": {

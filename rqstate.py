@@ -418,6 +418,16 @@ class RQState:
 		if self.players[playerid].state == "battle":
 			self.handleBattle(playerid, message, item)
 
+	def openDispenser(self, playerid, message):
+		if message not in self.savedData["dispensers"]["rooms"].keys():
+			self.writeMessage(f"You can't open {message}!")
+		elif self.players[playerid].location not in self.savedData["dispensers"]["rooms"][message]:
+			self.writeMessage(f"You can't {message} here!")
+		else:
+			dispenserDict = self.savedData["dispensers"][message]
+			item = random.choices([*dispenserDict.keys()], weights=dispenserDict.values())[0]
+			self.addItem(playerid, item)
+
 	def parseMessage(self, playerid, message):
 		messagelist = message.split()
 		if DEBUG == 1:
@@ -463,6 +473,8 @@ class RQState:
 				self.writeMessage(f"Money: {player.money}")
 			elif messagelist[0] == "levelup":
 				self.levelUp(playerid, messagelist[1])
+			elif messagelist[0] == "open":
+				self.openDispenser(playerid, messagelist[1])
 			elif self.movePlayer(playerid, message):
 				self.handleRoom(playerid)
 		elif self.players[playerid].state == "battle":

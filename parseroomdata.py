@@ -214,6 +214,25 @@ gamedata['costs'] = {
 	"block" : 5
 }
 
+gamedata['dispensers'] = {
+	"rooms" : {
+		"fish" : ["UTP Office"],
+		"fridge" : [*respawnlists[0].values()]
+	},
+	"fish" : {
+		"trash" : 750,
+		"fish" : 150,
+		"rare fish" : 90,
+		"souper_soup" : 10,
+	},
+	"fridge" : {
+		"soup" : 50,
+		"healthy soup" : 50,
+		"salad" : 25,
+		"battle soup" : 20,
+		"souper_soup" : 10
+	}
+}
 with open("rqdata/npcs.json", "r") as room_json:
 	npcdict = json.load(room_json)
 	gamedata["items"] = npcdict["items"]
@@ -222,4 +241,3 @@ with open("rqdata/npcs.json", "r") as room_json:
 
 with open("rooms.json","w") as room_json:
 	json.dump(gamedata,room_json,indent=2)
-	
