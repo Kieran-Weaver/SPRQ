@@ -233,9 +233,9 @@ class RQState:
 			rChoices.append(None)
 			chosen = random.choices(rChoices, cum_weights=rWeights)[0]
 			if chosen == "charge":
-				self.players[playerid].battle["charge"] = self.players[playerid].battle.get("charge") + attacks[chosen]["atk"]
+				self.players[playerid].battle["charge"] = self.players[playerid].battle.get("charge", 0) + attacks[chosen]["atk"]
 				damage = 0
-				message = attacks[chosen]["text"]
+				message = attacks[chosen]["text"].format(self.players[playerid].battle["charge"])
 			elif chosen == "catk":
 				damage = self.players[playerid].battle["charge"] + attacks[chosen]["atk"]
 				message = attacks[chosen]["text"]
@@ -400,7 +400,7 @@ class RQState:
 					else:
 						self.players[playerid].powerups.add(item)
 				elif itemdata["type"] == "battle" and self.players[playerid].state == "battle":
-					self.attackItem(playerid, itemdata["atk"])
+					self.attackItem(playerid, item)
 					lastItem = item
 				elif itemdata["type"] == "powerup":
 					if item in ["bag", "suitcase"]:

@@ -190,7 +190,7 @@
       "level" : 1,
       "attacks" : {
         "at1" : {
-          "probability" : 50,
+          "probability" : 60,
           "maxhp" : 10,
           "atk" : 6,
           "text" : "The robot's arms bend backward and it runs into you"
@@ -202,7 +202,7 @@
           "text" : "The robot's arms came off, flying up into the air like rockets. The rockets are charged to +{} damage!"
         },
         "catk" : {
-          "probability" : -1,
+          "probability" : 40,
           "maxhp" : 10,
           "atk" : 4,
           "text" : "All of the rockets run into you at once"
@@ -242,7 +242,7 @@
           "text" : "The robot revs up its engines. The robot is charged to +{} damage!"
         },
         "catk" : {
-          "probability" : -1,
+          "probability" : 40,
           "maxhp" : 20,
           "atk" : 0,
           "text" : "The robot speeds into you"
@@ -282,7 +282,7 @@
           "text" : "The student turns into an enormous ball. It is now charged to +{} damage!"
         },
         "catk" : {
-          "probability" : -1,
+          "probability" : 40,
           "maxhp" : 100,
           "atk" : 0,
           "text" : "The student rolls into you, knocking you over. You get back up."
@@ -322,7 +322,7 @@
           "text" : "The Comic Fan started glowing bright yellow. It is now charged to +{} damage!"
         },
         "catk" : {
-          "probability" : -1,
+          "probability" : 40,
           "maxhp" : 40,
           "atk" : 0,
           "text" : "The Comic Fan started talking at incredible speed!"
@@ -362,7 +362,7 @@
           "text" : "The Flying Doge started to charge up it's laser. It is now charged to +{} damage!"
         },
         "catk" : {
-          "probability" : -1,
+          "probability" : 40,
           "maxhp" : 10,
           "atk" : 0,
           "text" : "The Doge released a massive blast of energy!"
@@ -402,7 +402,7 @@
           "text" : "The student curled up on the bench, eyeing you. It is now charged to +{} damage!"
         },
         "catk" : {
-          "probability" : -1,
+          "probability" : 40,
           "maxhp" : 100,
           "atk" : 0,
           "text" : "The student streches out, kicking you in the face. You get back up."
@@ -1087,26 +1087,26 @@
       "sp": 10,
       "atk": 2
     },
-    "health_soup": {
+    "health soup": {
       "type": "any",
       "cost": 1,
       "hp": 10,
       "sp": 0,
       "atk": 0
     },
-    "souper_soup": {
+    "souper soup": {
       "type": "any",
       "cost": 50,
       "hp": 50,
       "sp": 50,
       "atk": 1
     },
-    "battle_soup": {
+    "battle soup": {
       "type": "battle",
       "cost": 10,
       "atk": 5
     },
-    "bus_pass": {
+    "bus pass": {
       "type": "powerup",
       "cost": 25
     },
