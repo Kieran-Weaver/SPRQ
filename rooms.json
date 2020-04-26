@@ -1471,12 +1471,12 @@
         "none",
         "none",
         "none",
-        "Waterfront Station",
-        "Hastings at Granville",
         "Robson at Granville",
         "41st at Granville",
-        "Marine at Cambie",
-        "5th at Granville"
+        "Waterfront Station",
+        "5th at Granville",
+        "Hastings at Granville",
+        "Marine at Cambie"
       ],
       "info": "You are in a bus running route 10. You can go to the following destinations:\n\nWaterfront Station\nHastings at Granville\nRobson at Granville\n5th at Granville\n41st at Granville\nMarine at Cambie",
       "npcs": [],
@@ -1581,8 +1581,8 @@
         "none",
         "none",
         "none",
-        "UBC Bus Loop",
         "4th at Fir",
+        "UBC Bus Loop",
         "500 Block 2nd Avenue"
       ],
       "info": "You are in a bus running route 84. You can go to the following destinations:\n\nUBC Bus Loop\n4th at Fir\n500 Block 2nd Avenue",
@@ -2182,8 +2182,8 @@
         "none",
         "none",
         "none",
-        "Broadway at Cambie",
-        "UBC Bus Loop"
+        "UBC Bus Loop",
+        "Broadway at Cambie"
       ],
       "info": "You are in a bus running route 99. You can go to the following destinations:\n\nUBC Bus Loop\nBroadway at Cambie",
       "npcs": [],
@@ -2256,9 +2256,9 @@
         "none",
         "none",
         "none",
-        "41st at West Boulevard",
-        "41st at Granville",
         "41st at Cambie",
+        "41st at Granville",
+        "41st at West Boulevard",
         "UBC Bus Loop"
       ],
       "info": "You are in a bus running route 43. You can go to the following destinations:\n\nUBC Bus Loop\n41st at West Boulevard\n41st at Granville\n41st at Cambie",
@@ -2576,16 +2576,16 @@
         "none",
         "none",
         "none",
-        "Waterfront Station",
-        "Lansdowne Station",
+        "Bridgeport Station",
         "Olympic Village Station",
-        "Marine Drive Station",
-        "Broadway-City Hall Station",
-        "Brighouse Station",
-        "Aberdeen Station",
         "Vancouver City Centre Station",
+        "Broadway-City Hall Station",
+        "Waterfront Station",
+        "Aberdeen Station",
         "Oakridge-41st Station",
-        "Bridgeport Station"
+        "Brighouse Station",
+        "Marine Drive Station",
+        "Lansdowne Station"
       ],
       "info": "You are in an above-ground subway train running a route called the Canada Line. You can go to the following destinations:\n\nWaterfront Station\nVancouver City Centre Station\nOlympic Village Station\nBroadway-City Hall Station\nOakridge-41st Station\nMarine Drive Station\nBridgeport Station\nAberdeen Station\nLansdowne Station\nBrighouse Station",
       "npcs": [],
@@ -2672,9 +2672,9 @@
         "none",
         "none",
         "none",
-        "Pipeline at Stanley Park",
+        "Pender at Granville",
         "Stanley Park Loop",
-        "Pender at Granville"
+        "Pipeline at Stanley Park"
       ],
       "info": "You are in a bus running route 19. You can go to the following destinations:\n\nPender at Granville\nPipeline at Stanley Park\nStanley Park Loop",
       "npcs": [],
@@ -3503,13 +3503,13 @@
         "none",
         "none",
         "none",
-        "Granville at No. 3",
-        "Lansdowne at No. 3",
-        "Westminster at No. 3",
-        "Entertainment Roundabout",
-        "Aberdeen Station",
         "Bridgeport Station Bus Loop",
-        "Cook at No. 3"
+        "Cook at No. 3",
+        "Lansdowne at No. 3",
+        "Granville at No. 3",
+        "Westminster at No. 3",
+        "Aberdeen Station",
+        "Entertainment Roundabout"
       ],
       "info": "You are in a bus running route 403. You can go to the following destinations:\n\nEntertainment Roundabout\nGranville at No. 3\nCook at No. 3\nWestminster at No. 3\nLansdowne at No. 3\nAberdeen Station\nBridgeport Station Bus Loop",
       "npcs": [],
@@ -7931,9 +7931,29 @@
       "def": 0,
       "xp": 10,
       "level": 1,
+      "attacks": {
+        "at1": {
+          "probability": 50,
+          "maxhp": 10,
+          "atk": 6,
+          "text": "The robot's arms bend backward and it runs into you"
+        },
+        "charge": {
+          "probability": 40,
+          "maxhp": 5,
+          "atk": 4,
+          "text": "The robot's arms came off, flying up into the air like rockets. The rockets are charged to +{} damage!"
+        },
+        "catk": {
+          "probability": -1,
+          "maxhp": 10,
+          "atk": 4,
+          "text": "All of the rockets run into you at once"
+        }
+      },
       "text": {
         "entry": "Out from the shadows of the ELI, a human-sized robot with twin rollers on a single, extended arm emerges. As it moves, the ground shakes, causing part of a ceiling tile to fall into the rollers. The tile is immediately disintegrated.",
-        "turn": "The Bagle stands in front of you menacingly",
+        "turn": "The robot rolled forward and hit your legs",
         "lose": "You {} the robot. That did nothing to frighten it and it took you down.",
         "win": "You used {} on the robot. Damaged, it deactivated and contracted into a small cube. You have won.",
         "ilose": "You {} the robot. That did nothing to frighten it and it took you down.",
@@ -7951,9 +7971,29 @@
       "def": 0,
       "xp": 20,
       "level": 1,
+      "attacks": {
+        "at1": {
+          "probability": 50,
+          "maxhp": 20,
+          "atk": 2,
+          "text": "The robot bounces off the wall and rams into your legs"
+        },
+        "charge": {
+          "probability": 40,
+          "maxhp": 5,
+          "atk": 5,
+          "text": "The robot revs up its engines. The robot is charged to +{} damage!"
+        },
+        "catk": {
+          "probability": -1,
+          "maxhp": 20,
+          "atk": 0,
+          "text": "The robot speeds into you"
+        }
+      },
       "text": {
         "entry": "You look around and see hundreds of tiny two-wheeled robots entering the fountain through a crack in the ice. Once they disappear, all is silent. Suddenly, a figure ten times your height breaks through the centre of the fountain. Composed of the hundreds of tiny robots, it steps out and moves toward you.",
-        "turn": "The Diwheel Transformer stands in front of you menacingly",
+        "turn": "The robot rammed into your shoes and bounced off",
         "lose": "You {} the robot. That did nothing to frighten it and it took you down.",
         "win": "You used {} on the robot. Damaged, it fell apart back into the tiny two-wheeled robots. The robots disperse. You have won.",
         "ilose": "You {} the robot. That did nothing to frighten it and it took you down.",
@@ -7971,9 +8011,29 @@
       "def": -4,
       "xp": 20,
       "level": 3,
+      "attacks": {
+        "crunch": {
+          "probability": 60,
+          "maxhp": 100,
+          "atk": 1,
+          "text": "The student demands food from you. You refuse. The student runs into you."
+        },
+        "charge": {
+          "probability": 40,
+          "maxhp": 40,
+          "atk": 4,
+          "text": "The student turns into an enormous ball. It is now charged to +{} damage!"
+        },
+        "catk": {
+          "probability": -1,
+          "maxhp": 100,
+          "atk": 0,
+          "text": "The student rolls into you, knocking you over. You get back up."
+        }
+      },
       "text": {
         "entry": "A large student crosses your path. They look hungry.",
-        "turn": "The Hungry Student stands in front of you menacingly",
+        "turn": "The student growled hungrily at you.",
         "lose": "You {} the student. That did nothing to frighten them. It turned into an enormous ball and rolled you over.",
         "win": "You used {} on the student. Tired of eating, they began to roll away. You have won.",
         "ilose": "You {} the student. That did nothing to frighten them. It turned into an enormous ball and rolled you over.",
@@ -7990,9 +8050,30 @@
       "atk": 2,
       "def": 0,
       "xp": 20,
+      "level": 5,
+      "attacks": {
+        "shove": {
+          "probability": 60,
+          "maxhp": 40,
+          "atk": 3,
+          "text": "The Comic Fan shoves a comic book in your face."
+        },
+        "charge": {
+          "probability": 40,
+          "maxhp": 30,
+          "atk": 5,
+          "text": "The Comic Fan started glowing bright yellow. It is now charged to +{} damage!"
+        },
+        "catk": {
+          "probability": -1,
+          "maxhp": 40,
+          "atk": 0,
+          "text": "The Comic Fan started talking at incredible speed!"
+        }
+      },
       "text": {
         "entry": "A person holding a bunch of comic books crosses your path. They begin to pester you with facts.",
-        "turn": "The Obsessed Comic Fan stands in front of you menacingly",
+        "turn": "The Comic Fan smacked you in the face with a comic book.",
         "lose": "You {} the person. That did nothing to frighten them. Angry, they knock you out.",
         "win": "You used {} on the person. Annoyed, they walk away. You have won.",
         "ilose": "You {} the person. That did nothing to frighten them. Angry, they knock you out.",
@@ -8007,11 +8088,32 @@
       "name": "Flying Doge",
       "hp": 10,
       "atk": 1,
-      "def": -1,
-      "xp": 0,
+      "def": 2,
+      "xp": 10,
+      "level": 4,
+      "attacks": {
+        "shove": {
+          "probability": 60,
+          "maxhp": 10,
+          "atk": 3,
+          "text": "The Flying Doge barked incredibly loudly."
+        },
+        "charge": {
+          "probability": 40,
+          "maxhp": 5,
+          "atk": 10,
+          "text": "The Flying Doge started to charge up it's laser. It is now charged to +{} damage!"
+        },
+        "catk": {
+          "probability": -1,
+          "maxhp": 10,
+          "atk": 0,
+          "text": "The Doge released a massive blast of energy!"
+        }
+      },
       "text": {
         "entry": "Out from the clouds, a dog with wings descends toward you. It shoots a laser. The laser is quickly approaching you.",
-        "turn": "The Flying Doge stands in front of you menacingly",
+        "turn": "The Flying Doge shot at you, barking quietly.",
         "lose": "You {} the laser. That doesn't block it at all. It hits you and you faint.",
         "win": "You used {} on the laser. It reflects the laser back toward the flying dog. Tired, the dog retreats back into the clouds as the laser shoots into the air. You have won.",
         "ilose": "You {} the laser. That doesn't block it at all. It hits you and you faint.",
@@ -8024,10 +8126,31 @@
     },
     "Lovesick Student": {
       "name": "Lovesick Student",
-      "hp": 0,
-      "atk": 0,
-      "def": 0,
+      "hp": 30,
+      "atk": 3,
+      "def": 2,
       "xp": 0,
+      "level": 4,
+      "attacks": {
+        "shove": {
+          "probability": 60,
+          "maxhp": 30,
+          "atk": 3,
+          "text": "The student moaned about you disrupting their alone time."
+        },
+        "charge": {
+          "probability": 40,
+          "maxhp": 30,
+          "atk": 4,
+          "text": "The student curled up on the bench, eyeing you. It is now charged to +{} damage!"
+        },
+        "catk": {
+          "probability": -1,
+          "maxhp": 100,
+          "atk": 0,
+          "text": "The student streches out, kicking you in the face. You get back up."
+        }
+      },
       "text": {
         "entry": "You look around and find a student sitting by some flowers. The student seemed to be daydreaming about something. You walk toward them to investigate. You startle the student and they get angry. They begin to run toward you.",
         "turn": "The Lovesick Student stands in front of you menacingly",

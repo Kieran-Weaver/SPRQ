@@ -6,6 +6,7 @@ import time
 import random
 import inspect
 import math
+import itertools
 DEBUG = 1
 #PlayerState is dynamic data, the saved json is static data
 levelupTable = {
@@ -145,9 +146,13 @@ class RQState:
 
 	def handleRoom(self, playerid):
 		room = self.savedData['rooms'][self.players[playerid].location]
-		if (room["npcs"]) and (random.randrange(0, 256) <= self.savedData['regions'][room["region"]]['npcrate']):
-			self.setState(playerid, "battle")
-			self.writeMessage(self.players[playerid].battle["text"]["entry"])
+		if (room["npcs"]):
+			npcrate = self.savedData['regions'][room["region"]]['npcrate']
+			if any(x in self.savedData["bosses"] for x in room["npcs"]):
+				npcrate = 256
+			if (random.randrange(0, 256) <= npcrate):
+				self.setState(playerid, "battle")
+				self.writeMessage(self.players[playerid].battle["text"]["entry"])
 		if (room["spawner"]) and (room["spawner"] not in room["items"]):
 			room["items"].append(room["spawner"])
 
@@ -162,10 +167,10 @@ class RQState:
 
 	def checkWin(self, playerid, usedItem):
 		if (self.players[playerid].state == "battle") and (self.players[playerid].battle["hp"] <= 0):
-			if usedItem:
+			if usedItem not in ["attack", "heal", "block"]:
 				self.outqueue.put(self.players[playerid].battle["text"]["iwin"].format(usedItem))
 			else:
-				self.outqueue.put(self.players[playerid].battle["text"]["win"])
+				self.outqueue.put(self.players[playerid].battle["text"]["win"].format(usedItem))
 			self.players[playerid].money += self.players[playerid].battle["money"]
 			for item in self.players[playerid].battle["drops"]:
 				if (random.randrange(0, 256) <= self.players[playerid].battle["drops"][item]):
@@ -183,7 +188,7 @@ class RQState:
 			elif usedItem:
 				self.writeMessage(self.players[playerid].battle["text"]["ilose"].format(usedItem))
 			else:
-				self.writeMessage(self.players[playerid].battle["text"]["lose"])
+				self.writeMessage(self.players[playerid].battle["text"]["lose"].format(usedItem))
 			self.killPlayer(playerid)
 			return True
 		else:
@@ -213,9 +218,27 @@ class RQState:
 		if self.checkWin(playerid, usedItem):
 			return
 
-		self.players[playerid].hp -= round(defMul*self.players[playerid].battle["atk"]*(time.monotonic() - self.players[playerid].battle["time"]))
+		damage = self.players[playerid].battle["atk"]
+		message = self.players[playerid].battle["text"]["turn"]
+		if self.players[playerid].battle["type"] == "bosses":
+			attacks = self.players[playerid].battle["attacks"]
+			rChoices = []
+			if "charge" in self.players[playerid].battle: # Boss is charged
+				rChoices = ["charge", "catk"]
+			else: # Boss is not charged
+				rChoices = [x for x in attacks.keys() if ((x != "catk") and (self.players[playerid].battle["hp"] <= attacks[x]["maxhp"]))]
+			rWeights = [*itertools.accumulate([attacks[x]["probability"] for x in rChoices]), 256]
+			rChoices += [None]
+			chosen = random.choices(rChoices, cum_weights=rWeights)
+			assert(len(chosen) == 1)
+			chosen = chosen[0]
+			if chosen:
+				damage = attacks[chosen]["atk"]
+				message = attacks[chosen]["text"]
+
+		self.players[playerid].hp -= round(defMul*damage*(time.monotonic() - self.players[playerid].battle["time"]))
 		if not self.checkLose(playerid, usedItem):
-			self.writeMessage(self.players[playerid].battle["text"]["turn"])
+			self.writeMessage(message)
 			self.players[playerid].battle['time'] = time.monotonic()
 			self.players[playerid].battle['turn'] += 1
 		
@@ -225,9 +248,16 @@ class RQState:
 			self.players[playerid].state = "map"
 		elif (state == "battle"):
 			room = self.savedData['rooms'][self.players[playerid].location]
-			self.players[playerid].battle = self.savedData["npcs"][room["npcs"][0]].copy()
+			npcname = random.choice(room["npcs"])
+			battletype = ""
+			if (npcname in self.savedData["npcs"]):
+				battletype = "npcs"
+			elif (npcname in self.savedData["bosses"]):
+				battletype = "bosses"
+			self.players[playerid].battle = self.savedData[battletype][npcname].copy()
 			self.players[playerid].battle['time'] = time.monotonic()
 			self.players[playerid].battle['turn'] = 0
+			self.players[playerid].battle['type'] = battletype
 			self.players[playerid].state = "battle"
 		else:
 			if (DEBUG == 1):
@@ -251,6 +281,9 @@ class RQState:
 		if (player.state == "map"):
 			room = self.savedData['rooms'][self.players[playerid].location]
 			rmessage = [room['name'],room['info'],'Items:'] + room['items']
+			if "flashlight" in self.players[playerid].powerups:
+				rmessage += ["Exits: "]
+				rmessage += [ x for x in room['exits'] if x != "none" ]
 #			rmessage = rmessage + ['People Here:'] + rooms['players']
 			rmessage.append('Region: ' + room['region'])
 			self.writeMessage("\n".join(rmessage))
@@ -429,7 +462,7 @@ class RQState:
 				self.printState(playerid)
 				self.printInventory(playerid)
 			elif messagelist[0] in ["attack", "heal", "block"]:
-				self.handleBattle(playerid, message, False)
+				self.handleBattle(playerid, message, messagelist[0])
 			elif random.randrange(0, 256) > 100:
 				self.writeMessage(self.players[playerid].battle["text"]["norun"])
 				self.killPlayer(playerid)
