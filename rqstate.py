@@ -384,7 +384,15 @@ class RQState:
 		items = message.split(", ")
 		nonexistentItems = []
 		lastItem = ""
+		aliasList = {
+			"s" : "soup",
+			"ss" : "souper soup",
+			"bs" : "battle soup",
+			"hs" : "healthy soup",
+			"sl" : "salad"
+		}
 		for item in items:
+			item = aliasList.get(item, item)
 			if item in self.players[playerid].items:
 				itemdata = self.savedData["items"][item]
 				if itemdata["type"] == "any":
