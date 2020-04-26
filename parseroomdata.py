@@ -31,7 +31,7 @@ itemtable = {
 	"🍁" : "leaf",
 	"📣" : "megaphone",
 	"🔦" : "flashlight",
-	"📇" : "bus_pass",
+	"📇" : "bus pass",
 	"🕳️" : "hole",
 	"👜" : "bag",
 	"🛄" : "suitcase",
@@ -149,14 +149,14 @@ gamedata['dispensers'] = {
 		"trash" : 750,
 		"fish" : 150,
 		"rare fish" : 90,
-		"souper_soup" : 10,
+		"souper soup" : 10,
 	},
 	"fridge" : {
 		"soup" : 50,
 		"healthy soup" : 50,
 		"salad" : 25,
 		"battle soup" : 20,
-		"souper_soup" : 10
+		"souper soup" : 10
 	}
 }
 with open("rqdata/extra_data.json", "r") as room_json:
