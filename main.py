@@ -1,4 +1,5 @@
 import rqstate
+import os
 if __name__ == '__main__':
 	rq = rqstate.RQState("rooms.json")
 	name = ''
@@ -17,8 +18,7 @@ if __name__ == '__main__':
 			name = input("> ")
 	while True:
 		rq.printState(name)
-		while not (rq.outqueue.empty()):
-			print(rq.outqueue.get())
+		print(os.linesep.join(rq.getMessages(name)))
 		prompt = input("> ")
 		if prompt == "exit":
 			rq.savestate('rooms.json')
