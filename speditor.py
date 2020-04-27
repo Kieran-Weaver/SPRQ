@@ -2,11 +2,12 @@ import bimpy
 import rqstate
 import os
 import ast
-
-def startWindow(name, x, y, w, h):
+import copy
+import collections
+def startWindow(name, x, y, w, h, extraFlags = 0):
 	bimpy.set_next_window_pos(bimpy.Vec2(x,y), int(bimpy.Condition.Once))
 	bimpy.set_next_window_size(bimpy.Vec2(w, h), int(bimpy.Condition.Once))
-	bimpy.begin(name, flags=bimpy.WindowFlags.NoTitleBar|bimpy.WindowFlags.NoResize|bimpy.WindowFlags.NoMove)
+	bimpy.begin(name, flags=bimpy.WindowFlags.NoTitleBar|bimpy.WindowFlags.NoResize|bimpy.WindowFlags.NoMove|extraFlags)
 
 class Terminal:
 	def __init__(self, x, y, w, h, content):
@@ -49,21 +50,34 @@ class Terminal:
 
 class Debugger:
 	def __init__(self):
+		self.menuEntries = collections.OrderedDict()
+		self.currentMenuItem = ""
 		self.entries = {}
-	def add_entry(self, text, callback):
-		self.entries[text] = {
+	def add_menuentry(self, text):
+		self.menuEntries[text] = {}
+		self.currentMenuItem = text
+	def add_entry(self, text, etype, callback):
+		self.menuEntries[self.currentMenuItem][text] = {
 			"value" : bimpy.String(),
+			"type" : etype,
 			"checked" : bimpy.Bool(),
 			"callback" : callback
 		}
 	def draw(self):
-		startWindow("Debugger", W, 0, 1080-W, H)
+		startWindow("Debugger", W, 0, 1080-W, H, bimpy.WindowFlags.MenuBar)
 		bimpy.text("Debugger")
+		assert(bimpy.begin_menu_bar())
+		for menuitem in self.menuEntries:
+			if bimpy.menu_item(menuitem, ""):
+				self.entries = self.menuEntries[menuitem]
+		bimpy.end_menu_bar()
+
 		for entry in self.entries:
 			bimpy.input_text(entry, self.entries[entry]["value"], 256)
 			bimpy.same_line()
-			if bimpy.checkbox(f"##{entry}_checkbox", self.entries[entry]["checked"]):
-				self.entries[entry]["callback"](entry, self.entries[entry]["checked"].value, self.entries[entry]["value"].value)
+			if self.entries[entry]["type"] == "checkbox":
+				if bimpy.checkbox(f"##{entry}_checkbox", self.entries[entry]["checked"]):
+					self.entries[entry]["callback"](entry, self.entries[entry]["checked"].value, self.entries[entry]["value"].value)
 
 W = 640
 H = 480
@@ -82,7 +96,9 @@ fields = {
 	"levelpoints": int,
 	"money": int,
 	"location": str,
-	"state": str
+	"state": str,
+	"items": dict,
+	"powerups": set
 }
 
 ctx = bimpy.Context()
@@ -95,7 +111,10 @@ debugger = Debugger()
 def lockField(field, checkValue, value):
 	global locked_fields, fields
 	if checkValue:
-		newValue = ast.literal_eval(value)
+		if value:
+			newValue = ast.literal_eval(value)
+		else:
+			newValue = fields[field]()
 		if type(newValue) == fields[field]:
 			locked_fields[field] = newValue
 		else:
@@ -103,13 +122,14 @@ def lockField(field, checkValue, value):
 	elif field in locked_fields:
 		del locked_fields[field]
 
+debugger.add_menuentry("Lock Fields")
 for field in fields:
-	debugger.add_entry(field, lockField)
+	debugger.add_entry(field, "checkbox", lockField)
 
 while not ctx.should_close():
 	if name:
 		for field in locked_fields:
-			setattr(rq.players[name], field, locked_fields[field])
+			setattr(rq.players[name], field, copy.deepcopy(locked_fields[field]))
 	with ctx:
 		debugger.draw()
 		prompt = terminal.draw()
