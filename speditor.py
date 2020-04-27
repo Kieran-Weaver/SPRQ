@@ -1,6 +1,7 @@
 import bimpy
 import rqstate
 import os
+import ast
 
 def startWindow(name, x, y, w, h):
 	bimpy.set_next_window_pos(bimpy.Vec2(x,y), int(bimpy.Condition.Once))
@@ -38,7 +39,7 @@ class Terminal:
 
 	def fitText(self):
 		self._text = os.linesep.join(self.content)
-		while bimpy.calc_text_size(self._text, wrap_width=(W-20)).y > (H - 100):
+		while bimpy.calc_text_size(self._text, wrap_width=(W-20)).y > (H - 120):
 			self.content.pop(0)
 			self._text = os.linesep.join(self.content)
 	
@@ -62,17 +63,53 @@ class Debugger:
 			bimpy.input_text(entry, self.entries[entry]["value"], 256)
 			bimpy.same_line()
 			if bimpy.checkbox(f"##{entry}_checkbox", self.entries[entry]["checked"]):
-				self.entries[entry]["callback"](self.entries[entry]["checked"].value)
+				self.entries[entry]["callback"](entry, self.entries[entry]["checked"].value, self.entries[entry]["value"].value)
+
 W = 640
 H = 480
 rq = rqstate.RQState("rooms.json")
+locked_fields = {}
+fields = {
+	"hp": int,
+	"sp": int,
+	"defMul": float,
+	"maxSP": int,
+	"maxHP": int,
+	"itemCapacity": int,
+	"atk": int,
+	"xp": int,
+	"level": int,
+	"levelpoints": int,
+	"money": int,
+	"location": str,
+	"state": str
+}
+
 ctx = bimpy.Context()
 ctx.init(1080, 480, "SPRQ Editor")
 textH = bimpy.get_text_line_height_with_spacing()
 name = ""
 terminal = Terminal(0, 0, W, H, ["Enter your name"])
 debugger = Debugger()
+
+def lockField(field, checkValue, value):
+	global locked_fields, fields
+	if checkValue:
+		newValue = ast.literal_eval(value)
+		if type(newValue) == fields[field]:
+			locked_fields[field] = newValue
+		else:
+			terminal.append(f"Error: The type of {field} must be {fields[field]}") 
+	elif field in locked_fields:
+		del locked_fields[field]
+
+for field in fields:
+	debugger.add_entry(field, lockField)
+
 while not ctx.should_close():
+	if name:
+		for field in locked_fields:
+			setattr(rq.players[name], field, locked_fields[field])
 	with ctx:
 		debugger.draw()
 		prompt = terminal.draw()
