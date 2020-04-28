@@ -53,31 +53,67 @@ class Debugger:
 		self.menuEntries = collections.OrderedDict()
 		self.currentMenuItem = ""
 		self.entries = {}
-	def add_menuentry(self, text):
-		self.menuEntries[text] = {}
+		self.etype = ""
+		self.combo_text = ""
+
+	def add_menuentry(self, condition, text, etype):
+		self.menuEntries[text] = {"condition" : condition, "type" : etype, "entries" : {}}
 		self.currentMenuItem = text
-	def add_entry(self, text, etype, callback):
-		self.menuEntries[self.currentMenuItem][text] = {
+	
+	def set_menuentry(self, text):
+		self.currentMenuItem = text
+
+	def set_attr(self, entry, attr, value):
+		self.menuEntries.get(entry, {})[attr] = value
+
+	def add_entry(self, text, etype, callback, defValue=""):
+		self.menuEntries[self.currentMenuItem]["entries"][text] = {
 			"value" : bimpy.String(),
 			"type" : etype,
 			"checked" : bimpy.Bool(),
 			"callback" : callback
 		}
+		self.menuEntries[self.currentMenuItem]["entries"][text]["value"].value = str(defValue)
+
 	def draw(self):
 		startWindow("Debugger", W, 0, 1080-W, H, bimpy.WindowFlags.MenuBar)
 		bimpy.text("Debugger")
 		assert(bimpy.begin_menu_bar())
 		for menuitem in self.menuEntries:
-			if bimpy.menu_item(menuitem, ""):
-				self.entries = self.menuEntries[menuitem]
+			if self.menuEntries[menuitem]["condition"]:
+				if bimpy.menu_item(menuitem, ""):
+					self.entries = self.menuEntries[menuitem]["entries"].copy()
+					self.etype = self.menuEntries[menuitem]["type"]
+					if self.etype == "combo" and not self.combo_text:
+						self.combo_text = [*self.entries.keys()][0]
 		bimpy.end_menu_bar()
 
-		for entry in self.entries:
-			bimpy.input_text(entry, self.entries[entry]["value"], 256)
-			bimpy.same_line()
-			if self.entries[entry]["type"] == "checkbox":
-				if bimpy.checkbox(f"##{entry}_checkbox", self.entries[entry]["checked"]):
-					self.entries[entry]["callback"](entry, self.entries[entry]["checked"].value, self.entries[entry]["value"].value)
+		if self.entries:
+			shouldend = False
+			if self.etype == "combo" and bimpy.begin_combo("##Combo", self.combo_text):
+				shouldend = True
+			for entry in self.entries:
+				if self.etype == "combo":
+					is_selected = bimpy.Bool()
+					if bimpy.selectable(f"{entry}##_combo", selected=is_selected):
+						self.entries[entry]["callback"](entry, self.entries)
+					elif is_selected.value:
+						self.combo_text = entry
+						print(self.combo_text)
+				elif self.entries[entry]["type"] == "button":
+					if bimpy.button(f"{entry}##_button") and self.entries[entry]["callback"]:
+						self.entries[entry]["callback"](entry, self.entries)
+				elif self.entries[entry]["type"] == "text":
+					bimpy.text_wrapped(f"{entry}")
+				else:
+					bimpy.input_text(f"{entry}##_input", self.entries[entry]["value"], 256)
+					if self.entries[entry]["callback"]:
+						if self.entries[entry]["type"] == "checkbox":
+							bimpy.same_line()
+							if bimpy.checkbox(f"##{entry}_checkbox", self.entries[entry]["checked"]):
+								self.entries[entry]["callback"](entry, self.entries)
+			if shouldend:
+				bimpy.end_combo()
 
 W = 640
 H = 480
@@ -108,8 +144,10 @@ name = ""
 terminal = Terminal(0, 0, W, H, ["Enter your name"])
 debugger = Debugger()
 
-def lockField(field, checkValue, value):
+def lockField(field, entries):
 	global locked_fields, fields
+	value = entries[field]["value"].value
+	checkValue = entries[field]["checked"].value
 	if checkValue:
 		if value:
 			newValue = ast.literal_eval(value)
@@ -122,9 +160,34 @@ def lockField(field, checkValue, value):
 	elif field in locked_fields:
 		del locked_fields[field]
 
-debugger.add_menuentry("Lock Fields")
+debugger.add_menuentry(True, "Lock Fields", "default")
 for field in fields:
 	debugger.add_entry(field, "checkbox", lockField)
+
+def saveItem(field, entries):
+	item = ''
+	for val in entries:
+		if entries[val]["type"] == "text":
+			item = val
+	fields = [val for val in entries if entries[val]["type"] == "default"]
+	itemData = rq.savedData["items"][item]
+	for field in fields:
+		itemData[field] = ast.literal_eval(entries[field]["value"].value)
+
+def editItem(item, entries):
+	itemData = rq.savedData["items"][item]
+	debugger.add_menuentry(True, "Edit Item", "default")
+	debugger.add_entry(item, "text", None)
+	for key in itemData:
+		debugger.add_entry(key, "default", None, repr(itemData[key]))
+	debugger.add_entry("Save", "button", saveItem)
+
+debugger.add_menuentry(True, "Edit Item Data", "combo")
+for item in rq.savedData["items"]:
+	debugger.add_entry(item, "combo", editItem)
+debugger.add_menuentry(True, "Edit Room", "default")
+debugger.add_menuentry(False, "Edit Item", "default")
+debugger.add_menuentry(False, "Edit NPC", "default")
 
 while not ctx.should_close():
 	if name:
@@ -138,6 +201,9 @@ while not ctx.should_close():
 				if prompt:
 					name = prompt
 					rq.loadPlayer(name)
+					debugger.set_menuentry("Lock Fields")
+					for field in fields:
+						debugger.add_entry(field, "checkbox", lockField, repr(getattr(rq.players[name], field)))
 			else:
 				if prompt == "exit":
 #				rq.savestate('rooms.json')
