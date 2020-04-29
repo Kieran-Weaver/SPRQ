@@ -1,134 +1,49 @@
-import json
-import queue
+from playerstate import PlayerState
+from jsonhandler import JSONHandler
 import time
 import random
-import inspect
 import math
 import itertools
 DEBUG = 1
 # PlayerState is dynamic data, the saved json is static data
-levelupTable = {
-	"HP": ("maxHP", 10),
-	"SP": ("maxSP", 5),
-	"ATTACK": ("atk", 1),
-	"DEFENSE": ("defStat", 1)
-}
-
-
-class PlayerState:
-	hp = 20  # Goes down over time in battle
-	sp = 10  # For using "attack", "block", and "heal"
-	defMul = 1.0
-	defStat = 0
-	maxSP = 10
-	maxHP = 20
-	itemCapacity = 10
-	atk = 1
-	xp = 0
-	level = 1
-	levelpoints = 0
-	money = 0
-	location = "UTP Lounge"
-	items = {}
-	state = "map"
-	battle = {}
-	powerups = set()
-	status = {}
-
 
 class RQState:
-	savedData = {}
-	players = {}
-	outqueue = {}
-
 	def __init__(self, filename):
-		with open(filename, "r") as f:
-			self.savedData = json.load(f)
-		for player in self.savedData["players"]:
-			self.loadPlayer(player)
+		self.savedData = JSONHandler(filename)
+		self.players = {}
 
-	def savestate(self, filename):
+	def savestate(self, filename=None):
 		for player in self.players:
 			self.savePlayer(player)
-		with open(filename, "w") as f:
-			json.dump(self.savedData, f, indent=2)
+		self.savedData.saveState(filename)
 
 	def writeMessage(self, playerid, message):
-		self.outqueue[playerid].put(message)
+		self.players[playerid].writeMessage(message)
 
 	def numItems(self, playerid):
-		return sum(self.players[playerid].items.values())
+		return self.players[playerid].numItems()
 
 	def addItem(self, playerid, item):
-		if self.numItems(playerid) < self.players[playerid].itemCapacity:
-			self.players[playerid].items[item] = self.players[playerid].items.get(item, 0) + 1
-			self.writeMessage(playerid, f"You got a {item}!")
-			return True
-		else:
-			self.writeMessage(playerid, "You cannot pick up any more items!")
-			return False
+		return self.players[playerid].addItem(item)
 
 	def removeItem(self, playerid, item):
-		if item in self.players[playerid].items.keys():
-			self.players[playerid].items[item] -= 1
-			if self.players[playerid].items[item] == 0:
-				del self.players[playerid].items[item]
-			return True
-		else:
-			return False
+		return self.players[playerid].removeItem(item)
 
 	def addXP(self, playerid, xp, level):
-		playerdata = self.players[playerid]
-		if (playerdata.level > level):
-			playerdata.xp += math.ceil(xp / (playerdata.level - level))
-		else:
-			playerdata.xp += xp
-		if (playerdata.xp >= 100):
-			playerdata.level += 1
-			playerdata.levelpoints += 1
-			playerdata.xp -= 100
-			self.writeMessage(playerid, "You received one level point!")
-			self.writeMessage(playerid, "Type levelup STAT to increase one of your stats")
-			self.writeMessage(playerid, "Stats you can level up:")
-			self.writeMessage(playerid, "HP, SP, Attack, and Defense")
+		self.players[playerid].addXP(xp, level)
 
 	def levelUp(self, playerid, stat):
-		if (self.players[playerid].levelpoints == 0):
-			self.writeMessage(playerid, "You have 0 level points and cannot level up a stat!")
-		elif stat.upper() in levelupTable:
-			self.writeMessage(playerid, f"You leveled up: {stat}")
-			statboost = levelupTable[stat.upper()]
-			setattr(self.players[playerid], statboost[0], getattr(self.players[playerid], statboost[0]) + statboost[1])
-			self.players[playerid].hp = self.players[playerid].maxHP
-			self.players[playerid].sp = self.players[playerid].maxSP
-			self.players[playerid].levelpoints -= 1
-			self.printInventory(playerid)
-		else:
-			self.writeMessage(playerid, f"{stat} is not a stat you can level up!")
+		if self.players[playerid].levelUp(stat):
+			self.players[playerid].writeStats()
 
 	def loadPlayer(self, playerid):
-		self.players[playerid] = PlayerState()
-		self.outqueue[playerid] = queue.SimpleQueue()
-		if not (playerid in self.savedData["players"]):
-			self.savePlayer(playerid)
-		for pkey in self.savedData["players"][playerid]:
-			setattr(self.players[playerid], pkey, self.savedData["players"][playerid][pkey])
-		self.players[playerid].powerups = set(self.savedData["players"][playerid]["powerups"])
-		if self.players[playerid].state == "battle":
-			self.players[playerid].battle["time"] = time.monotonic()
+		self.players[playerid] = self.savedData.loadPlayer(playerid)
 
 	def savePlayer(self, playerid):
-		self.savedData["players"][playerid] = {}
-		playerstate = self.savedData["players"][playerid]
-		playerdata = inspect.getmembers(self.players[playerid], lambda a: not(inspect.isroutine(a)))
-		for data in playerdata:
-			if not data[0].startswith("_"):
-				if type(data[1]) in [list, set]:
-					playerstate[data[0]] = list(data[1])
-				elif type(data[1]) == dict:
-					playerstate[data[0]] = dict(data[1])
-				else:
-					playerstate[data[0]] = data[1]
+		self.savedData.savePlayer(playerid, self.players[playerid])
+
+	def getMessages(self, playerid):
+		return self.players[playerid].getMessages()
 
 	def movePlayer(self, playerid, exitname):
 		directions = ["north", "south", "east", "west", "n", "s", "e", "w"]
@@ -497,9 +412,3 @@ class RQState:
 				self.setState(playerid, "map")
 			else:
 				self.handleBattle(playerid, message, False)
-	
-	def getMessages(self, playerid):
-		messages = []
-		while not self.outqueue[playerid].empty():
-			messages.append(self.outqueue[playerid].get())
-		return messages

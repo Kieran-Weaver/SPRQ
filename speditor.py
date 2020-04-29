@@ -198,17 +198,16 @@ while not ctx.should_close():
 		prompt = terminal.draw()
 		if prompt:
 			if not name:
-				if prompt:
-					name = prompt
-					rq.loadPlayer(name)
-					debugger.set_menuentry("Lock Fields")
-					for field in fields:
-						debugger.add_entry(field, "checkbox", lockField, repr(getattr(rq.players[name], field)))
+				name = prompt
+				rq.loadPlayer(name)
+				debugger.set_menuentry("Lock Fields")
+				for field in fields:
+					debugger.add_entry(field, "checkbox", lockField, repr(getattr(rq.players[name], field)))
 			else:
 				if prompt == "exit":
 #				rq.savestate('rooms.json')
 					break
-				elif prompt:
+				else:
 					rq.parseMessage(name,prompt)
 			rq.printState(name)
 			terminal.append(*rq.getMessages(name))
