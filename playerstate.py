@@ -83,14 +83,36 @@ class PlayerState:
 			self.writeMessage(f"{stat} is not a stat you can level up!")
 			return False
 
-	def writeStats(self):
+	def printStats(self):
 		self.writeMessage(f"HP: {self.hp}/{self.maxHP}")
 		self.writeMessage(f"SP: {self.sp}/{self.maxSP}")
 		self.writeMessage(f"Attack: {self.atk}")
 		self.writeMessage(f"Defense: {self.defStat}")
+		self.writeMessage(f"XP: {self.xp}/100")
 	
 	def getMessages(self):
 		messages = []
 		while not self._outqueue.empty():
 			messages.append(self._outqueue.get())
 		return messages
+
+	def printInventory(self):
+		self.writeMessage(f"Money: {self.money}")
+		self.writeMessage("Items: ")
+		for key in self.items:
+			keystr = f"{key}"
+			if self.items[key] > 1:
+				keystr = f"{key} x {self.items[key]}"
+			self.writeMessage(keystr)
+	
+	def reset(self):
+		items = []
+		for key in self.items:
+			items += [key] * self.items[key]
+		self.items = {}
+#		self.money = 0
+		self.hp = self.maxHP
+		self.sp = self.maxSP
+		self.battle = {}
+		self.state = "map"
+		return items
