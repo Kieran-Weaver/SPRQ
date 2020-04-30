@@ -4,6 +4,15 @@ import os
 import ast
 import copy
 import collections
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 def startWindow(name, x, y, w, h, extraFlags = 0):
 	bimpy.set_next_window_pos(bimpy.Vec2(x,y), int(bimpy.Condition.Once))
 	bimpy.set_next_window_size(bimpy.Vec2(w, h), int(bimpy.Condition.Once))
@@ -117,7 +126,7 @@ class Debugger:
 
 W = 640
 H = 480
-rq = rqstate.RQState("rooms.json")
+rq = rqstate.RQState(resource_path("rooms.json"))
 locked_fields = {}
 fields = {
 	"hp": int,
