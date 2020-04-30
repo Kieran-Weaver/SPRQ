@@ -323,11 +323,12 @@ class RQState:
 				self.players[playerid].printInventory()
 			elif messagelist[0] in ["attack", "heal", "block"]:
 				self.handleBattle(playerid, message, messagelist[0])
-			elif random.randrange(256) > 100:
-				self.players[playerid].writeMessage( self.players[playerid].battle["text"]["norun"])
-				self.killPlayer(playerid)
-			elif self.mapHandler.movePlayer(self.players[playerid], message):
-				self.players[playerid].writeMessage( self.players[playerid].battle["text"]["run"])
-				self.mapHandler.setState(self.players[playerid], "map")
+			elif self.players[playerid].battle["type"] == "npc" and self.mapHandler.movePlayer(self.players[playerid], message):
+				if random.randrange(256) > 100:
+					self.players[playerid].writeMessage( self.players[playerid].battle["text"]["norun"])
+					self.killPlayer(playerid)
+				else:
+					self.players[playerid].writeMessage( self.players[playerid].battle["text"]["run"])
+					self.mapHandler.setState(self.players[playerid], "map")
 			else:
 				self.handleBattle(playerid, message, False)
