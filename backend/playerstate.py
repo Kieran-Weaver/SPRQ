@@ -116,3 +116,12 @@ class PlayerState:
 		self.battle = {}
 		self.state = "map"
 		return items
+	
+	def damageNPC(self, atk):
+		if self.state == "battle":
+			if atk >= 0: # Not piercing
+				self.battle["hp"] -= max(atk - self.battle["def"], 0)
+			else: # Piercing
+				self.battle["hp"] += atk
+		else:
+			self.writeMessage( "There is nothing to attack")

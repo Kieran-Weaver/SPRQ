@@ -1,18 +1,21 @@
-from playerstate import PlayerState
-from jsonhandler import JSONHandler
-from rqmap import RQMap
+from backend.playerstate import PlayerState
+from backend.jsonhandler import JSONHandler
+from backend.rqmap import RQMap
+import backend.rqflags as flags
 import time
 import random
 import math
 import itertools
 DEBUG = 1
-# PlayerState is dynamic data, the saved json is static data
-
 class RQState:
 	def __init__(self, filename):
 		self.savedData = JSONHandler(filename)
 		self.mapHandler = RQMap(self.savedData)
+		self.mode = flags.RQMode.M_15
 		self.players = {}
+
+	def loadstate(self, filename=None):
+		self.savedData.loadState(filename)
 
 	def savestate(self, filename=None):
 		for player in self.players:
@@ -32,29 +35,8 @@ class RQState:
 	def getMessages(self, playerid):
 		return self.players[playerid].getMessages()
 
-	def handleRoom(self, playerid):
-		room = self.savedData["rooms"][self.players[playerid].location]
-		if room["npcs"]:
-			npcrate = self.savedData["regions"][room["region"]]["npcrate"]
-			if any(x in self.savedData["bosses"] for x in room["npcs"]):
-				npcrate = 256
-			if random.randrange(256) <= npcrate:
-				self.setState(playerid, "battle")
-				self.players[playerid].writeMessage( self.players[playerid].battle["text"]["entry"])
-		if room["spawner"] and room["spawner"] not in room["items"]:
-			room["items"].append(room["spawner"])
-
 	def fastTravel(self, playerid, message):
 		self.mapHandler.fastTravel(self.players[playerid], message)
-
-	def damageNPC(self, playerid, atk):
-		if self.players[playerid].state == "battle":
-			if atk >= 0:
-				self.players[playerid].battle["hp"] -= max(atk - self.players[playerid].battle["def"], 0)
-			else:
-				self.players[playerid].battle["hp"] += atk
-		else:
-			self.players[playerid].writeMessage( "There is nothing to attack")
 
 	def checkWin(self, playerid, usedItem):
 		if self.players[playerid].state == "battle" and self.players[playerid].battle["hp"] <= 0:
@@ -67,7 +49,7 @@ class RQState:
 				if random.randrange(256) <= self.players[playerid].battle["drops"][item]:
 					self.players[playerid].addItem(item)
 			self.players[playerid].addXP(self.players[playerid].battle["xp"], self.players[playerid].battle["level"])
-			self.setState(playerid, "map")
+			self.mapHandler.setState(self.players[playerid], "map")
 			return True
 		else:
 			return False
@@ -100,7 +82,7 @@ class RQState:
 		defMul = self.players[playerid].defMul
 		if self.doMove(playerid, messagelist[0]):
 			if messagelist[0] == "attack":
-				self.damageNPC(playerid, self.players[playerid].atk)
+				self.players[playerid].damageNPC(self.players[playerid].atk)
 			elif messagelist[0] == "heal":
 				self.players[playerid].hp = self.players[playerid].maxHP
 			elif messagelist[0] == "block":
@@ -137,26 +119,6 @@ class RQState:
 			self.players[playerid].writeMessage( message)
 			self.players[playerid].battle["time"] = time.monotonic()
 			self.players[playerid].battle["turn"] += 1
-
-	def setState(self, playerid, state):
-		if state == "map":
-			self.players[playerid].battle = {}
-			self.players[playerid].state = "map"
-		elif state == "battle":
-			room = self.savedData["rooms"][self.players[playerid].location]
-			npcname = random.choice(room["npcs"])
-			battletype = ""
-			if npcname in self.savedData["npcs"]:
-				battletype = "npcs"
-			elif npcname in self.savedData["bosses"]:
-				battletype = "bosses"
-			self.players[playerid].battle = self.savedData[battletype][npcname].copy()
-			self.players[playerid].battle["time"] = time.monotonic()
-			self.players[playerid].battle["turn"] = 0
-			self.players[playerid].battle["type"] = battletype
-			self.players[playerid].state = "battle"
-		elif DEBUG == 1:
-			self.players[playerid].writeMessage( f"Invalid state: {state}")
 
 	def killPlayer(self, playerid):
 		room = self.mapHandler.getRoom(self.players[playerid])
@@ -234,7 +196,7 @@ class RQState:
 			weakness = self.players[playerid].battle["weakness"]
 		if weakness == item:
 			damage = damage * 2
-		self.damageNPC(playerid, damage)
+		self.players[playerid].damageNPC(damage)
 
 	def useItems(self, playerid, message):
 		items = message.split(", ")
@@ -334,7 +296,7 @@ class RQState:
 			elif messagelist[0] == "open":
 				self.openDispenser(playerid, messagelist[1])
 			elif self.mapHandler.movePlayer(self.players[playerid], message):
-				self.handleRoom(playerid)
+				self.mapHandler.handleRoom(self.players[playerid])
 		elif self.players[playerid].state == "battle":
 			if messagelist[0][:4] == "inv":
 				self.printState(playerid)
@@ -346,6 +308,6 @@ class RQState:
 				self.killPlayer(playerid)
 			elif self.mapHandler.movePlayer(self.players[playerid], message):
 				self.players[playerid].writeMessage( self.players[playerid].battle["text"]["run"])
-				self.setState(playerid, "map")
+				self.mapHandler.setState(self.players[playerid], "map")
 			else:
 				self.handleBattle(playerid, message, False)

@@ -1,10 +1,9 @@
 import json
 import inspect
-from playerstate import PlayerState
+from .playerstate import PlayerState
 class JSONHandler:
 	def __init__(self, filename):
-		self.filename = filename
-		self.loadState(self.filename)
+		self.loadState(filename)
 
 	def __getitem__(self, key):
 		return self.savedData[key]
@@ -15,9 +14,15 @@ class JSONHandler:
 	def __delitem__(self, key):
 		del self.savedData[key]
 
-	def loadState(self, filename):
-		with open(filename, "r") as f:
-			self.savedData = json.load(f)
+	def loadState(self, filename=None):
+		if filename:
+			with open(filename, "r") as f:
+				self.savedData = json.load(f)
+			self.filename = filename
+		elif self.filename:
+			with open(self.filename, "r") as f:
+				self.savedData = json.load(f)
+#       else: fail silently
 
 	def saveState(self, filename = None):
 		if not filename:
