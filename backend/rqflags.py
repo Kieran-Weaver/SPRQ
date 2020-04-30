@@ -15,7 +15,7 @@ class RQFlags(Flag):
 	F_TIMED_DAMAGE = auto()    # Damage increases over time (1.1 mode) instead of being turn-based (1.5 mode)
 	F_SP_SYSTEM = auto()       # Dynamic HP/SP/ATK/DEF Stats (1.5 mode)
 	F_DYNAMIC_MOVESET = auto() # Bosses have dynamic movesets (1.5 mode) instead of static attacks (1.1 mode)
-	F_SEQUENCE = auto()        # You can't re-fight bosses (Possible 2.0 mode)
+	F_SEQUENCE = auto()        # You can't re-fight bosses (Possible 2.0 mode), does nothing in SP's non-linear structure
 	F_DEATH_MONEY = auto()     # Money disappears on death
 
 ModeFlags = {

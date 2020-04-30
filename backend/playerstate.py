@@ -1,4 +1,6 @@
 from queue import SimpleQueue
+import random
+from .rqflags import *
 levelupTable = {
 	"HP": ("maxHP", 10),
 	"SP": ("maxSP", 5),
@@ -28,6 +30,8 @@ class PlayerState:
 		self.levelpoints = 0   # Stored level points, which you can put toward HP, SP, attack, or defense
 		self.money = 0         # Current money
 		self._outqueue = SimpleQueue() # Player messages
+		self.mode = RQMode.M_15# Mode, determines flags
+		self._items = None
 
 	def writeMessage(self, message):
 		self._outqueue.put(message)
@@ -36,6 +40,8 @@ class PlayerState:
 		return sum(self.items.values())
 
 	def addItem(self, item):
+		if self.mode == RQMode.M_RAND:
+			item = random.choice(self._items)
 		if self.numItems() < self.itemCapacity:
 			self.items[item] = self.items.get(item, 0) + 1
 			self.writeMessage(f"You got a {item}!")
@@ -110,7 +116,8 @@ class PlayerState:
 		for key in self.items:
 			items += [key] * self.items[key]
 		self.items = {}
-#		self.money = 0
+		if self.hasFlag(RQFlags.F_DEATH_MONEY):
+			self.money = 0
 		self.hp = self.maxHP
 		self.sp = self.maxSP
 		self.battle = {}
@@ -125,3 +132,6 @@ class PlayerState:
 				self.battle["hp"] += atk
 		else:
 			self.writeMessage( "There is nothing to attack")
+
+	def hasFlag(self, flag):
+		return flag in getFlags(self.mode)

@@ -1,5 +1,6 @@
 import random
 import time
+from .rqflags import *
 class RQMap:
 	def __init__(self, saveddata):
 		self.savedData = saveddata
@@ -9,19 +10,25 @@ class RQMap:
 		return self.savedData["rooms"][playerdata.location]
 
 	def movePlayer(self, playerdata, exitname):
+		if playerdata.mode == RQMode.M_RAND:
+			playerdata.location = random.choice([*self.savedData["rooms"].keys()])
+			return True
 		room = self.getRoom(playerdata)
+		reenter = playerdata.hasFlag(RQFlags.F_REENTER_GLITCH)
 		if exitname in self.directions:
 			exitindex = self.directions.index(exitname) % 4
 			if room["exits"][exitindex] == "none":
 				playerdata.writeMessage("That is not an exit")
-				return False
+				if not reenter:
+					return False
 			else:
 				playerdata.location = room["exits"][exitindex]
 		elif exitname in room["exits"]:
 			playerdata.location = exitname
 		else:
 			playerdata.writeMessage("That is not an exit")
-			return False
+			if not reenter:
+				return False
 		return True
 
 	def fastTravel(self, playerdata, message):

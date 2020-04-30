@@ -7,6 +7,13 @@ import random
 import math
 import itertools
 DEBUG = 1
+modeTable = {
+	"1.0" : flags.RQMode.M_10,
+	"1.1" : flags.RQMode.M_11,
+	"SP" : flags.RQMode.M_15,
+	"COOP" : flags.RQMode.M_COOP,
+	"RAND" : flags.RQMode.M_RAND
+}
 class RQState:
 	def __init__(self, filename):
 		self.savedData = JSONHandler(filename)
@@ -132,9 +139,10 @@ class RQState:
 		if player.state == "map":
 			room = self.savedData["rooms"][self.players[playerid].location]
 			rmessage = [room["name"], room["info"], "Items:"] + room["items"]
-			if "flashlight" in self.players[playerid].powerups:
-				rmessage.append("Exits: ")
-				rmessage += [x for x in room["exits"] if x != "none"]
+			if self.players[playerid].hasFlag(flags.RQFlags.F_NEW_ITEMS):
+				if "flashlight" in self.players[playerid].powerups:
+					rmessage.append("Exits: ")
+					rmessage += [x for x in room["exits"] if x != "none"]
 			rmessage.append("Region: " + room["region"])
 			self.players[playerid].writeMessage( "\n".join(rmessage))
 		elif player.state == "battle":
@@ -175,14 +183,14 @@ class RQState:
 		if command == "get":
 			for item in items:
 				if item in room["items"]:
-					if not self.players[playerid].addItem( item):
+					if not self.players[playerid].addItem(item):
 						break
 					room["items"].remove(item)
 				else:
 					nonexistentItems.append(item)
 		else:
 			for item in items:
-				if not self.players[playerid].removeItem( item):
+				if not self.players[playerid].removeItem(item):
 					nonexistentItems.append(item)
 				elif command == "drop":
 					room["items"].append(item)
@@ -271,7 +279,19 @@ class RQState:
 				self.players[playerid].level = int(messagelist[1])
 				return
 
-		if messagelist[0] == "use":
+		if messagelist[0] == "setmode":
+			messagelist[1] = messagelist[1].upper()
+			if messagelist[1] in modeTable:
+				self.killPlayer(playerid)
+				self.savedData.savePlayer(playerid, PlayerState())
+				self.players[playerid] = self.savedData.loadPlayer(playerid)
+				self.players[playerid].mode = modeTable[messagelist[1]]
+				if self.players[playerid].mode == flags.RQMode.M_RAND:
+					self.players[playerid]._items = [*self.savedData["items"].keys()]
+				self.players[playerid].writeMessage(f"Your mode is now set to {messagelist[1]}")
+			else:
+				self.players[playerid].writeMessage(f"{messagelist[1]} is not a mode! Valid modes are: {[*modeTable.keys()]}")
+		elif messagelist[0] == "use":
 			self.useItems(playerid, " ".join(messagelist[1:]))
 		elif self.players[playerid].state == "map":
 			if messagelist[0][:4] == "inv":
