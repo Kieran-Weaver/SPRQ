@@ -19,7 +19,9 @@ async def on_message(message):
 	if msg:
 		rq.parseMessage(name, msg)
 	rq.printState(name)
-	await channel.send(os.linesep.join(rq.getMessages(name)))
+	membed = discord.Embed(title="SPRQ", type="rich")
+	membed.add_field(name=f"Replying to {name}", value=os.linesep.join(rq.getMessages(name)), inline=True)
+	await channel.send(embed=membed)
 
 @bot.event
 async def on_command_error(ctx, error):

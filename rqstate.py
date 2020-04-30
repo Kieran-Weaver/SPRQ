@@ -146,8 +146,8 @@ class RQState:
 			rmessage.append("Region: " + room["region"])
 			self.players[playerid].writeMessage( "\n".join(rmessage))
 		elif player.state == "battle":
-			self.players[playerid].writeMessage( f"HP: {player.hp}")
-			self.players[playerid].writeMessage( f"SP: {player.sp}")
+			self.players[playerid].writeMessage(f"HP: {self.hp}/{self.maxHP}")
+			self.players[playerid].writeMessage(f"SP: {self.sp}/{self.maxSP}")
 			self.players[playerid].writeMessage( f"NPC Name: {self.players[playerid].battle['name']}")
 			self.players[playerid].writeMessage( f"NPC HP: {self.players[playerid].battle['hp']}")
 
@@ -175,7 +175,7 @@ class RQState:
 				if nonexistentItems:
 					self.players[playerid].writeMessage( f"Error: Items {', '.join(nonexistentItems)} not found")
 		else:
-			self.players[playerid].writeMessage( f"{room} is not a shop")
+			self.players[playerid].writeMessage( f"{room['name']} is not a shop")
 
 	def handleItems(self, playerid, command, items):
 		room = self.savedData["rooms"][self.players[playerid].location]
@@ -319,7 +319,6 @@ class RQState:
 				self.mapHandler.handleRoom(self.players[playerid])
 		elif self.players[playerid].state == "battle":
 			if messagelist[0][:4] == "inv":
-				self.printState(playerid)
 				self.players[playerid].printInventory()
 			elif messagelist[0] in ["attack", "heal", "block"]:
 				self.handleBattle(playerid, message, messagelist[0])
