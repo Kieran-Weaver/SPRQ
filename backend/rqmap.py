@@ -55,7 +55,8 @@ class RQMap:
 			if any(x in self.savedData["bosses"] for x in room["npcs"]):
 				npcrate = 256
 			if random.randrange(256) <= npcrate:
-				self.setState(playerdata, "battle")
+				if not self.setState(playerdata, "battle"):
+					return
 				playerdata.writeMessage(playerdata.battle["text"]["entry"])
 		if room["spawner"] and room["spawner"] not in room["items"]:
 			room["items"].append(room["spawner"])
@@ -77,5 +78,9 @@ class RQMap:
 			playerdata.battle["turn"] = 0
 			playerdata.battle["type"] = battletype
 			playerdata.state = "battle"
+			if playerdata.battle["hp"] == 0:
+				self.setState(playerdata, "map")
+				return False
 		elif DEBUG == 1:
 			playerdata.writeMessage( f"Invalid state: {state}")
+		return True
