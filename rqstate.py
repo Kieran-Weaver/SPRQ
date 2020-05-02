@@ -146,8 +146,8 @@ class RQState:
 			rmessage.append("Region: " + room["region"])
 			self.players[playerid].writeMessage( "\n".join(rmessage))
 		elif player.state == "battle":
-			self.players[playerid].writeMessage(f"HP: {self.hp}/{self.maxHP}")
-			self.players[playerid].writeMessage(f"SP: {self.sp}/{self.maxSP}")
+			self.players[playerid].writeMessage(f"HP: {self.players[playerid].hp}/{self.players[playerid].maxHP}")
+			self.players[playerid].writeMessage(f"SP: {self.players[playerid].sp}/{self.players[playerid].maxSP}")
 			self.players[playerid].writeMessage( f"NPC Name: {self.players[playerid].battle['name']}")
 			self.players[playerid].writeMessage( f"NPC HP: {self.players[playerid].battle['hp']}")
 
@@ -323,7 +323,7 @@ class RQState:
 			elif messagelist[0] in ["attack", "heal", "block"]:
 				self.handleBattle(playerid, message, messagelist[0])
 			elif self.players[playerid].battle["type"] == "npc" and self.mapHandler.movePlayer(self.players[playerid], message):
-				if random.randrange(256) > 100:
+				if random.randrange(256) > 100 and not self.players[playerid].hasFlag(flags.RQFlags.F_BATTLE_STORAGE):
 					self.players[playerid].writeMessage( self.players[playerid].battle["text"]["norun"])
 					self.killPlayer(playerid)
 				else:
