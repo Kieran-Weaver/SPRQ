@@ -132,7 +132,9 @@ class RQState:
 
 	def killPlayer(self, playerid):
 		room = self.mapHandler.getRoom(self.players[playerid])
-		room["items"] += self.players[playerid].reset()
+		items = self.players[playerid].reset()
+		for item in items:
+			room["items"][item] = room["items"].get(item, 0) + 1
 		respawnData = self.savedData["regions"][room["region"]]
 		self.players[playerid].location = respawnData["room"]
 		self.players[playerid].writeMessage(respawnData["message"])
@@ -141,7 +143,12 @@ class RQState:
 		player = self.players[playerid]
 		if player.state == "map":
 			room = self.savedData["rooms"][self.players[playerid].location]
-			rmessage = [room["name"], room["info"], "Items:"] + room["items"]
+			rmessage = [room["name"], room["info"], "Items:"]
+			for key in room["items"]:
+				keystr = f"{key}"
+				if room["items"][key] > 1:
+					keystr = f"{key} x {room['items'][key]}"
+				rmessage.append(keystr)
 			if self.players[playerid].hasFlag(flags.RQFlags.F_NEW_ITEMS):
 				if "flashlight" in self.players[playerid].powerups:
 					rmessage.append("Exits: ")
@@ -162,23 +169,23 @@ class RQState:
 			if command == "buy":
 				for item in items:
 					if item not in shopdata:
-						self.players[playerid].writeMessage( f"Item {item} is not in this shop")
+						self.players[playerid].writeMessage(f"Item {item} is not in this shop")
 					elif self.savedData["items"][item]["cost"] > self.players[playerid].money:
-						self.players[playerid].writeMessage( f"You can't afford {item}!!")
+						self.players[playerid].writeMessage(f"You can't afford {item}!!")
 					else:
 						self.players[playerid].money -= self.savedData["items"][item]["cost"]
-						if not self.players[playerid].addItem( item):
+						if not self.players[playerid].addItem(item):
 							break
 			else:
 				for item in items:
-					if not self.players[playerid].removeItem( item):
+					if not self.players[playerid].removeItem(item):
 						nonexistentItems.append(item)
 					else:
 						self.players[playerid].money += self.savedData["items"][item]["cost"]//2
 				if nonexistentItems:
-					self.players[playerid].writeMessage( f"Error: Items {', '.join(nonexistentItems)} not found")
+					self.players[playerid].writeMessage(f"Error: Items {', '.join(nonexistentItems)} not found")
 		else:
-			self.players[playerid].writeMessage( f"{room['name']} is not a shop")
+			self.players[playerid].writeMessage(f"{room['name']} is not a shop")
 
 	def handleItems(self, playerid, command, items):
 		room = self.savedData["rooms"][self.players[playerid].location]
@@ -188,7 +195,9 @@ class RQState:
 				if item in room["items"]:
 					if not self.players[playerid].addItem(item):
 						break
-					room["items"].remove(item)
+					room["items"][item] = room["items"][item] - 1
+					if not room["items"][item]:
+						del room["items"][item]
 				else:
 					nonexistentItems.append(item)
 		else:
@@ -196,7 +205,7 @@ class RQState:
 				if not self.players[playerid].removeItem(item):
 					nonexistentItems.append(item)
 				elif command == "drop":
-					room["items"].append(item)
+					room["items"][item] = room["items"].get(item, 0) + 1
 		if nonexistentItems:
 			self.players[playerid].writeMessage( f"Error: Items {', '.join(nonexistentItems)} not found")
 
@@ -317,7 +326,10 @@ class RQState:
 			elif messagelist[0] == "levelup":
 				self.levelUp(playerid, messagelist[1])
 			elif messagelist[0] == "open":
-				self.openDispenser(playerid, messagelist[1])
+				if len(messagelist) > 1:
+					self.openDispenser(playerid, messagelist[1])
+				else:
+					self.players[playerid].writeMessage("You can't open nothing!")
 			elif self.mapHandler.movePlayer(self.players[playerid], message):
 				self.mapHandler.handleRoom(self.players[playerid])
 		elif self.players[playerid].state == "battle":

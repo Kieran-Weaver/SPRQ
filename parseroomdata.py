@@ -79,7 +79,7 @@ def GenRoomJSON(room):
 				roomjson[data[0]] = dict(data[1])
 			else:
 				roomjson[data[0]] = data[1]
-	roomjson["items"] = []
+	roomjson["items"] = {}
 	return roomjson
 
 def GenRespawnJSON(spawnpoints,rmessages):
