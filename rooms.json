@@ -12,7 +12,7 @@
       "npcs": [],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "UTP Lockers": {
       "exits": [
@@ -26,7 +26,7 @@
       "npcs": [],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "UTP Office": {
       "exits": [
@@ -40,7 +40,7 @@
       "npcs": [],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "UTP Hallway": {
       "exits": [
@@ -58,7 +58,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "UTP ELI": {
       "exits": [
@@ -74,7 +74,7 @@
       ],
       "region": "UBC",
       "spawner": "letter",
-      "items": []
+      "items": {}
     },
     "UTP Balcony": {
       "exits": [
@@ -91,7 +91,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "UTP Driveway": {
       "exits": [
@@ -108,7 +108,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Agricultural Road West": {
       "exits": [
@@ -124,7 +124,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Agricultural Road East": {
       "exits": [
@@ -140,7 +140,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Agricultural at Main": {
       "exits": [
@@ -157,7 +157,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Main Mall Centre North": {
       "exits": [
@@ -174,7 +174,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "University at Main": {
       "exits": [
@@ -192,7 +192,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Main Mall Centre South": {
       "exits": [
@@ -209,7 +209,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Agricultural at East": {
       "exits": [
@@ -225,7 +225,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Main Mall North": {
       "exits": [
@@ -242,7 +242,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Nest Walkway": {
       "exits": [
@@ -258,7 +258,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Martha Piper Fountain": {
       "exits": [
@@ -274,7 +274,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "The Cairn": {
       "exits": [
@@ -290,7 +290,7 @@
       ],
       "region": "UBC",
       "spawner": "cake",
-      "items": []
+      "items": {}
     },
     "Rose Garden": {
       "exits": [
@@ -306,7 +306,7 @@
       ],
       "region": "UBC",
       "spawner": "flag",
-      "items": []
+      "items": {}
     },
     "The Nest": {
       "exits": [
@@ -322,7 +322,7 @@
       ],
       "region": "UBC",
       "spawner": "letter",
-      "items": []
+      "items": {}
     },
     "East Mall": {
       "exits": [
@@ -338,7 +338,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "UBC Bookstore": {
       "exits": [
@@ -352,7 +352,7 @@
       "npcs": [],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "UBC Bus Loop": {
       "exits": [
@@ -366,7 +366,7 @@
       "npcs": [],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Bank UBC": {
       "exits": [
@@ -380,7 +380,7 @@
       "npcs": [],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "University Boulevard West": {
       "exits": [
@@ -396,7 +396,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "University at East": {
       "exits": [
@@ -412,7 +412,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "IKB Library": {
       "exits": [
@@ -426,7 +426,7 @@
       "npcs": [],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "University Boulevard East": {
       "exits": [
@@ -442,7 +442,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "University at Wesbrook": {
       "exits": [
@@ -458,7 +458,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze\u200b": {
       "exits": [
@@ -474,7 +474,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze \u200b": {
       "exits": [
@@ -490,7 +490,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze  \u200b": {
       "exits": [
@@ -506,7 +506,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze   \u200b": {
       "exits": [
@@ -522,7 +522,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze    \u200b": {
       "exits": [
@@ -538,7 +538,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze     \u200b": {
       "exits": [
@@ -554,7 +554,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze      \u200b": {
       "exits": [
@@ -570,7 +570,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze       \u200b": {
       "exits": [
@@ -586,7 +586,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze        \u200b": {
       "exits": [
@@ -602,7 +602,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze         \u200b": {
       "exits": [
@@ -618,7 +618,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze          \u200b": {
       "exits": [
@@ -634,7 +634,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze           \u200b": {
       "exits": [
@@ -650,7 +650,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pacific Spirit Maze            \u200b": {
       "exits": [
@@ -666,7 +666,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Memorial at West": {
       "exits": [
@@ -680,7 +680,7 @@
       "npcs": [],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "West Mall": {
       "exits": [
@@ -696,7 +696,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Agricultural at West": {
       "exits": [
@@ -712,7 +712,7 @@
       ],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "68": {
       "exits": [
@@ -728,7 +728,7 @@
       "npcs": [],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Chalkboard": {
       "exits": [
@@ -743,7 +743,7 @@
       "npcs": [],
       "region": "UBC",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "44": {
       "exits": [
@@ -759,7 +759,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Waterfront Station": {
       "exits": [
@@ -773,7 +773,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "600 Block West Cordova Street": {
       "exits": [
@@ -789,7 +789,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cordova at Granville": {
       "exits": [
@@ -805,7 +805,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "700 Block West Cordova Street": {
       "exits": [
@@ -821,7 +821,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cordova at Howe": {
       "exits": [
@@ -837,7 +837,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "800 Block West Cordova Street": {
       "exits": [
@@ -853,7 +853,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cordova at Burrard": {
       "exits": [
@@ -870,7 +870,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "1000 Block West Cordova Street": {
       "exits": [
@@ -886,7 +886,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cordova at Thurlow": {
       "exits": [
@@ -902,7 +902,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "200 Block Howe Street": {
       "exits": [
@@ -918,7 +918,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "200 Block Burrard Street": {
       "exits": [
@@ -935,7 +935,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "200 Block Thurlow Street": {
       "exits": [
@@ -952,7 +952,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "800 Block Canada Place": {
       "exits": [
@@ -968,7 +968,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "1000 Block Canada Place": {
       "exits": [
@@ -984,7 +984,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Canada Place at Howe": {
       "exits": [
@@ -1000,7 +1000,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Canada Place at Burrard": {
       "exits": [
@@ -1017,7 +1017,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Canada Place at Thurlow": {
       "exits": [
@@ -1033,7 +1033,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Vancouver Convention Centre": {
       "exits": [
@@ -1049,7 +1049,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": "news",
-      "items": []
+      "items": {}
     },
     "Canada Place": {
       "exits": [
@@ -1063,7 +1063,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "300 Block Granville Street": {
       "exits": [
@@ -1079,7 +1079,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Bank Downtown Vancouver": {
       "exits": [
@@ -1093,7 +1093,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Hastings at Granville": {
       "exits": [
@@ -1107,7 +1107,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "400 Block Granville Street": {
       "exits": [
@@ -1123,7 +1123,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pender at Granville": {
       "exits": [
@@ -1137,7 +1137,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "500 Block Granville Street": {
       "exits": [
@@ -1153,7 +1153,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Dunsmuir at Granville": {
       "exits": [
@@ -1169,7 +1169,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "600 Block Granville Street": {
       "exits": [
@@ -1185,7 +1185,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Georgia at Granville": {
       "exits": [
@@ -1199,7 +1199,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Vancouver City Centre Station": {
       "exits": [
@@ -1213,7 +1213,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "700 Block Granville Street": {
       "exits": [
@@ -1229,7 +1229,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Robson at Granville": {
       "exits": [
@@ -1243,7 +1243,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "700 Block Robson Street": {
       "exits": [
@@ -1259,7 +1259,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Robson at Howe": {
       "exits": [
@@ -1275,7 +1275,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Robson Square": {
       "exits": [
@@ -1290,7 +1290,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Robson Square Ice Rink": {
       "exits": [
@@ -1306,7 +1306,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "600 Block Robson Street": {
       "exits": [
@@ -1322,7 +1322,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Robson at Seymour": {
       "exits": [
@@ -1338,7 +1338,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "500 Block Robson Street": {
       "exits": [
@@ -1354,7 +1354,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Robson at Richards": {
       "exits": [
@@ -1370,7 +1370,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "400 Block Robson Street": {
       "exits": [
@@ -1386,7 +1386,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Robson at Homer": {
       "exits": [
@@ -1402,7 +1402,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "700 Block Homer Street": {
       "exits": [
@@ -1418,7 +1418,7 @@
       ],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Georgia at Homer": {
       "exits": [
@@ -1432,7 +1432,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Vancouver Public Library Central Branch": {
       "exits": [
@@ -1446,7 +1446,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "250": {
       "exits": [
@@ -1462,7 +1462,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "10": {
       "exits": [
@@ -1471,18 +1471,18 @@
         "none",
         "none",
         "41st at Granville",
-        "Hastings at Granville",
-        "Marine at Cambie",
+        "5th at Granville",
         "Waterfront Station",
         "Robson at Granville",
-        "5th at Granville"
+        "Hastings at Granville",
+        "Marine at Cambie"
       ],
       "info": "You are in a bus running route 10. You can go to the following destinations:\n\nWaterfront Station\nHastings at Granville\nRobson at Granville\n5th at Granville\n41st at Granville\nMarine at Cambie",
       "name": "10",
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Gift Shop Downtown Vancouver": {
       "exits": [
@@ -1496,7 +1496,7 @@
       "npcs": [],
       "region": "Downtown Vancouver",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "5th at Granville": {
       "exits": [
@@ -1510,7 +1510,7 @@
       "npcs": [],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "2000 Block Granville Street": {
       "exits": [
@@ -1526,7 +1526,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "4th at Anderson": {
       "exits": [
@@ -1542,7 +1542,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "1500 Block 4th Avenue": {
       "exits": [
@@ -1558,7 +1558,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "4th at Fir": {
       "exits": [
@@ -1572,7 +1572,7 @@
       "npcs": [],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "84": {
       "exits": [
@@ -1580,16 +1580,16 @@
         "none",
         "none",
         "none",
-        "4th at Fir",
+        "500 Block 2nd Avenue",
         "UBC Bus Loop",
-        "500 Block 2nd Avenue"
+        "4th at Fir"
       ],
       "info": "You are in a bus running route 84. You can go to the following destinations:\n\nUBC Bus Loop\n4th at Fir\n500 Block 2nd Avenue",
       "name": "84",
       "npcs": [],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "1900 Block Anderson Street": {
       "exits": [
@@ -1605,7 +1605,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "3rd at Anderson": {
       "exits": [
@@ -1621,7 +1621,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "1800 Block Anderson Street": {
       "exits": [
@@ -1637,7 +1637,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Lamey's Mill at Anderson": {
       "exits": [
@@ -1651,7 +1651,7 @@
       "npcs": [],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Granville Island Entrance": {
       "exits": [
@@ -1667,7 +1667,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cartwright at Anderson": {
       "exits": [
@@ -1683,7 +1683,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Anderson Street Granville Island": {
       "exits": [
@@ -1699,7 +1699,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cartwright Street West": {
       "exits": [
@@ -1715,7 +1715,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cartwright at Old Bridge": {
       "exits": [
@@ -1731,7 +1731,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cartwright Street East": {
       "exits": [
@@ -1747,7 +1747,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cartwright at Johnston": {
       "exits": [
@@ -1763,7 +1763,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Johnston Street East": {
       "exits": [
@@ -1779,7 +1779,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Johnston at Old Bridge": {
       "exits": [
@@ -1795,7 +1795,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Johnston Street Centre": {
       "exits": [
@@ -1811,7 +1811,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Johnston at Anderson": {
       "exits": [
@@ -1827,7 +1827,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Johnston Street West": {
       "exits": [
@@ -1843,7 +1843,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Johnston at Duranleau": {
       "exits": [
@@ -1859,7 +1859,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Duranleau Street": {
       "exits": [
@@ -1875,7 +1875,7 @@
       ],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Granville Island Public Market": {
       "exits": [
@@ -1889,7 +1889,7 @@
       "npcs": [],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Bank Granville Island": {
       "exits": [
@@ -1903,7 +1903,7 @@
       "npcs": [],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Gift Shop Granville Island": {
       "exits": [
@@ -1917,7 +1917,7 @@
       "npcs": [],
       "region": "Granville Island",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Granville Island Parking Lot": {
       "exits": [
@@ -1933,7 +1933,7 @@
       ],
       "region": "Granville Island",
       "spawner": "script",
-      "items": []
+      "items": {}
     },
     "Olympic Village Station": {
       "exits": [
@@ -1947,7 +1947,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "500 Block 2nd Avenue": {
       "exits": [
@@ -1961,7 +1961,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "2nd at Cambie": {
       "exits": [
@@ -1975,7 +1975,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "2100 Block Cambie Street": {
       "exits": [
@@ -1989,7 +1989,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6th at Cambie": {
       "exits": [
@@ -2003,7 +2003,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "2200 Block Cambie Street": {
       "exits": [
@@ -2017,7 +2017,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "7th at Cambie": {
       "exits": [
@@ -2031,7 +2031,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "2300 Block Cambie Street": {
       "exits": [
@@ -2045,7 +2045,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8th at Cambie": {
       "exits": [
@@ -2059,7 +2059,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "2400 Block Cambie Street": {
       "exits": [
@@ -2073,7 +2073,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Broadway at Cambie": {
       "exits": [
@@ -2087,7 +2087,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Broadway-City Hall Station": {
       "exits": [
@@ -2101,7 +2101,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "50": {
       "exits": [
@@ -2117,7 +2117,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Bank False Creek South": {
       "exits": [
@@ -2131,7 +2131,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Gift Shop False Creek South": {
       "exits": [
@@ -2145,7 +2145,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "rqSHOP False Creek South": {
       "exits": [
@@ -2159,7 +2159,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "RQ Storage Solutions False Creek South": {
       "exits": [
@@ -2173,7 +2173,7 @@
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "99": {
       "exits": [
@@ -2181,15 +2181,15 @@
         "none",
         "none",
         "none",
-        "UBC Bus Loop",
-        "Broadway at Cambie"
+        "Broadway at Cambie",
+        "UBC Bus Loop"
       ],
       "info": "You are in a bus running route 99. You can go to the following destinations:\n\nUBC Bus Loop\nBroadway at Cambie",
       "name": "99",
       "npcs": [],
       "region": "False Creek South",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "41st at Granville": {
       "exits": [
@@ -2203,7 +2203,7 @@
       "npcs": [],
       "region": "41st @ Granville",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Bank 41st @ Granville": {
       "exits": [
@@ -2217,7 +2217,7 @@
       "npcs": [],
       "region": "41st @ Granville",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Food Cart 41st/Granville": {
       "exits": [
@@ -2231,7 +2231,7 @@
       "npcs": [],
       "region": "41st @ Granville",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Driveway": {
       "exits": [
@@ -2247,7 +2247,7 @@
       ],
       "region": "41st @ Granville",
       "spawner": "baguette",
-      "items": []
+      "items": {}
     },
     "43": {
       "exits": [
@@ -2256,16 +2256,16 @@
         "none",
         "none",
         "41st at Cambie",
-        "41st at Granville",
         "41st at West Boulevard",
-        "UBC Bus Loop"
+        "UBC Bus Loop",
+        "41st at Granville"
       ],
       "info": "You are in a bus running route 43. You can go to the following destinations:\n\nUBC Bus Loop\n41st at West Boulevard\n41st at Granville\n41st at Cambie",
       "name": "43",
       "npcs": [],
       "region": "41st @ Granville",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Arbutus Greenway": {
       "exits": [
@@ -2279,7 +2279,7 @@
       "npcs": [],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "41st at West Boulevard": {
       "exits": [
@@ -2293,7 +2293,7 @@
       "npcs": [],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "5700 Block West Boulevard": {
       "exits": [
@@ -2309,7 +2309,7 @@
       ],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "42nd at West Boulevard": {
       "exits": [
@@ -2325,7 +2325,7 @@
       ],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Vancouver Public Library Kerrisdale Branch": {
       "exits": [
@@ -2339,7 +2339,7 @@
       "npcs": [],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "2100 Block 41st Avenue": {
       "exits": [
@@ -2355,7 +2355,7 @@
       ],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "41st at Yew": {
       "exits": [
@@ -2371,7 +2371,7 @@
       ],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "2200 Block 41st Avenue": {
       "exits": [
@@ -2387,7 +2387,7 @@
       ],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Gift Shop Kerrisdale": {
       "exits": [
@@ -2401,7 +2401,7 @@
       "npcs": [],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "41st at Vine": {
       "exits": [
@@ -2417,7 +2417,7 @@
       ],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "2300 Block 41st Avenue": {
       "exits": [
@@ -2433,7 +2433,7 @@
       ],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "rqSHOP Kerrisdale": {
       "exits": [
@@ -2447,7 +2447,7 @@
       "npcs": [],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "41st at Balsam": {
       "exits": [
@@ -2463,7 +2463,7 @@
       ],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "2400 Block 41st Avenue": {
       "exits": [
@@ -2479,7 +2479,7 @@
       ],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "41st at Larch": {
       "exits": [
@@ -2495,7 +2495,7 @@
       ],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Bank Kerrisdale": {
       "exits": [
@@ -2509,7 +2509,7 @@
       "npcs": [],
       "region": "Kerrisdale",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Elm Park": {
       "exits": [
@@ -2525,7 +2525,7 @@
       ],
       "region": "Kerrisdale",
       "spawner": "leaf",
-      "items": []
+      "items": {}
     },
     "41st at Cambie": {
       "exits": [
@@ -2539,7 +2539,7 @@
       "npcs": [],
       "region": "Oakridge",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Oakridge-41st Station": {
       "exits": [
@@ -2553,7 +2553,7 @@
       "npcs": [],
       "region": "Oakridge",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Bank Oakridge": {
       "exits": [
@@ -2567,7 +2567,7 @@
       "npcs": [],
       "region": "Oakridge",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Canada Line": {
       "exits": [
@@ -2575,15 +2575,15 @@
         "none",
         "none",
         "none",
-        "Vancouver City Centre Station",
         "Bridgeport Station",
-        "Aberdeen Station",
-        "Marine Drive Station",
-        "Lansdowne Station",
         "Broadway-City Hall Station",
+        "Aberdeen Station",
+        "Vancouver City Centre Station",
         "Waterfront Station",
-        "Brighouse Station",
+        "Lansdowne Station",
         "Olympic Village Station",
+        "Brighouse Station",
+        "Marine Drive Station",
         "Oakridge-41st Station"
       ],
       "info": "You are in an above-ground subway train running a route called the Canada Line. You can go to the following destinations:\n\nWaterfront Station\nVancouver City Centre Station\nOlympic Village Station\nBroadway-City Hall Station\nOakridge-41st Station\nMarine Drive Station\nBridgeport Station\nAberdeen Station\nLansdowne Station\nBrighouse Station",
@@ -2591,7 +2591,7 @@
       "npcs": [],
       "region": "Oakridge",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Marine at Cambie": {
       "exits": [
@@ -2605,7 +2605,7 @@
       "npcs": [],
       "region": "Marine Drive",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Marine Drive Station": {
       "exits": [
@@ -2619,7 +2619,7 @@
       "npcs": [],
       "region": "Marine Drive",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Bank Marine Drive": {
       "exits": [
@@ -2633,7 +2633,7 @@
       "npcs": [],
       "region": "Marine Drive",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Marine Drive Open Space": {
       "exits": [
@@ -2649,7 +2649,7 @@
       ],
       "region": "Marine Drive",
       "spawner": "seed",
-      "items": []
+      "items": {}
     },
     "Pipeline at Stanley Park": {
       "exits": [
@@ -2663,7 +2663,7 @@
       "npcs": [],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "19": {
       "exits": [
@@ -2672,15 +2672,15 @@
         "none",
         "none",
         "Pipeline at Stanley Park",
-        "Pender at Granville",
-        "Stanley Park Loop"
+        "Stanley Park Loop",
+        "Pender at Granville"
       ],
       "info": "You are in a bus running route 19. You can go to the following destinations:\n\nPender at Granville\nPipeline at Stanley Park\nStanley Park Loop",
       "name": "19",
       "npcs": [],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pipeline Road": {
       "exits": [
@@ -2696,7 +2696,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Loop": {
       "exits": [
@@ -2710,7 +2710,7 @@
       "npcs": [],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "North Lagoon Drive": {
       "exits": [
@@ -2726,7 +2726,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Tatlow at North Lagoon": {
       "exits": [
@@ -2742,7 +2742,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Tatlow Walk": {
       "exits": [
@@ -2758,7 +2758,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Third Beach": {
       "exits": [
@@ -2774,7 +2774,7 @@
       ],
       "region": "Stanley Park",
       "spawner": "donut",
-      "items": []
+      "items": {}
     },
     "Stanley Park-Maze Entrance": {
       "exits": [
@@ -2790,7 +2790,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 0": {
       "exits": [
@@ -2812,7 +2812,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 1": {
       "exits": [
@@ -2834,7 +2834,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 2": {
       "exits": [
@@ -2856,7 +2856,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 3": {
       "exits": [
@@ -2878,7 +2878,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 4": {
       "exits": [
@@ -2900,7 +2900,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 5": {
       "exits": [
@@ -2922,7 +2922,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 6": {
       "exits": [
@@ -2944,7 +2944,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 7": {
       "exits": [
@@ -2966,7 +2966,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 8": {
       "exits": [
@@ -2988,7 +2988,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 9": {
       "exits": [
@@ -3010,7 +3010,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 10": {
       "exits": [
@@ -3032,7 +3032,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 11": {
       "exits": [
@@ -3054,7 +3054,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 12": {
       "exits": [
@@ -3076,7 +3076,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 13": {
       "exits": [
@@ -3098,7 +3098,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 14": {
       "exits": [
@@ -3120,7 +3120,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 15": {
       "exits": [
@@ -3142,7 +3142,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 16": {
       "exits": [
@@ -3164,7 +3164,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 17": {
       "exits": [
@@ -3186,7 +3186,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 18": {
       "exits": [
@@ -3208,7 +3208,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 19": {
       "exits": [
@@ -3230,7 +3230,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 20": {
       "exits": [
@@ -3252,7 +3252,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 21": {
       "exits": [
@@ -3274,7 +3274,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 22": {
       "exits": [
@@ -3296,7 +3296,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Stanley Park Maze 23": {
       "exits": [
@@ -3318,7 +3318,7 @@
       ],
       "region": "Stanley Park",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Bridgeport Station": {
       "exits": [
@@ -3332,7 +3332,7 @@
       "npcs": [],
       "region": "Bridgeport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Bridgeport Station Bus Loop": {
       "exits": [
@@ -3346,7 +3346,7 @@
       "npcs": [],
       "region": "Bridgeport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "480": {
       "exits": [
@@ -3354,15 +3354,15 @@
         "none",
         "none",
         "none",
-        "UBC Bus Loop",
-        "Bridgeport Station Bus Loop"
+        "Bridgeport Station Bus Loop",
+        "UBC Bus Loop"
       ],
       "info": "You are in a bus running route 480. You can go to the following destinations:\n\nUBC Bus Loop\nBridgeport Station Bus Loop",
       "name": "480",
       "npcs": [],
       "region": "Bridgeport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Aberdeen Station": {
       "exits": [
@@ -3376,7 +3376,7 @@
       "npcs": [],
       "region": "Bridgeport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Entertainment Boulevard": {
       "exits": [
@@ -3392,7 +3392,7 @@
       ],
       "region": "Riverport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Entertainment Roundabout": {
       "exits": [
@@ -3406,7 +3406,7 @@
       "npcs": [],
       "region": "Riverport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Steveston at Entertainment": {
       "exits": [
@@ -3422,7 +3422,7 @@
       ],
       "region": "Riverport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Bank Riverport": {
       "exits": [
@@ -3436,7 +3436,7 @@
       "npcs": [],
       "region": "Riverport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Theatres": {
       "exits": [
@@ -3450,7 +3450,7 @@
       "npcs": [],
       "region": "Riverport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Bowling Entrance": {
       "exits": [
@@ -3466,7 +3466,7 @@
       ],
       "region": "Riverport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Bowling Shop": {
       "exits": [
@@ -3480,7 +3480,7 @@
       "npcs": [],
       "region": "Riverport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Bowling Alley": {
       "exits": [
@@ -3494,7 +3494,7 @@
       "npcs": [],
       "region": "Riverport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "403": {
       "exits": [
@@ -3502,20 +3502,20 @@
         "none",
         "none",
         "none",
-        "Entertainment Roundabout",
         "Aberdeen Station",
-        "Lansdowne at No. 3",
-        "Cook at No. 3",
-        "Bridgeport Station Bus Loop",
+        "Entertainment Roundabout",
         "Granville at No. 3",
-        "Westminster at No. 3"
+        "Cook at No. 3",
+        "Westminster at No. 3",
+        "Bridgeport Station Bus Loop",
+        "Lansdowne at No. 3"
       ],
       "info": "You are in a bus running route 403. You can go to the following destinations:\n\nEntertainment Roundabout\nGranville at No. 3\nCook at No. 3\nWestminster at No. 3\nLansdowne at No. 3\nAberdeen Station\nBridgeport Station Bus Loop",
       "name": "403",
       "npcs": [],
       "region": "Riverport",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Lansdowne Station": {
       "exits": [
@@ -3529,7 +3529,7 @@
       "npcs": [],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Lansdowne at No. 3": {
       "exits": [
@@ -3543,7 +3543,7 @@
       "npcs": [],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8100 Block Lansdowne Road": {
       "exits": [
@@ -3565,7 +3565,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Lansdowne at Cooney": {
       "exits": [
@@ -3587,7 +3587,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8400 Block Lansdowne Road": {
       "exits": [
@@ -3609,7 +3609,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Lansdowne at Arcadia": {
       "exits": [
@@ -3631,7 +3631,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8900 Block Lansdowne Road": {
       "exits": [
@@ -3653,7 +3653,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Lansdowne at Garden City": {
       "exits": [
@@ -3675,7 +3675,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "5700 Block No. 3 Road": {
       "exits": [
@@ -3697,7 +3697,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "5500 Block Cooney Road": {
       "exits": [
@@ -3719,7 +3719,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "5400 Block Arcadia Road": {
       "exits": [
@@ -3741,7 +3741,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "5500 Block Garden City Road": {
       "exits": [
@@ -3763,7 +3763,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Ackroyd at No. 3": {
       "exits": [
@@ -3785,7 +3785,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8100 Block Ackroyd Road": {
       "exits": [
@@ -3807,7 +3807,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Ackroyd at Cooney": {
       "exits": [
@@ -3829,7 +3829,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8400 Block Ackroyd Road": {
       "exits": [
@@ -3851,7 +3851,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Ackroyd at Arcadia": {
       "exits": [
@@ -3867,7 +3867,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "5800 Block No. 3 Road": {
       "exits": [
@@ -3889,7 +3889,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "5800 Block Cooney Road": {
       "exits": [
@@ -3911,7 +3911,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "5700 Block Arcadia Road": {
       "exits": [
@@ -3933,7 +3933,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Westminster at No. 3": {
       "exits": [
@@ -3947,7 +3947,7 @@
       "npcs": [],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8100 Block Westminster Highway": {
       "exits": [
@@ -3969,7 +3969,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Westminster at Buswell": {
       "exits": [
@@ -3991,7 +3991,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8200 Block Westminster Highway": {
       "exits": [
@@ -4013,7 +4013,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Westminster at Cooney": {
       "exits": [
@@ -4035,7 +4035,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8400 Block Westminster Highway": {
       "exits": [
@@ -4057,7 +4057,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Westminster at Arcadia": {
       "exits": [
@@ -4079,7 +4079,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8800 Block Westminster Highway": {
       "exits": [
@@ -4101,7 +4101,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Westminster at Garden City": {
       "exits": [
@@ -4123,7 +4123,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6000 Block No. 3 Road": {
       "exits": [
@@ -4145,7 +4145,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6100 Block Buswell Street": {
       "exits": [
@@ -4167,7 +4167,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6100 Block Cooney Road": {
       "exits": [
@@ -4189,7 +4189,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6300 Block Garden City Road": {
       "exits": [
@@ -4211,7 +4211,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Saba at No. 3": {
       "exits": [
@@ -4233,7 +4233,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8000 Block Saba Road": {
       "exits": [
@@ -4255,7 +4255,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Saba at Buswell": {
       "exits": [
@@ -4278,7 +4278,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8200 Block Saba Road": {
       "exits": [
@@ -4300,7 +4300,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Saba at Cooney": {
       "exits": [
@@ -4322,7 +4322,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires Gate": {
       "exits": [
@@ -4344,7 +4344,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires Gate at Spires Road": {
       "exits": [
@@ -4366,7 +4366,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires Road NW": {
       "exits": [
@@ -4388,7 +4388,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires NW Corner": {
       "exits": [
@@ -4410,7 +4410,7 @@
       ],
       "region": "Brighoue",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires Road N": {
       "exits": [
@@ -4432,7 +4432,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires NE Corner": {
       "exits": [
@@ -4454,7 +4454,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires Road E": {
       "exits": [
@@ -4476,7 +4476,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires SE Corner": {
       "exits": [
@@ -4498,7 +4498,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires Road SE": {
       "exits": [
@@ -4520,7 +4520,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires E at Cook Crescent": {
       "exits": [
@@ -4542,7 +4542,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "East Spires Road S": {
       "exits": [
@@ -4564,7 +4564,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires at Cook Gate": {
       "exits": [
@@ -4586,7 +4586,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "West Spires Road S": {
       "exits": [
@@ -4608,7 +4608,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires W at Cook Crescent": {
       "exits": [
@@ -4630,7 +4630,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires Road SSW": {
       "exits": [
@@ -4652,7 +4652,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires SW Corner": {
       "exits": [
@@ -4674,7 +4674,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Spires Road WSW": {
       "exits": [
@@ -4696,7 +4696,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cook Crescent W": {
       "exits": [
@@ -4718,7 +4718,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cook Crescent W Corner": {
       "exits": [
@@ -4740,7 +4740,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cook Crescent N": {
       "exits": [
@@ -4756,7 +4756,7 @@
       ],
       "region": "Brighouse",
       "spawner": "plant",
-      "items": []
+      "items": {}
     },
     "Cook Crescent E Corner": {
       "exits": [
@@ -4778,7 +4778,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cook Crescent E": {
       "exits": [
@@ -4800,7 +4800,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6300 Block No. 3 Road": {
       "exits": [
@@ -4822,7 +4822,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Brighouse Station": {
       "exits": [
@@ -4836,7 +4836,7 @@
       "npcs": [],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6300 Block Buswell Street": {
       "exits": [
@@ -4858,7 +4858,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6300 Block Cooney Road": {
       "exits": [
@@ -4880,7 +4880,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cook at No. 3": {
       "exits": [
@@ -4894,7 +4894,7 @@
       "npcs": [],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8100 Block Cook Road": {
       "exits": [
@@ -4916,7 +4916,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cook at Buswell": {
       "exits": [
@@ -4938,7 +4938,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8300 Block Cook Road": {
       "exits": [
@@ -4960,7 +4960,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cook at Cooney": {
       "exits": [
@@ -4982,7 +4982,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8400 Block Cook Road": {
       "exits": [
@@ -5004,7 +5004,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cook at Eckersley": {
       "exits": [
@@ -5026,7 +5026,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8500 Block Cook Road": {
       "exits": [
@@ -5048,7 +5048,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cook Road at Cook Gate": {
       "exits": [
@@ -5070,7 +5070,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cook Gate": {
       "exits": [
@@ -5092,7 +5092,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8600 Block Cook Road": {
       "exits": [
@@ -5114,7 +5114,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cook at Pimlico": {
       "exits": [
@@ -5136,7 +5136,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8800 Block Cook Road": {
       "exits": [
@@ -5158,7 +5158,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Cook at Garden City": {
       "exits": [
@@ -5180,7 +5180,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6500 Block No. 3 Road": {
       "exits": [
@@ -5202,7 +5202,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6500 Block Buswell Street": {
       "exits": [
@@ -5224,7 +5224,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6500 Block Cooney Road": {
       "exits": [
@@ -5246,7 +5246,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6500 Block Eckersley Road": {
       "exits": [
@@ -5268,7 +5268,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Pimlico Way": {
       "exits": [
@@ -5290,7 +5290,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6600 Block Garden City Road": {
       "exits": [
@@ -5312,7 +5312,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Park at No. 3": {
       "exits": [
@@ -5334,7 +5334,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8000 Block Park Road": {
       "exits": [
@@ -5356,7 +5356,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Park at Buswell": {
       "exits": [
@@ -5378,7 +5378,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8200 Block Park Road": {
       "exits": [
@@ -5400,7 +5400,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Park at Cooney": {
       "exits": [
@@ -5422,7 +5422,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Park at Eckersley": {
       "exits": [
@@ -5444,7 +5444,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8500 Block Park Road": {
       "exits": [
@@ -5466,7 +5466,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Citation at Pimlico": {
       "exits": [
@@ -5488,7 +5488,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8600 Block Citation Drive": {
       "exits": [
@@ -5510,7 +5510,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Citation at Garden City": {
       "exits": [
@@ -5532,7 +5532,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6700 Block No. 3 Road": {
       "exits": [
@@ -5554,7 +5554,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6700 Block Buswell Street": {
       "exits": [
@@ -5576,7 +5576,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6700 Block Cooney Road": {
       "exits": [
@@ -5598,7 +5598,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6700 Block Eckersley Road": {
       "exits": [
@@ -5620,7 +5620,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8500 Block Citation Drive": {
       "exits": [
@@ -5642,7 +5642,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6800 Block Garden City Road": {
       "exits": [
@@ -5664,7 +5664,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Anderson at No. 3": {
       "exits": [
@@ -5686,7 +5686,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8100 Block Anderson Road": {
       "exits": [
@@ -5708,7 +5708,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Anderson at Buswell": {
       "exits": [
@@ -5730,7 +5730,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Anderson at Cooney": {
       "exits": [
@@ -5752,7 +5752,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8400 Block Anderson Road": {
       "exits": [
@@ -5774,7 +5774,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Anderson at Eckersley": {
       "exits": [
@@ -5796,7 +5796,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8500 Block Anderson Road": {
       "exits": [
@@ -5813,7 +5813,7 @@
       ],
       "region": "Brighouse",
       "spawner": "basketball",
-      "items": []
+      "items": {}
     },
     "6900 Block No. 3 Road": {
       "exits": [
@@ -5835,7 +5835,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6900 Block Buswell Street": {
       "exits": [
@@ -5857,7 +5857,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "6900 Block Cooney Road": {
       "exits": [
@@ -5879,7 +5879,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Granville at Garden City": {
       "exits": [
@@ -5901,7 +5901,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8700 Block Granville Avenue": {
       "exits": [
@@ -5923,7 +5923,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Granville at Citation": {
       "exits": [
@@ -5945,7 +5945,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8500 Block Granville Avenue": {
       "exits": [
@@ -5967,7 +5967,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Granville at Cooney": {
       "exits": [
@@ -5989,7 +5989,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8200 Block Granville Avenue": {
       "exits": [
@@ -6011,7 +6011,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Granville at Buswell": {
       "exits": [
@@ -6033,7 +6033,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "8000 Block Granville Avenue": {
       "exits": [
@@ -6055,7 +6055,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Granville at No. 3": {
       "exits": [
@@ -6069,7 +6069,7 @@
       "npcs": [],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "7800 Block Granville Avenue": {
       "exits": [
@@ -6091,7 +6091,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Granville at Minoru": {
       "exits": [
@@ -6113,7 +6113,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "7700 Block Granville Avenue": {
       "exits": [
@@ -6135,7 +6135,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Granville at Minoru Gate": {
       "exits": [
@@ -6157,7 +6157,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Minoru Gate": {
       "exits": [
@@ -6179,7 +6179,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "RPL Fountain": {
       "exits": [
@@ -6202,7 +6202,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Richmond Public Library Brighouse Branch": {
       "exits": [
@@ -6216,7 +6216,7 @@
       "npcs": [],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Bank Brighouse": {
       "exits": [
@@ -6230,7 +6230,7 @@
       "npcs": [],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "YuBot Gift Shop Brighouse": {
       "exits": [
@@ -6244,7 +6244,7 @@
       "npcs": [],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "rqSHOP Brighouse": {
       "exits": [
@@ -6258,7 +6258,7 @@
       "npcs": [],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Garden City Lands": {
       "exits": [
@@ -6274,7 +6274,7 @@
       ],
       "region": "Brighouse",
       "spawner": "leaf",
-      "items": []
+      "items": {}
     },
     "Garden City Park": {
       "exits": [
@@ -6290,7 +6290,7 @@
       ],
       "region": "Brighouse",
       "spawner": "leaf",
-      "items": []
+      "items": {}
     },
     "Lang Park": {
       "exits": [
@@ -6307,7 +6307,7 @@
       ],
       "region": "Brighouse",
       "spawner": "flower",
-      "items": []
+      "items": {}
     },
     "William Cook Elementary": {
       "exits": [
@@ -6323,7 +6323,7 @@
       ],
       "region": "Brighouse",
       "spawner": "soccer_ball",
-      "items": []
+      "items": {}
     },
     "Brighouse Park": {
       "exits": [
@@ -6339,7 +6339,7 @@
       ],
       "region": "Brighouse",
       "spawner": "key",
-      "items": []
+      "items": {}
     },
     "Terracotta Warrior": {
       "exits": [
@@ -6361,7 +6361,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u0": {
       "exits": [
@@ -6383,7 +6383,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u1": {
       "exits": [
@@ -6405,7 +6405,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u2": {
       "exits": [
@@ -6427,7 +6427,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u3": {
       "exits": [
@@ -6449,7 +6449,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u4": {
       "exits": [
@@ -6471,7 +6471,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u5": {
       "exits": [
@@ -6493,7 +6493,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u6": {
       "exits": [
@@ -6515,7 +6515,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u7": {
       "exits": [
@@ -6537,7 +6537,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u8": {
       "exits": [
@@ -6559,7 +6559,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u9": {
       "exits": [
@@ -6581,7 +6581,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u10": {
       "exits": [
@@ -6603,7 +6603,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u11": {
       "exits": [
@@ -6625,7 +6625,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u12": {
       "exits": [
@@ -6647,7 +6647,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u13": {
       "exits": [
@@ -6669,7 +6669,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u14": {
       "exits": [
@@ -6691,7 +6691,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u15": {
       "exits": [
@@ -6713,7 +6713,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u16": {
       "exits": [
@@ -6735,7 +6735,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u17": {
       "exits": [
@@ -6757,7 +6757,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u18": {
       "exits": [
@@ -6779,7 +6779,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u19": {
       "exits": [
@@ -6795,7 +6795,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u20": {
       "exits": [
@@ -6817,7 +6817,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u21": {
       "exits": [
@@ -6839,7 +6839,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u22": {
       "exits": [
@@ -6861,7 +6861,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u23": {
       "exits": [
@@ -6883,7 +6883,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u24": {
       "exits": [
@@ -6905,7 +6905,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u25": {
       "exits": [
@@ -6927,7 +6927,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u26": {
       "exits": [
@@ -6949,7 +6949,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u27": {
       "exits": [
@@ -6971,7 +6971,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u28": {
       "exits": [
@@ -6993,7 +6993,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u29": {
       "exits": [
@@ -7015,7 +7015,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u30": {
       "exits": [
@@ -7037,7 +7037,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u31": {
       "exits": [
@@ -7059,7 +7059,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u32": {
       "exits": [
@@ -7081,7 +7081,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u33": {
       "exits": [
@@ -7103,7 +7103,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u34": {
       "exits": [
@@ -7125,7 +7125,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u35": {
       "exits": [
@@ -7147,7 +7147,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u38": {
       "exits": [
@@ -7169,7 +7169,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u37": {
       "exits": [
@@ -7191,7 +7191,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "u36": {
       "exits": [
@@ -7213,7 +7213,7 @@
       ],
       "region": "Brighouse",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Thunderbird at Wesbrook": {
       "exits": [
@@ -7230,7 +7230,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Thunderbird Boulevard": {
       "exits": [
@@ -7247,7 +7247,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Thunderbird at East": {
       "exits": [
@@ -7264,7 +7264,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "2900 Block Wesbrook Mall": {
       "exits": [
@@ -7278,7 +7278,7 @@
       "npcs": [],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "25": {
       "exits": [
@@ -7294,7 +7294,7 @@
       "npcs": [],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "East Mall South": {
       "exits": [
@@ -7311,7 +7311,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "16th at Wesbrook": {
       "exits": [
@@ -7328,7 +7328,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "16th Avenue": {
       "exits": [
@@ -7345,7 +7345,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "16th at East": {
       "exits": [
@@ -7362,7 +7362,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "3200 Block Wesbrook Mall": {
       "exits": [
@@ -7379,7 +7379,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Ross Drive": {
       "exits": [
@@ -7396,7 +7396,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Berton at Wesbrook": {
       "exits": [
@@ -7413,7 +7413,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Berton Avenue": {
       "exits": [
@@ -7430,7 +7430,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Berton at Ross": {
       "exits": [
@@ -7447,7 +7447,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "UHill Parking Lot": {
       "exits": [
@@ -7464,7 +7464,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "UHill Hallway": {
       "exits": [
@@ -7480,7 +7480,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "UHill Cafeteria": {
       "exits": [
@@ -7494,7 +7494,7 @@
       "npcs": [],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Harry Warren Field": {
       "exits": [
@@ -7510,7 +7510,7 @@
       ],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "rqSHOP Wesbrook Village": {
       "exits": [
@@ -7524,7 +7524,7 @@
       "npcs": [],
       "region": "South Campus",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "601": {
       "exits": [
@@ -7541,7 +7541,7 @@
       "npcs": [],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Ladner Exchange": {
       "exits": [
@@ -7555,7 +7555,7 @@
       "npcs": [],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Harvest Drive": {
       "exits": [
@@ -7572,7 +7572,7 @@
       ],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Ladner Trunk at Harvest": {
       "exits": [
@@ -7589,7 +7589,7 @@
       ],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Ladner Trunk Road E": {
       "exits": [
@@ -7606,7 +7606,7 @@
       ],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Ladner Trunk at Linden": {
       "exits": [
@@ -7623,7 +7623,7 @@
       ],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Linden Drive": {
       "exits": [
@@ -7639,7 +7639,7 @@
       ],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Ladner Trunk Road W": {
       "exits": [
@@ -7656,7 +7656,7 @@
       ],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Ladner Trunk at Arthur": {
       "exits": [
@@ -7673,7 +7673,7 @@
       ],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Elliott Street": {
       "exits": [
@@ -7689,7 +7689,7 @@
       ],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "47A Avenue": {
       "exits": [
@@ -7705,7 +7705,7 @@
       ],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Magee Park": {
       "exits": [
@@ -7719,7 +7719,7 @@
       "npcs": [],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Matthews Exchange": {
       "exits": [
@@ -7733,7 +7733,7 @@
       "npcs": [],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "310": {
       "exits": [
@@ -7749,7 +7749,7 @@
       "npcs": [],
       "region": "Ladner",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "South Delta Recreation Centre": {
       "exits": [
@@ -7763,7 +7763,7 @@
       "npcs": [],
       "region": "Tsawwassen",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "56 Street N": {
       "exits": [
@@ -7780,7 +7780,7 @@
       ],
       "region": "Tsawwassen",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "16 at 56": {
       "exits": [
@@ -7797,7 +7797,7 @@
       ],
       "region": "Tsawwassen",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "16 Avenue": {
       "exits": [
@@ -7813,7 +7813,7 @@
       ],
       "region": "Tsawwassen",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "56 Street S": {
       "exits": [
@@ -7830,7 +7830,7 @@
       ],
       "region": "Tsawwassen",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "12 at 56": {
       "exits": [
@@ -7844,7 +7844,7 @@
       "npcs": [],
       "region": "Tsawwassen",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "12 Avenue W": {
       "exits": [
@@ -7860,7 +7860,7 @@
       ],
       "region": "Tsawwassen",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "12 Avenue E": {
       "exits": [
@@ -7876,7 +7876,7 @@
       ],
       "region": "Tsawwassen",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Tsawwassen Ferry Terminal": {
       "exits": [
@@ -7890,7 +7890,7 @@
       "npcs": [],
       "region": "Tsawwassen",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "620": {
       "exits": [
@@ -7906,7 +7906,7 @@
       "npcs": [],
       "region": "Tsawwassen",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Southmere Village Park": {
       "exits": [
@@ -7920,7 +7920,7 @@
       "npcs": [],
       "region": "White Rock",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "North Bluff Road": {
       "exits": [
@@ -7936,7 +7936,7 @@
       ],
       "region": "White Rock",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "351": {
       "exits": [
@@ -7953,7 +7953,7 @@
       "npcs": [],
       "region": "White Rock",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "North Bluff at 152": {
       "exits": [
@@ -7967,7 +7967,7 @@
       "npcs": [],
       "region": "White Rock",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Johnston Street": {
       "exits": [
@@ -7983,7 +7983,7 @@
       ],
       "region": "White Rock",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "152 Street S": {
       "exits": [
@@ -7999,7 +7999,7 @@
       ],
       "region": "White Rock",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "18 at 152": {
       "exits": [
@@ -8015,7 +8015,7 @@
       ],
       "region": "White Rock",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "152 Street N": {
       "exits": [
@@ -8031,7 +8031,7 @@
       ],
       "region": "White Rock",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "18 Avenue": {
       "exits": [
@@ -8047,7 +8047,7 @@
       ],
       "region": "White Rock",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Bakerview Park": {
       "exits": [
@@ -8063,7 +8063,7 @@
       ],
       "region": "White Rock",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Sullivan Street E": {
       "exits": [
@@ -8077,7 +8077,7 @@
       "npcs": [],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Sullivan at Kidd": {
       "exits": [
@@ -8093,7 +8093,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Sullivan at McBride": {
       "exits": [
@@ -8109,7 +8109,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "McBride Avenue N": {
       "exits": [
@@ -8125,7 +8125,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "McBride Avenue S": {
       "exits": [
@@ -8141,7 +8141,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Sullivan Street W": {
       "exits": [
@@ -8157,7 +8157,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Crescent Beach Entrance": {
       "exits": [
@@ -8173,7 +8173,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c0": {
       "exits": [
@@ -8196,7 +8196,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c1": {
       "exits": [
@@ -8219,7 +8219,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c2": {
       "exits": [
@@ -8242,7 +8242,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c3": {
       "exits": [
@@ -8265,7 +8265,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c4": {
       "exits": [
@@ -8288,7 +8288,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c5": {
       "exits": [
@@ -8311,7 +8311,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c6": {
       "exits": [
@@ -8327,7 +8327,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c7": {
       "exits": [
@@ -8350,7 +8350,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c8": {
       "exits": [
@@ -8373,7 +8373,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c9": {
       "exits": [
@@ -8396,7 +8396,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c10": {
       "exits": [
@@ -8419,7 +8419,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c11": {
       "exits": [
@@ -8442,7 +8442,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c12": {
       "exits": [
@@ -8465,7 +8465,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c13": {
       "exits": [
@@ -8488,7 +8488,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c14": {
       "exits": [
@@ -8511,7 +8511,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c15": {
       "exits": [
@@ -8534,7 +8534,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c16": {
       "exits": [
@@ -8557,7 +8557,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c17": {
       "exits": [
@@ -8580,7 +8580,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c18": {
       "exits": [
@@ -8603,7 +8603,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c19": {
       "exits": [
@@ -8626,7 +8626,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c20": {
       "exits": [
@@ -8649,7 +8649,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c21": {
       "exits": [
@@ -8672,7 +8672,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c22": {
       "exits": [
@@ -8695,7 +8695,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c23": {
       "exits": [
@@ -8718,7 +8718,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c24": {
       "exits": [
@@ -8741,7 +8741,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c25": {
       "exits": [
@@ -8764,7 +8764,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c26": {
       "exits": [
@@ -8787,7 +8787,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c27": {
       "exits": [
@@ -8810,7 +8810,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c28": {
       "exits": [
@@ -8833,7 +8833,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c29": {
       "exits": [
@@ -8856,7 +8856,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c30": {
       "exits": [
@@ -8879,7 +8879,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c31": {
       "exits": [
@@ -8902,7 +8902,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "c32": {
       "exits": [
@@ -8925,7 +8925,7 @@
       ],
       "region": "Crescent Beach",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "410": {
       "exits": [
@@ -8941,7 +8941,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Gilley at Westminster": {
       "exits": [
@@ -8955,7 +8955,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Gilley Road West": {
       "exits": [
@@ -8969,7 +8969,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Gilley at Smith": {
       "exits": [
@@ -8983,7 +8983,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Gilley Road East": {
       "exits": [
@@ -8997,7 +8997,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "Hamilton Park Maze Entrance": {
       "exits": [
@@ -9011,7 +9011,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h0": {
       "exits": [
@@ -9025,7 +9025,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h1": {
       "exits": [
@@ -9039,7 +9039,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h2": {
       "exits": [
@@ -9053,7 +9053,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h3": {
       "exits": [
@@ -9067,7 +9067,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h4": {
       "exits": [
@@ -9081,7 +9081,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h5": {
       "exits": [
@@ -9097,7 +9097,7 @@
       ],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h6": {
       "exits": [
@@ -9111,7 +9111,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h7": {
       "exits": [
@@ -9125,7 +9125,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h8": {
       "exits": [
@@ -9139,7 +9139,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h9": {
       "exits": [
@@ -9153,7 +9153,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h10": {
       "exits": [
@@ -9167,7 +9167,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h11": {
       "exits": [
@@ -9181,7 +9181,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h12": {
       "exits": [
@@ -9195,7 +9195,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h13": {
       "exits": [
@@ -9209,7 +9209,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h14": {
       "exits": [
@@ -9223,7 +9223,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h15": {
       "exits": [
@@ -9237,7 +9237,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h16": {
       "exits": [
@@ -9251,7 +9251,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h17": {
       "exits": [
@@ -9265,7 +9265,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h18": {
       "exits": [
@@ -9279,7 +9279,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h19": {
       "exits": [
@@ -9293,7 +9293,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h20": {
       "exits": [
@@ -9307,7 +9307,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h21": {
       "exits": [
@@ -9321,7 +9321,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h22": {
       "exits": [
@@ -9335,7 +9335,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h23": {
       "exits": [
@@ -9349,7 +9349,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h24": {
       "exits": [
@@ -9363,7 +9363,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h25": {
       "exits": [
@@ -9377,7 +9377,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h26": {
       "exits": [
@@ -9391,7 +9391,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h27": {
       "exits": [
@@ -9405,7 +9405,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h28": {
       "exits": [
@@ -9419,7 +9419,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h29": {
       "exits": [
@@ -9433,7 +9433,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h30": {
       "exits": [
@@ -9447,7 +9447,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h31": {
       "exits": [
@@ -9461,7 +9461,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h32": {
       "exits": [
@@ -9475,7 +9475,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h33": {
       "exits": [
@@ -9489,7 +9489,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h34": {
       "exits": [
@@ -9503,7 +9503,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h35": {
       "exits": [
@@ -9517,7 +9517,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h36": {
       "exits": [
@@ -9531,7 +9531,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h37": {
       "exits": [
@@ -9545,7 +9545,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h38": {
       "exits": [
@@ -9559,7 +9559,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h39": {
       "exits": [
@@ -9573,7 +9573,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h40": {
       "exits": [
@@ -9587,7 +9587,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h41": {
       "exits": [
@@ -9601,7 +9601,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h42": {
       "exits": [
@@ -9615,7 +9615,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h43": {
       "exits": [
@@ -9629,7 +9629,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h44": {
       "exits": [
@@ -9643,7 +9643,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h45": {
       "exits": [
@@ -9657,7 +9657,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h46": {
       "exits": [
@@ -9671,7 +9671,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     },
     "h47": {
       "exits": [
@@ -9685,7 +9685,7 @@
       "npcs": [],
       "region": "Hamilton",
       "spawner": null,
-      "items": []
+      "items": {}
     }
   },
   "regions": {

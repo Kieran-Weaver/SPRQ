@@ -59,7 +59,7 @@ class RQMap:
 					return
 				playerdata.writeMessage(playerdata.battle["text"]["entry"])
 		if room["spawner"] and room["spawner"] not in room["items"]:
-			room["items"].append(room["spawner"])
+			room["items"][room["spawner"]] = room["items"].get(room["spawner"], 0) + 1
 
 	def setState(self, playerdata, state):
 		if state == "map":
