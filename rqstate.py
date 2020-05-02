@@ -121,7 +121,10 @@ class RQState:
 				damage = attacks[chosen]["atk"]
 				message = attacks[chosen]["text"]
 
-		self.players[playerid].hp -= round(defMul * damage * (time.monotonic() - self.players[playerid].battle["time"]))
+		if self.players[playerid].hasFlag(flags.RQFlags.F_TIMED_DAMAGE):
+			self.players[playerid].hp -= round(defMul * damage * (time.monotonic() - self.players[playerid].battle["time"]))
+		else:
+			self.players[playerid].hp -= round(defMul * damage)
 		if not self.checkLose(playerid, usedItem):
 			self.players[playerid].writeMessage( message)
 			self.players[playerid].battle["time"] = time.monotonic()
