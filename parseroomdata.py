@@ -61,7 +61,7 @@ itemtable = {
 
 def GenRoomJSON(room):
 	roomjson = {}
-	if room.dexits != None:
+	if type(room.dexits) == list:
 		new_exits = set(room.exits) - set(room.dexits)
 		room.dexits += [*new_exits]
 		room.exits = room.dexits	
@@ -165,4 +165,4 @@ with open("rqdata/extra_data.json", "r") as room_json:
 		gamedata[key] = datadict[key]
 
 with open("rooms.json","w") as room_json:
-	json.dump(gamedata,room_json,indent=2)
+	json.dump(gamedata,room_json,indent=2,sort_keys=True)

@@ -746,7 +746,13 @@
         "Magee Park",
         "South Delta Recreation Centre",
         "Southmere Village Park",
-        "Sullivan Street E"
+        "Sullivan Street E",
+        "Commercial-Broadway Station",
+        "Central Park Path\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b",
+        "Highgate Supermarket",
+        "Highgate Supermarket",
+        "Nanaimo Ferry Terminal",
+        "Bamfield Cafeteria"
       ]
     }
   },
@@ -759,10 +765,25 @@
       "41st at Granville",
       "Marine at Cambie"
     ],
+    "106": [
+      "Edmonds Station",
+      "Edmonds at Kingsway",
+      "New Westminster Station"
+    ],
+    "119": [
+      "Metrotown Station",
+      "Edmonds Station",
+      "Kingsway at Griffiths",
+      "Edmonds at Kingsway"
+    ],
+    "144": [
+      "Metrotown Station"
+    ],
     "19": [
       "Pender at Granville",
       "Pipeline at Stanley Park",
-      "Stanley Park Loop"
+      "Stanley Park Loop",
+      "Metrotown Station"
     ],
     "25": [
       "UBC Bus Loop",
@@ -798,7 +819,11 @@
       "UBC Bus Loop",
       "41st at Granville",
       "41st at West Boulevard",
-      "41st at Cambie"
+      "41st at Cambie",
+      "Joyce-Collingwood Station"
+    ],
+    "430": [
+      "Metrotown Station"
     ],
     "44": [
       "UBC Bus Loop",
@@ -832,7 +857,11 @@
     ],
     "99": [
       "UBC Bus Loop",
-      "Broadway at Cambie"
+      "Broadway at Cambie",
+      "Commercial-Broadway Station"
+    ],
+    "Bamfield Shuttle": [
+      "Nanaimo"
     ],
     "Canada Line": [
       "Waterfront Station",
@@ -845,6 +874,18 @@
       "Lansdowne Station",
       "Brighouse Station",
       "Aberdeen Station"
+    ],
+    "Expo Line": [
+      "Waterfront Station",
+      "Commercial-Broadway Station",
+      "Joyce-Collingwood Station",
+      "Patterson Station",
+      "Edmonds Station",
+      "New Westminster Station"
+    ],
+    "Vancouver-Nanaimo Ferry": [
+      "Tsawwassen Ferry Terminal",
+      "Nanaimo Ferry Terminal"
     ]
   },
   "items": {
@@ -1289,6 +1330,11 @@
       "npcrate": 26,
       "room": "Food Cart 41st/Granville"
     },
+    "Bamfield": {
+      "message": " When you wake up, you find yourself back in the cafeteria with a fridge. Your pockets are empty.",
+      "npcrate": 26,
+      "room": "Bamfield Cafeteria"
+    },
     "Bridgeport": {
       "message": " When you wake up, you find yourself back in the Canada Line station with the info table and fridge. Your pockets are empty.",
       "npcrate": 26,
@@ -1299,6 +1345,11 @@
       "npcrate": 26,
       "room": "Richmond Public Library Brighouse Branch"
     },
+    "Commercial-Broadway": {
+      "message": " When you wake up, you find yourself back in the busy SkyTrain station with a food cart. Your pockets are empty.",
+      "npcrate": 26,
+      "room": "Commercial-Broadway Station"
+    },
     "Crescent Beach": {
       "message": "When you wake up, you find yourself back in the east section of an east-west road. Your pockets are empty.",
       "npcrate": 26,
@@ -1308,6 +1359,11 @@
       "message": " When you wake up, you find yourself back in the expansive patio with tables and a fridge. Your pockets are empty.",
       "npcrate": 26,
       "room": "Robson Square"
+    },
+    "Edmonds": {
+      "message": " When you wake up, you find yourself back in the supermarket with a fridge. Your pockets are empty.",
+      "npcrate": 26,
+      "room": "Highgate Supermarket"
     },
     "False Creek South": {
       "message": " When you wake up, you find yourself back in the Canada Line station with the info table and fridge. Your pockets are empty.",
@@ -1338,6 +1394,21 @@
       "message": " When you wake up, you find yourself back in the Canada Line station with the info table and fridge. Your pockets are empty.",
       "npcrate": 26,
       "room": "Marine Drive Station"
+    },
+    "Metrotown": {
+      "message": " When you wake up, you find yourself back in the park path with a fridge. Your pockets are empty.",
+      "npcrate": 26,
+      "room": "Central Park Path\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b"
+    },
+    "Nanaimo": {
+      "message": " When you wake up, you find yourself back in the ferry terminal with a fridge. Your pockets are empty.",
+      "npcrate": 26,
+      "room": "Nanaimo Ferry Terminal"
+    },
+    "New West": {
+      "message": " When you wake up, you find yourself back in the supermarket with a fridge. Your pockets are empty.",
+      "npcrate": 26,
+      "room": "Highgate Supermarket"
     },
     "Oakridge": {
       "message": " When you wake up, you find yourself back in the Canada Line station with the info table and fridge. Your pockets are empty.",
@@ -1382,11 +1453,11 @@
         "none",
         "none",
         "none",
-        "41st at Granville",
-        "Marine at Cambie",
-        "5th at Granville",
-        "Hastings at Granville",
         "Waterfront Station",
+        "Hastings at Granville",
+        "5th at Granville",
+        "Marine at Cambie",
+        "41st at Granville",
         "Robson at Granville"
       ],
       "info": "You are in a bus running route 10. You can go to the following destinations:\n\nWaterfront Station\nHastings at Granville\nRobson at Granville\n5th at Granville\n41st at Granville\nMarine at Cambie",
@@ -2137,11 +2208,11 @@
         "none",
         "none",
         "none",
-        "Aberdeen Station",
-        "Bridgeport Station Bus Loop",
         "Lansdowne at No. 3",
         "Cook at No. 3",
         "Westminster at No. 3",
+        "Aberdeen Station",
+        "Bridgeport Station Bus Loop",
         "Granville at No. 3",
         "Entertainment Roundabout"
       ],
@@ -2158,8 +2229,8 @@
         "none",
         "none",
         "none",
-        "Aberdeen Station",
-        "Gilley at Westminster"
+        "Gilley at Westminster",
+        "Aberdeen Station"
       ],
       "info": "You are in a bus running route 410. You can go to the following destinations:\n\nGilley at Westminster\nAberdeen Station",
       "items": {},
@@ -2329,8 +2400,8 @@
         "none",
         "none",
         "41st at Granville",
-        "41st at Cambie",
         "41st at West Boulevard",
+        "41st at Cambie",
         "UBC Bus Loop"
       ],
       "info": "You are in a bus running route 43. You can go to the following destinations:\n\nUBC Bus Loop\n41st at West Boulevard\n41st at Granville\n41st at Cambie",
@@ -2488,8 +2559,8 @@
         "none",
         "none",
         "none",
-        "Lamey's Mill at Anderson",
-        "500 Block 2nd Avenue"
+        "500 Block 2nd Avenue",
+        "Lamey's Mill at Anderson"
       ],
       "info": "You are in a bus running route 50. You can go to the following destinations:\n\nLamey's Mill at Anderson\n500 Block 2nd Avenue",
       "items": {},
@@ -5242,16 +5313,16 @@
         "none",
         "none",
         "none",
+        "Waterfront Station",
+        "Vancouver City Centre Station",
+        "Marine Drive Station",
         "Aberdeen Station",
+        "Oakridge-41st Station",
+        "Bridgeport Station",
         "Lansdowne Station",
         "Olympic Village Station",
-        "Brighouse Station",
-        "Oakridge-41st Station",
-        "Marine Drive Station",
-        "Bridgeport Station",
-        "Vancouver City Centre Station",
         "Broadway-City Hall Station",
-        "Waterfront Station"
+        "Brighouse Station"
       ],
       "info": "You are in an above-ground subway train running a route called the Canada Line. You can go to the following destinations:\n\nWaterfront Station\nVancouver City Centre Station\nOlympic Village Station\nBroadway-City Hall Station\nOakridge-41st Station\nMarine Drive Station\nBridgeport Station\nAberdeen Station\nLansdowne Station\nBrighouse Station",
       "items": {},
@@ -9967,7 +10038,7 @@
         "none",
         "none",
         "Central at Olive",
-        "Central Park Path\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b"
+        "Central Park Path\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b"
       ],
       "info": "You are in a small SkyTrain station. To the west is a large central park.",
       "items": {},
