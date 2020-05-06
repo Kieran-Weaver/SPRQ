@@ -120,6 +120,7 @@ class RQState:
 			elif chosen == "catk":
 				damage = self.players[playerid].battle["charge"] + attacks[chosen]["atk"]
 				message = attacks[chosen]["text"]
+				del self.players[playerid].battle["charge"]
 			elif chosen:
 				damage = attacks[chosen]["atk"]
 				message = attacks[chosen]["text"]
@@ -140,6 +141,7 @@ class RQState:
 			for item in items:
 				room["items"][item] = room["items"].get(item, 0) + 1
 		respawnData = self.savedData["regions"][room["region"]]
+		self.mapHandler.setState(playerid, "map")
 		self.players[playerid].location = respawnData["room"]
 		self.players[playerid].writeMessage(respawnData["message"])
 
@@ -347,8 +349,7 @@ class RQState:
 				if self.players[playerid].mode == flags.RQMode.M_COOP:
 					battledata = self.mapHandler.battles[self.players[playerid].location]
 					if playerid in battledata:
-						idx = battledata.index(playerid)
-						if idx != self.players[playerid].battle["turn"] % len(battledata):
+						if battledata[self.players[playerid].battle["turn"] % len(battledata)] != playerid:
 							self.players[playerid].writeMessage(f"You can't move out of turn!")
 							return
 			if messagelist[0] in ["attack", "heal", "block"]:

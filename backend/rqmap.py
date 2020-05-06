@@ -58,8 +58,9 @@ class RQMap:
 				npcrate = 256
 			if random.randrange(256) <= npcrate:
 				if self.players[playerid].mode == RQMode.M_COOP:
-					if room["name"] in self.battles and playerid not in self.battles[room["name"]]:
-						self.battles[room["name"]].append(playerid)
+					if room["name"] in self.battles:
+						if playerid not in self.battles[room["name"]]:
+							self.battles[room["name"]].append(playerid)
 					else:
 						self.battles[room["name"]] = [playerid]
 				if not self.setState(playerid, "battle"):
@@ -73,8 +74,9 @@ class RQMap:
 		if state == "map":
 			self.players[playerid].battle = {}
 			self.players[playerid].state = "map"
-			while playerid in self.battles[self.players[playerid].location]:
-				self.battles[self.players[playerid].location].remove(playerid)
+			if self.players[playerid].location in self.battles:
+				while playerid in self.battles[self.players[playerid].location]:
+					self.battles[self.players[playerid].location].remove(playerid)
 		elif state == "battle":
 			room = self.getRoom(playerid)
 			npcname = random.choice(room["npcs"])
