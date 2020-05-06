@@ -13,57 +13,6 @@ class Room(object):
     self.spawner = spawner
     self._registry.append(self)
 
-
-utp_lounge = Room("UTP Lounge", 
-["UTP Lockers", "UTP Office", "UTP Hallway"], 
-["UTP Office", "UTP Hallway", "none", "UTP Lockers"], 
-"You are standing in a small room with some tables in the middle. A fridge is sitting to one side, and a small hallway goes out the other. There is a tiny office behind you alongside some lockers.", 
-[], 
-"UBC")
-
-utp_lockers = Room("UTP Lockers", 
-["UTP Lounge", "UTP Balcony"], 
-["none", "none", "UTP Lounge", "UTP Balcony"], 
-"You are in front of a wall of lockers. They are all locked. There is one with your name on it which you happen to know the password to.", 
-[], 
-"UBC")
-
-utp_office = Room("UTP Office", 
-["UTP Lounge"], 
-["none", "none", "UTP Lounge", "none"], 
-"You are in a tiny office outside the small room. There are numerous computers stored to one side. One of them has a virtual fishing game running.", 
-[], 
-"UBC")
-
-utp_hallway = Room("UTP Hallway", 
-["UTP Lounge", "UTP Balcony", "Chalkboard"], 
-["UTP Lounge", "none", "none", "UTP Balcony"], 
-"You are in a small hallway to the side of the room. There are chalkboards on the walls, and a doorway leading to a balcony.", 
-["Box Robot", "Student"], 
-"UBC")
-
-utp_eli = Room("UTP ELI", 
-["UTP Balcony"], 
-["none", "none", "none", "UTP Balcony"], 
-"You are in a large room with robots strewn on tables. There is a closed box here.", 
-["Bagle"], 
-"UBC",
-"💌")
-
-utp_balcony = Room("UTP Balcony", 
-["UTP Hallway", "UTP Lockers", "UTP Driveway", "UTP ELI"], 
-["UTP Lockers", "UTP ELI",  "UTP Hallway", "UTP Driveway"], 
-"You are on a long balcony outside. Behind you is a staircase to the driveway, and to your sides and front are three doorways.", 
-["Box Robot", "Student"], 
-"UBC")
-
-utp_driveway = Room("UTP Driveway", 
-["UTP Balcony", "West Mall"], 
-["none", "none", "UTP Balcony", "West Mall"], 
-"You are in a snowy driveway leading to an old wooden building. There is a staircase leading to a long balcony. To the west is West Mall.", 
-["Box Robot", "Student"], 
-"UBC")
-
 agricultural_road_west = Room("Agricultural Road West", 
 ["Agricultural at West", "Agricultural at Main"], 
 ["none", "none", "Agricultural at Main", "Agricultural at West"], 
@@ -133,7 +82,7 @@ martha_piper_fountain = Room("Martha Piper Fountain",
 "You are at a circular fountain. There is water here, but it is underneath a thick layer of solid ice and snow. There is a closed box here.", 
 ["Diwheel Transformer"], 
 "UBC",
-"🛡")
+"🛡️")
 
 the_cairn = Room("The Cairn", 
 ["Main Mall Centre South"], 
@@ -169,7 +118,7 @@ east_mall = Room("East Mall",
 ubc_bookstore = Room("UBC Bookstore", 
 ["University at East"], 
 ["University at East", "none", "none", "none"], 
-"You are in an underground bookstore. To the north is University Boulevard. There is a sign here that says:\n\n**📣 and 🔦 for sale.** \n*for your late night exam commutes*\n*50 coins per item\nAvailable for 5000 coins:📇", 
+"You are in an underground bookstore. To the north is University Boulevard. There is a sign here that says:\n\n**📣 and 🔦 for sale.** \n*for your late night exam commutes*\n*50 coins per item\nAvailable for 5000 coins:📇\nAvailable for 10000 coins:📀\nAvailable for 10000 coins:🥛", 
 [], 
 "UBC")
 
@@ -279,7 +228,7 @@ pacific_spirit_maze9 = Room("Pacific Spirit Maze         ​",["Pacific Spirit M
 "You are in a twisty, winding maze with walls of dense trees. Everything looks the same. There is a closed box here.", 
 ["Treasure Hunter Student"], 
 "UBC",
-"🕯")
+"🕯️")
 
 pacific_spirit_maze10 = Room("Pacific Spirit Maze          ​",["Pacific Spirit Maze  ​", "Pacific Spirit Maze         ​"], 
 ["none", "Pacific Spirit Maze  ​", "Pacific Spirit Maze         ​", "none"], 
@@ -328,13 +277,6 @@ sixty_eight = Room("68",
 [], 
 "UBC")
 
-chalkboard = Room("Chalkboard",
-["Canada Place", "UTP Hallway"],
-["UTP Hallway", "none", "none", "none"],
-"You went inside the chalkboard and realized it was a teleporter. You can see portals leading to the following locations here:\n\nCanada Place\n\nTo the north is the way back into the hallway.",
-[],
-"UBC")
-
 #-----------------------end of UBC rooms---------------------
 
 forty_four = Room("44",
@@ -344,10 +286,10 @@ forty_four = Room("44",
 [], 
 "Downtown Vancouver")
 
-waterfront_station = Room("Waterfront Station", 
-["600 Block West Cordova Street"],
+waterfront_station = Room("Waterfront Station",
 ["none", "600 Block West Cordova Street", "none", "none"],
-"You are in an old, busy transit terminal. To the south is Cordova Street. There is a Canada Line station here.\nThere is a bus stop here for:\n\n10\n44",
+None,
+"You are in an old, busy transit terminal. To the south is Cordova Street. There is a Canada Line and SkyTrain station here.\nThere are bus stops here for:\n\n10\n44",
 [],
 "Downtown Vancouver")
 
@@ -589,7 +531,7 @@ robson_square_ice_rink = Room("Robson Square Ice Rink",
 "You are in a skating rink underneath robson square. There is a box here.",
 ["Skater"],
 "Downtown Vancouver",
-"❄")
+"❄️")
 
 robson_600_block = Room("600 Block Robson Street",
 ["Robson at Granville", "Robson at Seymour"],
@@ -997,11 +939,11 @@ rqstorage_false_creek_south = Room("RQ Storage Solutions False Creek South",
 "False Creek South")
 
 ninety_nine = Room("99",
-["UBC Bus Loop", "Broadway at Cambie"],
-["none", "none", "none", "none"],
-"You are in a bus running route 99. You can go to the following destinations:\n\n"+"\n".join(["UBC Bus Loop", "Broadway at Cambie"]),
+["none", "none", "none", "none", "UBC Bus Loop", "Broadway at Cambie", "Commercial-Broadway Station"],
+None,
+"You are in a bus running route 99. You can go to the following destinations:\n\n"+"\n".join(["UBC Bus Loop", "Broadway at Cambie", "Commercial-Broadway Station"]),
 [],
-"False Creek South")
+"Commercial-Broadway")
 
 #-------------End of False Creek South Rooms-----------------
 forty_first_at_granville = Room("41st at Granville",
@@ -1122,7 +1064,7 @@ None,
 rqshop_kerrisdale = Room("rqSHOP Kerrisdale",
 ["none", "2300 Block 41st Avenue", "none", "none"],
 None,
-"You are in a small trinket shop. To the south is 41st Avenue. There is a sign here that says:\n\nAvailable for 200000 coins:♨",
+"You are in a small trinket shop. To the south is 41st Avenue. There is a sign here that says:\n\nAvailable for 200000 coins:♨️",
 [], 
 "Kerrisdale")
 
@@ -1241,9 +1183,9 @@ None,
 "Stanley Park")
 
 nineteen = Room("19",
-["Pender at Granville", "Pipeline at Stanley Park", "Stanley Park Loop"],
-["none", "none", "none", "none"],
-"You are in a bus running route 19. You can go to the following destinations:\n\n"+"\n".join(["Pender at Granville", "Pipeline at Stanley Park", "Stanley Park Loop"]),
+["none", "none", "none", "none", "Metrotown Station", "Pender at Granville", "Pipeline at Stanley Park", "Stanley Park Loop"],
+None,
+"You are in a bus running route 19. You can go to the following destinations:\n\n"+"\n".join(["Metrotown Station", "Pender at Granville", "Pipeline at Stanley Park", "Stanley Park Loop"]),
 [],
 "Stanley Park")
 
@@ -1559,7 +1501,7 @@ None,
 bowling_shop = Room("Bowling Shop",
 ["none", "Bowling Entrance", "none", "none"],
 None,
-"You are in a small shop at a bowling alley. There is a sign here that says:\n\n🎟: 500 coins\n🎱: 100 coins\n👟: 50 coins\n🎳: 25000 coins",
+"You are in a small shop at a bowling alley. There is a sign here that says:\n\n🎟️: 500 coins\n🎱: 100 coins\n👟: 50 coins\n🎳: 25000 coins",
 [],
 "Riverport")
 
@@ -1699,7 +1641,7 @@ None,
 "You are at the intersection of Ackroyd Road and Arcadia Road. There is a box here.",
 ["Actor Redux"],
 "Brighouse",
-"✏")
+"✏️")
 
 no_3_road_5800_block = Room("5800 Block No. 3 Road",
 ["Ackroyd at No. 3", "Westminster at No. 3", "none", "none"],
