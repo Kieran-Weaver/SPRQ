@@ -9,13 +9,13 @@ rq = rqstate.RQState("rooms.json")
 
 @bot.event
 async def on_message(message):
-	if message.author.bot or not(message.content.startswith("SP")):
+	if message.author.bot or not(message.content.startswith("SP ") or message.content.startswith("sp ")):
 		return
 	channel = message.channel
 	name = str(message.author)
 	if name not in rq.players:
 		rq.loadPlayer(name)
-	msg = str(message.content).lstrip("SP ")
+	msg = str(message.content)[2:].lstrip()
 	if msg:
 		rq.parseMessage(name, msg)
 	rq.printState(name)

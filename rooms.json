@@ -720,8 +720,8 @@
         "none",
         "none",
         "none",
-        "Memorial at West",
-        "UBC Bus Loop"
+        "UBC Bus Loop",
+        "Memorial at West"
       ],
       "info": "You are in a bus running route 68. You can go to the following destinations:\n\nMemorial at West\nUBC Bus Loop",
       "name": "68",
@@ -751,8 +751,8 @@
         "none",
         "none",
         "none",
-        "Waterfront Station",
-        "UBC Bus Loop"
+        "UBC Bus Loop",
+        "Waterfront Station"
       ],
       "info": "You are in a bus running route 44. You can go to the following destinations:\n\nUBC Bus Loop\nWaterfront Station",
       "name": "44",
@@ -1454,8 +1454,8 @@
         "none",
         "none",
         "none",
-        "Georgia at Granville",
-        "Georgia at Homer"
+        "Georgia at Homer",
+        "Georgia at Granville"
       ],
       "info": "You are in a bus running route 250. You can go to the following destinations:\n\nGeorgia at Homer\nGeorgia at Granville",
       "name": "250",
@@ -1470,12 +1470,12 @@
         "none",
         "none",
         "none",
-        "41st at Granville",
-        "5th at Granville",
-        "Waterfront Station",
-        "Robson at Granville",
         "Hastings at Granville",
-        "Marine at Cambie"
+        "41st at Granville",
+        "Marine at Cambie",
+        "Robson at Granville",
+        "5th at Granville",
+        "Waterfront Station"
       ],
       "info": "You are in a bus running route 10. You can go to the following destinations:\n\nWaterfront Station\nHastings at Granville\nRobson at Granville\n5th at Granville\n41st at Granville\nMarine at Cambie",
       "name": "10",
@@ -1580,9 +1580,9 @@
         "none",
         "none",
         "none",
-        "500 Block 2nd Avenue",
         "UBC Bus Loop",
-        "4th at Fir"
+        "4th at Fir",
+        "500 Block 2nd Avenue"
       ],
       "info": "You are in a bus running route 84. You can go to the following destinations:\n\nUBC Bus Loop\n4th at Fir\n500 Block 2nd Avenue",
       "name": "84",
@@ -2181,8 +2181,8 @@
         "none",
         "none",
         "none",
-        "Broadway at Cambie",
-        "UBC Bus Loop"
+        "UBC Bus Loop",
+        "Broadway at Cambie"
       ],
       "info": "You are in a bus running route 99. You can go to the following destinations:\n\nUBC Bus Loop\nBroadway at Cambie",
       "name": "99",
@@ -2255,9 +2255,9 @@
         "none",
         "none",
         "none",
+        "UBC Bus Loop",
         "41st at Cambie",
         "41st at West Boulevard",
-        "UBC Bus Loop",
         "41st at Granville"
       ],
       "info": "You are in a bus running route 43. You can go to the following destinations:\n\nUBC Bus Loop\n41st at West Boulevard\n41st at Granville\n41st at Cambie",
@@ -2575,16 +2575,16 @@
         "none",
         "none",
         "none",
-        "Bridgeport Station",
-        "Broadway-City Hall Station",
-        "Aberdeen Station",
-        "Vancouver City Centre Station",
-        "Waterfront Station",
-        "Lansdowne Station",
-        "Olympic Village Station",
         "Brighouse Station",
+        "Olympic Village Station",
+        "Aberdeen Station",
+        "Broadway-City Hall Station",
+        "Lansdowne Station",
         "Marine Drive Station",
-        "Oakridge-41st Station"
+        "Oakridge-41st Station",
+        "Vancouver City Centre Station",
+        "Bridgeport Station",
+        "Waterfront Station"
       ],
       "info": "You are in an above-ground subway train running a route called the Canada Line. You can go to the following destinations:\n\nWaterfront Station\nVancouver City Centre Station\nOlympic Village Station\nBroadway-City Hall Station\nOakridge-41st Station\nMarine Drive Station\nBridgeport Station\nAberdeen Station\nLansdowne Station\nBrighouse Station",
       "name": "Canada Line",
@@ -3354,8 +3354,8 @@
         "none",
         "none",
         "none",
-        "Bridgeport Station Bus Loop",
-        "UBC Bus Loop"
+        "UBC Bus Loop",
+        "Bridgeport Station Bus Loop"
       ],
       "info": "You are in a bus running route 480. You can go to the following destinations:\n\nUBC Bus Loop\nBridgeport Station Bus Loop",
       "name": "480",
@@ -3503,12 +3503,12 @@
         "none",
         "none",
         "Aberdeen Station",
-        "Entertainment Roundabout",
-        "Granville at No. 3",
         "Cook at No. 3",
-        "Westminster at No. 3",
         "Bridgeport Station Bus Loop",
-        "Lansdowne at No. 3"
+        "Granville at No. 3",
+        "Lansdowne at No. 3",
+        "Entertainment Roundabout",
+        "Westminster at No. 3"
       ],
       "info": "You are in a bus running route 403. You can go to the following destinations:\n\nEntertainment Roundabout\nGranville at No. 3\nCook at No. 3\nWestminster at No. 3\nLansdowne at No. 3\nAberdeen Station\nBridgeport Station Bus Loop",
       "name": "403",
@@ -7215,6 +7215,766 @@
       "spawner": null,
       "items": {}
     },
+    "410": {
+      "exits": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "Gilley at Westminster",
+        "Aberdeen Station"
+      ],
+      "info": "You are in a bus running route 410. You can go to the following destinations:\n\nGilley at Westminster\nAberdeen Station",
+      "name": "410",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "Gilley at Westminster": {
+      "exits": [
+        "none",
+        "none",
+        "Gilley Road West",
+        "none"
+      ],
+      "info": "You are at an intersection of two roads. There is a bus stop here for\n\n410",
+      "name": "Gilley at Westminster",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "Gilley Road West": {
+      "exits": [
+        "none",
+        "none",
+        "Gilley at Smith",
+        "Gilley at Westminster"
+      ],
+      "info": "You are at the west side of a short east-west road.",
+      "name": "Gilley Road West",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "Gilley at Smith": {
+      "exits": [
+        "none",
+        "none",
+        "Gilley Road East",
+        "Gilley Road West"
+      ],
+      "info": "You are at an intersection of two roads.",
+      "name": "Gilley at Smith",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "Gilley Road East": {
+      "exits": [
+        "none",
+        "Hamilton Park Maze Entrance",
+        "none",
+        "Gilley at Smith"
+      ],
+      "info": "You are at the east side of a short east-west road. To the south is a park.",
+      "name": "Gilley Road East",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "Hamilton Park Maze Entrance": {
+      "exits": [
+        "Gilley Road East",
+        "h0",
+        "none",
+        "none"
+      ],
+      "info": "You are at the entrance to a small maze.",
+      "name": "Hamilton Park Maze Entrance",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h0": {
+      "exits": [
+        "Hamilton Park Maze Entrance",
+        "h1",
+        "h11",
+        "h2"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h0",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h1": {
+      "exits": [
+        "h25",
+        "h9",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h1",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h2": {
+      "exits": [
+        "h25",
+        "h25",
+        "h0",
+        "h47"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h2",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h3": {
+      "exits": [
+        "h25",
+        "h4",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h3",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h4": {
+      "exits": [
+        "h3",
+        "h6",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h4",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h5": {
+      "exits": [
+        "h25",
+        "h25",
+        "h6",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h5",
+      "npcs": [
+        "Programmer Redux"
+      ],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h6": {
+      "exits": [
+        "h4",
+        "h25",
+        "h7",
+        "h5"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h6",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h7": {
+      "exits": [
+        "h25",
+        "h25",
+        "h8",
+        "h6"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h7",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h8": {
+      "exits": [
+        "h9",
+        "h25",
+        "h22",
+        "h7"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h8",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h9": {
+      "exits": [
+        "h25",
+        "h25",
+        "h21",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h9",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h10": {
+      "exits": [
+        "h11",
+        "h25",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h10",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h11": {
+      "exits": [
+        "h25",
+        "h10",
+        "h12",
+        "h0"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h11",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h12": {
+      "exits": [
+        "h25",
+        "h25",
+        "h13",
+        "h11"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h12",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h13": {
+      "exits": [
+        "h25",
+        "h25",
+        "h15",
+        "h12"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h13",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h14": {
+      "exits": [
+        "h25",
+        "h15",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h14",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h15": {
+      "exits": [
+        "h14",
+        "h16",
+        "h25",
+        "h13"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h15",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h16": {
+      "exits": [
+        "h15",
+        "h19",
+        "h17",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h16",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h17": {
+      "exits": [
+        "h25",
+        "h25",
+        "h25",
+        "h16"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h17",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h18": {
+      "exits": [
+        "h25",
+        "h25",
+        "h19",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h18",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h19": {
+      "exits": [
+        "h16",
+        "h20",
+        "h25",
+        "h18"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h19",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h20": {
+      "exits": [
+        "h19",
+        "h23",
+        "h25",
+        "h21"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h20",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h21": {
+      "exits": [
+        "h25",
+        "h22",
+        "h20",
+        "h9"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h21",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h22": {
+      "exits": [
+        "h21",
+        "h25",
+        "h24",
+        "h8"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h22",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h23": {
+      "exits": [
+        "h20",
+        "h24",
+        "h33",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h23",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h24": {
+      "exits": [
+        "h23",
+        "h27",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h24",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h25": {
+      "exits": [
+        "h25",
+        "h26",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h25",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h26": {
+      "exits": [
+        "h25",
+        "h25",
+        "h27",
+        "h1"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h26",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h27": {
+      "exits": [
+        "h14",
+        "h25",
+        "h28",
+        "h26"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h27",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h28": {
+      "exits": [
+        "h29",
+        "h25",
+        "h40",
+        "h27"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h28",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h29": {
+      "exits": [
+        "h30",
+        "h28",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h29",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h30": {
+      "exits": [
+        "h31",
+        "h29",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h30",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h31": {
+      "exits": [
+        "h25",
+        "h30",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h31",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h32": {
+      "exits": [
+        "h25",
+        "h31",
+        "h34",
+        "h33"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h32",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h33": {
+      "exits": [
+        "h25",
+        "h25",
+        "h32",
+        "h23"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h33",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h34": {
+      "exits": [
+        "h35",
+        "h25",
+        "h25",
+        "h32"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h34",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h35": {
+      "exits": [
+        "h36",
+        "h34",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h35",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h36": {
+      "exits": [
+        "h25",
+        "h37",
+        "h35",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h36",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h37": {
+      "exits": [
+        "h38",
+        "h25",
+        "h39",
+        "h36"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h37",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h38": {
+      "exits": [
+        "h25",
+        "h37",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h38",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h39": {
+      "exits": [
+        "h25",
+        "h25",
+        "h47",
+        "h37"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h39",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h40": {
+      "exits": [
+        "h25",
+        "h25",
+        "h41",
+        "h28"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h40",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h41": {
+      "exits": [
+        "h42",
+        "h25",
+        "h25",
+        "h40"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h41",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h42": {
+      "exits": [
+        "h44",
+        "h41",
+        "h43",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h42",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h43": {
+      "exits": [
+        "h25",
+        "h25",
+        "h25",
+        "h42"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h43",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h44": {
+      "exits": [
+        "h25",
+        "h42",
+        "h25",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h44",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h45": {
+      "exits": [
+        "h25",
+        "h25",
+        "h46",
+        "h43"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h45",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h46": {
+      "exits": [
+        "h47",
+        "h25",
+        "h3",
+        "h45"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h46",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
+    "h47": {
+      "exits": [
+        "h25",
+        "h46",
+        "h2",
+        "h25"
+      ],
+      "info": "You are in a park with many identical paths.",
+      "name": "h47",
+      "npcs": [],
+      "region": "Hamilton",
+      "spawner": null,
+      "items": {}
+    },
     "Thunderbird at Wesbrook": {
       "exits": [
         "none",
@@ -8926,766 +9686,6 @@
       "region": "Crescent Beach",
       "spawner": null,
       "items": {}
-    },
-    "410": {
-      "exits": [
-        "none",
-        "none",
-        "none",
-        "none",
-        "Gilley at Westminster",
-        "Aberdeen Station"
-      ],
-      "info": "You are in a bus running route 410. You can go to the following destinations:\n\nGilley at Westminster\nAberdeen Station",
-      "name": "410",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "Gilley at Westminster": {
-      "exits": [
-        "none",
-        "none",
-        "Gilley Road West",
-        "none"
-      ],
-      "info": "You are at an intersection of two roads. There is a bus stop here for\n\n410",
-      "name": "Gilley at Westminster",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "Gilley Road West": {
-      "exits": [
-        "none",
-        "none",
-        "Gilley at Smith",
-        "Gilley at Westminster"
-      ],
-      "info": "You are at the west side of a short east-west road.",
-      "name": "Gilley Road West",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "Gilley at Smith": {
-      "exits": [
-        "none",
-        "none",
-        "Gilley Road East",
-        "Gilley Road West"
-      ],
-      "info": "You are at an intersection of two roads.",
-      "name": "Gilley at Smith",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "Gilley Road East": {
-      "exits": [
-        "none",
-        "Hamilton Park Maze Entrance",
-        "none",
-        "Gilley at Smith"
-      ],
-      "info": "You are at the east side of a short east-west road. To the south is a park.",
-      "name": "Gilley Road East",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "Hamilton Park Maze Entrance": {
-      "exits": [
-        "Gilley Road East",
-        "h0",
-        "none",
-        "none"
-      ],
-      "info": "You are at the entrance to a small maze.",
-      "name": "Hamilton Park Maze Entrance",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h0": {
-      "exits": [
-        "Hamilton Park Maze Entrance",
-        "h1",
-        "h11",
-        "h2"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h0",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h1": {
-      "exits": [
-        "h25",
-        "h9",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h1",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h2": {
-      "exits": [
-        "h25",
-        "h25",
-        "h0",
-        "h47"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h2",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h3": {
-      "exits": [
-        "h25",
-        "h4",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h3",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h4": {
-      "exits": [
-        "h3",
-        "h6",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h4",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h5": {
-      "exits": [
-        "h25",
-        "h25",
-        "h6",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h5",
-      "npcs": [
-        "Programmer Redux"
-      ],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h6": {
-      "exits": [
-        "h4",
-        "h25",
-        "h7",
-        "h5"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h6",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h7": {
-      "exits": [
-        "h25",
-        "h25",
-        "h8",
-        "h6"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h7",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h8": {
-      "exits": [
-        "h9",
-        "h25",
-        "h22",
-        "h7"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h8",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h9": {
-      "exits": [
-        "h25",
-        "h25",
-        "h21",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h9",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h10": {
-      "exits": [
-        "h11",
-        "h25",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h10",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h11": {
-      "exits": [
-        "h25",
-        "h10",
-        "h12",
-        "h0"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h11",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h12": {
-      "exits": [
-        "h25",
-        "h25",
-        "h13",
-        "h11"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h12",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h13": {
-      "exits": [
-        "h25",
-        "h25",
-        "h15",
-        "h12"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h13",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h14": {
-      "exits": [
-        "h25",
-        "h15",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h14",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h15": {
-      "exits": [
-        "h14",
-        "h16",
-        "h25",
-        "h13"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h15",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h16": {
-      "exits": [
-        "h15",
-        "h19",
-        "h17",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h16",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h17": {
-      "exits": [
-        "h25",
-        "h25",
-        "h25",
-        "h16"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h17",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h18": {
-      "exits": [
-        "h25",
-        "h25",
-        "h19",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h18",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h19": {
-      "exits": [
-        "h16",
-        "h20",
-        "h25",
-        "h18"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h19",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h20": {
-      "exits": [
-        "h19",
-        "h23",
-        "h25",
-        "h21"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h20",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h21": {
-      "exits": [
-        "h25",
-        "h22",
-        "h20",
-        "h9"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h21",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h22": {
-      "exits": [
-        "h21",
-        "h25",
-        "h24",
-        "h8"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h22",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h23": {
-      "exits": [
-        "h20",
-        "h24",
-        "h33",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h23",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h24": {
-      "exits": [
-        "h23",
-        "h27",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h24",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h25": {
-      "exits": [
-        "h25",
-        "h26",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h25",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h26": {
-      "exits": [
-        "h25",
-        "h25",
-        "h27",
-        "h1"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h26",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h27": {
-      "exits": [
-        "h14",
-        "h25",
-        "h28",
-        "h26"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h27",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h28": {
-      "exits": [
-        "h29",
-        "h25",
-        "h40",
-        "h27"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h28",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h29": {
-      "exits": [
-        "h30",
-        "h28",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h29",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h30": {
-      "exits": [
-        "h31",
-        "h29",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h30",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h31": {
-      "exits": [
-        "h25",
-        "h30",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h31",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h32": {
-      "exits": [
-        "h25",
-        "h31",
-        "h34",
-        "h33"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h32",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h33": {
-      "exits": [
-        "h25",
-        "h25",
-        "h32",
-        "h23"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h33",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h34": {
-      "exits": [
-        "h35",
-        "h25",
-        "h25",
-        "h32"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h34",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h35": {
-      "exits": [
-        "h36",
-        "h34",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h35",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h36": {
-      "exits": [
-        "h25",
-        "h37",
-        "h35",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h36",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h37": {
-      "exits": [
-        "h38",
-        "h25",
-        "h39",
-        "h36"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h37",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h38": {
-      "exits": [
-        "h25",
-        "h37",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h38",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h39": {
-      "exits": [
-        "h25",
-        "h25",
-        "h47",
-        "h37"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h39",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h40": {
-      "exits": [
-        "h25",
-        "h25",
-        "h41",
-        "h28"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h40",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h41": {
-      "exits": [
-        "h42",
-        "h25",
-        "h25",
-        "h40"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h41",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h42": {
-      "exits": [
-        "h44",
-        "h41",
-        "h43",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h42",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h43": {
-      "exits": [
-        "h25",
-        "h25",
-        "h25",
-        "h42"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h43",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h44": {
-      "exits": [
-        "h25",
-        "h42",
-        "h25",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h44",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h45": {
-      "exits": [
-        "h25",
-        "h25",
-        "h46",
-        "h43"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h45",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h46": {
-      "exits": [
-        "h47",
-        "h25",
-        "h3",
-        "h45"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h46",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
-    },
-    "h47": {
-      "exits": [
-        "h25",
-        "h46",
-        "h2",
-        "h25"
-      ],
-      "info": "You are in a park with many identical paths.",
-      "name": "h47",
-      "npcs": [],
-      "region": "Hamilton",
-      "spawner": null,
-      "items": {}
     }
   },
   "regions": {
@@ -9881,26 +9881,26 @@
   "shops": {
     "UBC Bookstore": [
       "soup",
-      "health_soup",
-      "souper_soup",
+      "healthy soup",
+      "souper soup",
       "flashlight",
       "bus_pass"
     ],
     "YuBot Gift Shop Downtown Vancouver": [
       "soup",
-      "souper_soup",
+      "souper soup",
       "flashlight",
       "bus_pass"
     ],
     "YuBot Gift Shop Granville Island": [
       "soup",
-      "souper_soup",
+      "souper soup",
       "flashlight",
       "bus_pass"
     ],
     "YuBot Gift Shop False Creek South": [
       "soup",
-      "souper_soup",
+      "souper soup",
       "flashlight",
       "bus_pass"
     ],
@@ -9913,18 +9913,18 @@
     ],
     "YuBot Gift Shop Kerrisdale": [
       "soup",
-      "souper_soup",
+      "souper soup",
       "flashlight",
-      "bus_pass"
+      "bus pass"
     ],
     "rqSHOP Kerrisdale": [
       "repel"
     ],
     "YuBot Gift Shop Brighouse": [
       "soup",
-      "souper_soup",
+      "souper soup",
       "flashlight",
-      "bus_pass"
+      "bus pass"
     ],
     "rqSHOP Brighouse": [
       "lock",
@@ -9933,21 +9933,21 @@
     ],
     "rqSHOP Wesbrook Village": [
       "soup",
-      "souper_soup",
-      "battle_soup",
-      "health_soup"
+      "souper soup",
+      "battle soup",
+      "health soup"
     ],
     "YuBot Gift Shop Commercial-Broadway": [
       "soup",
-      "souper_soup",
+      "souper soup",
       "flashlight",
-      "bus_pass"
+      "bus pass"
     ],
     "YuBot Gift Shop Crystal Mall": [
       "soup",
-      "souper_soup",
+      "souper soup",
       "flashlight",
-      "bus_pass"
+      "bus pass"
     ],
     "rqSHOP Crystal Mall": [
       "soup",
@@ -11088,7 +11088,7 @@
       "sp": 10,
       "atk": 2
     },
-    "health soup": {
+    "healthy soup": {
       "type": "any",
       "cost": 1,
       "hp": 10,

@@ -37,7 +37,7 @@ ModeFlags = {
 	RQMode.M_COOP: [
 		RQFlags.F_NEW_ITEMS,
 		RQFlags.F_SP_SYSTEM,
-		RQFlags.F_TIMED_DAMAGE,
+#		RQFlags.F_TIMED_DAMAGE,
 		RQFlags.F_DEATH_MONEY
 	],
 	RQMode.M_RAND: [

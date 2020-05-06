@@ -57,6 +57,9 @@ class RQState:
 					self.players[playerid].addItem(item)
 			self.players[playerid].addXP(self.players[playerid].battle["xp"], self.players[playerid].battle["level"])
 			self.mapHandler.setState(playerid, "map")
+			if self.players[playerid].location in self.mapHandler.battles:
+				for newid in self.mapHandler.battles[self.players[playerid].location]:
+					self.checkWin(newid, "nothing")
 			return True
 		else:
 			return False
@@ -205,7 +208,7 @@ class RQState:
 			for item in items:
 				if not self.players[playerid].removeItem(item):
 					nonexistentItems.append(item)
-				elif command == "drop":
+				elif command == "drop" and self.players[playerid].mode != flags.RQMode.M_RAND:
 					room["items"][item] = room["items"].get(item, 0) + 1
 		if nonexistentItems:
 			self.players[playerid].writeMessage( f"Error: Items {', '.join(nonexistentItems)} not found")
@@ -336,6 +339,9 @@ class RQState:
 		elif self.players[playerid].state == "battle":
 			if messagelist[0][:4] == "inv":
 				self.players[playerid].printInventory()
+				return
+			elif messagelist[0] == "panic":
+				self.killPlayer(playerid)
 				return
 			else:
 				if self.players[playerid].mode == flags.RQMode.M_COOP:

@@ -91,10 +91,10 @@ class RQMap:
 			if self.players[playerid].battle["hp"] == 0:
 				self.setState(playerid, "map")
 				return False
-			if self.players[playerid].mode == RQMode.M_COOP:
+			if self.players[playerid].mode == RQMode.M_COOP and room['name'] in self.battles:
 				if self.battles[room["name"]].index(playerid) != 0:
 					newid = self.battles[room["name"]][0]
-					self.players[playerid].battle = self.players[playerid].battle
+					self.players[playerid].battle = self.players[newid].battle
 		elif DEBUG == 1:
 			self.players[playerid].writeMessage( f"Invalid state: {state}")
 		return True
