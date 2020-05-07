@@ -294,12 +294,12 @@ None,
 sullivan_street_w = Room("Sullivan Street W",
 ["none", "none", "Sullivan at McBride", "Crescent Beach Entrance"],
 None,
-"You are at the west section of an east-west road. To the east is a beach.",
+"You are at the west section of an east-west road. To the west is a beach.",
 ["Seagull"],
 "Crescent Beach")
 
 crescent_beach_entrance = Room("Crescent Beach Entrance",
-["none", "none", "Sullivan Street W", "c0"],
+["none", "none", "Sullivan Street W", "none"],
 None,
 "You are at the entrance to a beach. It is locked. There are four circular indents on the door.",
 ["Seagull"],
@@ -308,7 +308,7 @@ None,
 #------------------Crescent Beach Maze Below------------------
 
 c0 = Room("c0",
-["c4", "none", "Crescent Beach Entrance", "c1"],
+["c4", "c36", "Crescent Beach Entrance", "c1"],
 None,
 "You are at Crescent Beach. Everything is covered in snow.",
 npclist,
@@ -353,7 +353,7 @@ c6 = Room("c6",
 ["none", "c5", "none", "none"],
 None,
 "You are at Crescent Beach. Everything is covered in snow.",
-["Programmer_Redux_Redux"],
+["Programmer Redux Redux"],
 "Crescent Beach")
 
 c7 = Room("c7",
@@ -532,7 +532,126 @@ npclist,
 "Crescent Beach")
 
 c32 = Room("c32",
-["none", "none", "none", "none"],
+["c34", "c33", "none", "none"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c33 = Room("c33",
+["c32", "c49", "none", "none"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c34 = Room("c34",
+["none", "c32", "none", "c35"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c35 = Room("c35",
+["c36", "none", "c34", "none"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c36 = Room("c36",
+["c0", "none", "none", "none"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c37 = Room("c37",
+["c28", "c38", "none", "c26"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c38 = Room("c38",
+["c37", "c41", "none", "c39"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c39 = Room("c39",
+["none", "c40", "c38", "none"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c40 = Room("c40",
+["c39", "none", "c41", "c43"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c41 = Room("c41",
+["c38", "c42", "none", "c40"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c42 = Room("c42",
+["c41", "none", "none", "none"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c43 = Room("c43",
+["c44", "none", "c40", "none"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c44 = Room("c44",
+["none", "c43", "none", "c45"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c45 = Room("c45",
+["none", "c46", "c44", "none"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c46 = Room("c46",
+["c45", "c47", "none", "none"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c47 = Room("c47",
+["c46", "none", "c49", "c48"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c48 = Room("c48",
+["c25", "none", "c47", "none"],
+None,
+"You are at Crescent Beach. Everything is covered in snow.",
+npclist,
+"Crescent Beach")
+
+c49 = Room("c49",
+["c33", "none", "none", "c47"],
 None,
 "You are at Crescent Beach. Everything is covered in snow.",
 npclist,

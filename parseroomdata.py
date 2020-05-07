@@ -61,7 +61,7 @@ itemtable = {
 
 def GenRoomJSON(room):
 	roomjson = {}
-	if room.dexits != None:
+	if type(room.dexits) == list:
 		new_exits = set(room.exits) - set(room.dexits)
 		room.dexits += [*new_exits]
 		room.exits = room.dexits	
@@ -79,7 +79,7 @@ def GenRoomJSON(room):
 				roomjson[data[0]] = dict(data[1])
 			else:
 				roomjson[data[0]] = data[1]
-	roomjson["items"] = []
+	roomjson["items"] = {}
 	return roomjson
 
 def GenRespawnJSON(spawnpoints,rmessages):
@@ -109,19 +109,19 @@ gamedata = {
 	'players' : {
 	},
 	'shops' : {
-		"UBC Bookstore" : ["soup", "health_soup", "souper_soup", "flashlight", "bus_pass"],
-		"YuBot Gift Shop Downtown Vancouver" : ["soup", "souper_soup", "flashlight", "bus_pass"],
-		"YuBot Gift Shop Granville Island" : ["soup", "souper_soup", "flashlight", "bus_pass"],
-		"YuBot Gift Shop False Creek South" : ["soup", "souper_soup", "flashlight", "bus_pass"],
+		"UBC Bookstore" : ["soup", "healthy soup", "souper soup", "flashlight", "bus_pass"],
+		"YuBot Gift Shop Downtown Vancouver" : ["soup", "souper soup", "flashlight", "bus_pass"],
+		"YuBot Gift Shop Granville Island" : ["soup", "souper soup", "flashlight", "bus_pass"],
+		"YuBot Gift Shop False Creek South" : ["soup", "souper soup", "flashlight", "bus_pass"],
 		"rqSHOP False Creek South" : ["satellite"],
 		"RQ Storage Solutions False Creek South" : ["bag", "suitcase"],
-		"YuBot Gift Shop Kerrisdale" : ["soup", "souper_soup", "flashlight", "bus_pass"],
+		"YuBot Gift Shop Kerrisdale" : ["soup", "souper soup", "flashlight", "bus pass"],
 		"rqSHOP Kerrisdale" : ["repel"],
-		"YuBot Gift Shop Brighouse" : ["soup", "souper_soup", "flashlight", "bus_pass"],
+		"YuBot Gift Shop Brighouse" : ["soup", "souper soup", "flashlight", "bus pass"],
 		"rqSHOP Brighouse" : ["lock", "suitcase", "sattelite"],
-		"rqSHOP Wesbrook Village" : ["soup", "souper_soup", "battle_soup", "health_soup"],
-		"YuBot Gift Shop Commercial-Broadway" : ["soup", "souper_soup", "flashlight", "bus_pass"],
-		"YuBot Gift Shop Crystal Mall" : ["soup", "souper_soup", "flashlight", "bus_pass"],
+		"rqSHOP Wesbrook Village" : ["soup", "souper soup", "battle soup", "health soup"],
+		"YuBot Gift Shop Commercial-Broadway" : ["soup", "souper soup", "flashlight", "bus pass"],
+		"YuBot Gift Shop Crystal Mall" : ["soup", "souper soup", "flashlight", "bus pass"],
 		"rqSHOP Crystal Mall" : ["soup", "flashlight", "suitcase"]
 	}
 }
@@ -165,4 +165,4 @@ with open("rqdata/extra_data.json", "r") as room_json:
 		gamedata[key] = datadict[key]
 
 with open("rooms.json","w") as room_json:
-	json.dump(gamedata,room_json,indent=2)
+	json.dump(gamedata,room_json,indent=2,sort_keys=True)

@@ -120,8 +120,6 @@ class PlayerState:
 			self.money = 0
 		self.hp = self.maxHP
 		self.sp = self.maxSP
-		self.battle = {}
-		self.state = "map"
 		return items
 	
 	def damageNPC(self, atk):

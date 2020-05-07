@@ -16,10 +16,10 @@ modeTable = {
 }
 class RQState:
 	def __init__(self, filename):
-		self.savedData = JSONHandler(filename)
-		self.mapHandler = RQMap(self.savedData)
-		self.mode = flags.RQMode.M_15
 		self.players = {}
+		self.savedData = JSONHandler(filename)
+		self.mapHandler = RQMap(self.savedData, self.players)
+		self.mode = flags.RQMode.M_15
 
 	def loadstate(self, filename=None):
 		self.savedData.loadState(filename)
@@ -43,7 +43,7 @@ class RQState:
 		return self.players[playerid].getMessages()
 
 	def fastTravel(self, playerid, message):
-		self.mapHandler.fastTravel(self.players[playerid], message)
+		self.mapHandler.fastTravel(playerid, message)
 
 	def checkWin(self, playerid, usedItem):
 		if self.players[playerid].state == "battle" and self.players[playerid].battle["hp"] <= 0:
@@ -56,7 +56,10 @@ class RQState:
 				if random.randrange(256) <= self.players[playerid].battle["drops"][item]:
 					self.players[playerid].addItem(item)
 			self.players[playerid].addXP(self.players[playerid].battle["xp"], self.players[playerid].battle["level"])
-			self.mapHandler.setState(self.players[playerid], "map")
+			self.mapHandler.setState(playerid, "map")
+			if self.players[playerid].location in self.mapHandler.battles:
+				for newid in self.mapHandler.battles[self.players[playerid].location]:
+					self.checkWin(newid, "nothing")
 			return True
 		else:
 			return False
@@ -117,20 +120,28 @@ class RQState:
 			elif chosen == "catk":
 				damage = self.players[playerid].battle["charge"] + attacks[chosen]["atk"]
 				message = attacks[chosen]["text"]
+				del self.players[playerid].battle["charge"]
 			elif chosen:
 				damage = attacks[chosen]["atk"]
 				message = attacks[chosen]["text"]
 
-		self.players[playerid].hp -= round(defMul * damage * (time.monotonic() - self.players[playerid].battle["time"]))
+		if self.players[playerid].hasFlag(flags.RQFlags.F_TIMED_DAMAGE):
+			self.players[playerid].hp -= round(defMul * damage * (time.monotonic() - self.players[playerid].battle["time"]))
+		else:
+			self.players[playerid].hp -= round(defMul * damage)
 		if not self.checkLose(playerid, usedItem):
 			self.players[playerid].writeMessage( message)
 			self.players[playerid].battle["time"] = time.monotonic()
 			self.players[playerid].battle["turn"] += 1
 
 	def killPlayer(self, playerid):
-		room = self.mapHandler.getRoom(self.players[playerid])
-		room["items"] += self.players[playerid].reset()
+		room = self.mapHandler.getRoom(playerid)
+		items = self.players[playerid].reset()
+		if self.players[playerid].mode != flags.RQMode.M_RAND:
+			for item in items:
+				room["items"][item] = room["items"].get(item, 0) + 1
 		respawnData = self.savedData["regions"][room["region"]]
+		self.mapHandler.setState(playerid, "map")
 		self.players[playerid].location = respawnData["room"]
 		self.players[playerid].writeMessage(respawnData["message"])
 
@@ -138,7 +149,12 @@ class RQState:
 		player = self.players[playerid]
 		if player.state == "map":
 			room = self.savedData["rooms"][self.players[playerid].location]
-			rmessage = [room["name"], room["info"], "Items:"] + room["items"]
+			rmessage = [room["name"], room["info"], "Items:"]
+			for key in room["items"]:
+				keystr = f"{key}"
+				if room["items"][key] > 1:
+					keystr = f"{key} x {room['items'][key]}"
+				rmessage.append(keystr)
 			if self.players[playerid].hasFlag(flags.RQFlags.F_NEW_ITEMS):
 				if "flashlight" in self.players[playerid].powerups:
 					rmessage.append("Exits: ")
@@ -146,8 +162,8 @@ class RQState:
 			rmessage.append("Region: " + room["region"])
 			self.players[playerid].writeMessage( "\n".join(rmessage))
 		elif player.state == "battle":
-			self.players[playerid].writeMessage( f"HP: {player.hp}")
-			self.players[playerid].writeMessage( f"SP: {player.sp}")
+			self.players[playerid].writeMessage(f"HP: {self.players[playerid].hp}/{self.players[playerid].maxHP}")
+			self.players[playerid].writeMessage(f"SP: {self.players[playerid].sp}/{self.players[playerid].maxSP}")
 			self.players[playerid].writeMessage( f"NPC Name: {self.players[playerid].battle['name']}")
 			self.players[playerid].writeMessage( f"NPC HP: {self.players[playerid].battle['hp']}")
 
@@ -159,23 +175,23 @@ class RQState:
 			if command == "buy":
 				for item in items:
 					if item not in shopdata:
-						self.players[playerid].writeMessage( f"Item {item} is not in this shop")
+						self.players[playerid].writeMessage(f"Item {item} is not in this shop")
 					elif self.savedData["items"][item]["cost"] > self.players[playerid].money:
-						self.players[playerid].writeMessage( f"You can't afford {item}!!")
+						self.players[playerid].writeMessage(f"You can't afford {item}!!")
 					else:
 						self.players[playerid].money -= self.savedData["items"][item]["cost"]
-						if not self.players[playerid].addItem( item):
+						if not self.players[playerid].addItem(item):
 							break
 			else:
 				for item in items:
-					if not self.players[playerid].removeItem( item):
+					if not self.players[playerid].removeItem(item):
 						nonexistentItems.append(item)
 					else:
 						self.players[playerid].money += self.savedData["items"][item]["cost"]//2
 				if nonexistentItems:
-					self.players[playerid].writeMessage( f"Error: Items {', '.join(nonexistentItems)} not found")
+					self.players[playerid].writeMessage(f"Error: Items {', '.join(nonexistentItems)} not found")
 		else:
-			self.players[playerid].writeMessage( f"{room} is not a shop")
+			self.players[playerid].writeMessage(f"{room['name']} is not a shop")
 
 	def handleItems(self, playerid, command, items):
 		room = self.savedData["rooms"][self.players[playerid].location]
@@ -185,15 +201,17 @@ class RQState:
 				if item in room["items"]:
 					if not self.players[playerid].addItem(item):
 						break
-					room["items"].remove(item)
+					room["items"][item] = room["items"][item] - 1
+					if not room["items"][item]:
+						del room["items"][item]
 				else:
 					nonexistentItems.append(item)
 		else:
 			for item in items:
 				if not self.players[playerid].removeItem(item):
 					nonexistentItems.append(item)
-				elif command == "drop":
-					room["items"].append(item)
+				elif command == "drop" and self.players[playerid].mode != flags.RQMode.M_RAND:
+					room["items"][item] = room["items"].get(item, 0) + 1
 		if nonexistentItems:
 			self.players[playerid].writeMessage( f"Error: Items {', '.join(nonexistentItems)} not found")
 
@@ -314,21 +332,34 @@ class RQState:
 			elif messagelist[0] == "levelup":
 				self.levelUp(playerid, messagelist[1])
 			elif messagelist[0] == "open":
-				self.openDispenser(playerid, messagelist[1])
-			elif self.mapHandler.movePlayer(self.players[playerid], message):
-				self.mapHandler.handleRoom(self.players[playerid])
+				if len(messagelist) > 1:
+					self.openDispenser(playerid, messagelist[1])
+				else:
+					self.players[playerid].writeMessage("You can't open nothing!")
+			elif self.mapHandler.movePlayer(playerid, message):
+				self.mapHandler.handleRoom(playerid)
 		elif self.players[playerid].state == "battle":
 			if messagelist[0][:4] == "inv":
-				self.printState(playerid)
 				self.players[playerid].printInventory()
-			elif messagelist[0] in ["attack", "heal", "block"]:
+				return
+			elif messagelist[0] == "panic":
+				self.killPlayer(playerid)
+				return
+			else:
+				if self.players[playerid].mode == flags.RQMode.M_COOP:
+					battledata = self.mapHandler.battles[self.players[playerid].location]
+					if playerid in battledata:
+						if battledata[self.players[playerid].battle["turn"] % len(battledata)] != playerid:
+							self.players[playerid].writeMessage(f"You can't move out of turn!")
+							return
+			if messagelist[0] in ["attack", "heal", "block"]:
 				self.handleBattle(playerid, message, messagelist[0])
-			elif self.players[playerid].battle["type"] == "npc" and self.mapHandler.movePlayer(self.players[playerid], message):
-				if random.randrange(256) > 100:
+			elif self.players[playerid].battle["type"] == "npc" and self.mapHandler.movePlayer(playerid, message):
+				if random.randrange(256) > 100 and not self.players[playerid].hasFlag(flags.RQFlags.F_BATTLE_STORAGE):
 					self.players[playerid].writeMessage( self.players[playerid].battle["text"]["norun"])
 					self.killPlayer(playerid)
 				else:
 					self.players[playerid].writeMessage( self.players[playerid].battle["text"]["run"])
-					self.mapHandler.setState(self.players[playerid], "map")
+					self.mapHandler.setState(playerid, "map")
 			else:
 				self.handleBattle(playerid, message, False)

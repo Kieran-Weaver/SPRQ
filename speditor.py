@@ -4,6 +4,8 @@ import os
 import ast
 import copy
 import collections
+W = 840
+H = 1000
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
     try:
@@ -85,7 +87,7 @@ class Debugger:
 		self.menuEntries[self.currentMenuItem]["entries"][text]["value"].value = str(defValue)
 
 	def draw(self):
-		startWindow("Debugger", W, 0, 1080-W, H, bimpy.WindowFlags.MenuBar)
+		startWindow("Debugger", W, 0, 1920-W, H, bimpy.WindowFlags.MenuBar)
 		bimpy.text("Debugger")
 		assert(bimpy.begin_menu_bar())
 		for menuitem in self.menuEntries:
@@ -124,8 +126,6 @@ class Debugger:
 			if shouldend:
 				bimpy.end_combo()
 
-W = 640
-H = 480
 rq = rqstate.RQState(resource_path("rooms.json"))
 locked_fields = {}
 fields = {
@@ -147,7 +147,7 @@ fields = {
 }
 
 ctx = bimpy.Context()
-ctx.init(1080, 480, "SPRQ Editor")
+ctx.init(1920, H, "SPRQ Editor")
 textH = bimpy.get_text_line_height_with_spacing()
 name = ""
 terminal = Terminal(0, 0, W, H, ["Enter your name"])
@@ -173,36 +173,71 @@ debugger.add_menuentry(True, "Lock Fields", "default")
 for field in fields:
 	debugger.add_entry(field, "checkbox", lockField)
 
-def saveItem(field, entries):
+def saveData(field, key, entries):
 	item = ''
 	for val in entries:
-		if entries[val]["type"] == "text":
+		if entries[val]["type"] == "text" and entries[val]["value"].value == "name":
 			item = val
 	fields = [val for val in entries if entries[val]["type"] == "default"]
-	itemData = rq.savedData["items"][item]
-	for field in fields:
-		itemData[field] = ast.literal_eval(entries[field]["value"].value)
+	itemData = rq.savedData[key][item]
+	for f in fields:
+		if '/' in f:
+			kargs = f.split('/')
+			data = itemData
+			for arg in kargs[:-1]:
+				data = data[arg]
+			data[kargs[-1]] = ast.literal_eval(entries[f]["value"].value)
+		else:
+			itemData[f] = ast.literal_eval(entries[f]["value"].value)
+	terminal.append(f"Saved {item}")
 
-def editItem(item, entries):
-	itemData = rq.savedData["items"][item]
-	debugger.add_menuentry(True, "Edit Item", "default")
-	debugger.add_entry(item, "text", None)
-	for key in itemData:
-		debugger.add_entry(key, "default", None, repr(itemData[key]))
-	debugger.add_entry("Save", "button", saveItem)
+def saveItem(field, entries):
+	saveData(field, "items", entries)
+
+def saveNPC(field, entries):
+	saveData(field, "npcs", entries)
+
+def saveBOSS(field, entries):
+	saveData(field, "bosses", entries)
+
+def editDict(prefix, data, saveFunc):
+	for internal_key in data:
+		debugger.add_entry(f"{prefix}: ", "text", None)
+		if type(data[internal_key]) == dict:
+			editDict(f"{prefix}/{internal_key}", data[internal_key], saveFunc)
+		else:
+			debugger.add_entry(f"{prefix}/{internal_key}", "default", None, repr(data[internal_key]))
+
+def editData(dtype, dname, saveFunc):
+	internal_data = rq.savedData[dtype][dname]
+	debugger.add_menuentry(True, f"Edit {dtype}", "default")
+	debugger.add_entry(dname, "text", None, defValue="name")
+	for key in internal_data:
+		data = internal_data[key]
+		if type(data) == dict:
+			editDict(key, data, saveFunc)
+		else:
+			debugger.add_entry(key, "default", None, repr(internal_data[key]))
+	debugger.add_entry("Save", "button", saveFunc)
 
 debugger.add_menuentry(True, "Edit Item Data", "combo")
 for item in rq.savedData["items"]:
-	debugger.add_entry(item, "combo", editItem)
-debugger.add_menuentry(True, "Edit Room", "default")
+	debugger.add_entry(item, "combo", lambda item, entries: editData("items", item, saveItem))
+debugger.add_menuentry(False, "Edit Room", "default")
 debugger.add_menuentry(False, "Edit Item", "default")
-debugger.add_menuentry(False, "Edit NPC", "default")
+debugger.add_menuentry(True, "Edit NPCs", "combo")
+for npc in rq.savedData["npcs"]:
+	debugger.add_entry(npc, "combo", lambda npc, entries: editData("npcs", npc, saveNPC))
+debugger.add_menuentry(True, "Edit Bosses", "combo")
+for boss in rq.savedData["bosses"]:
+	debugger.add_entry(boss, "combo", lambda npc, entries: editData("bosses", npc, saveBOSS))
 
 while not ctx.should_close():
 	if name:
 		for field in locked_fields:
 			setattr(rq.players[name], field, copy.deepcopy(locked_fields[field]))
 	with ctx:
+		bimpy.set_font_global_scale(1.5)
 		debugger.draw()
 		prompt = terminal.draw()
 		if prompt:
@@ -217,6 +252,10 @@ while not ctx.should_close():
 #				rq.savestate('rooms.json')
 					break
 				else:
-					rq.parseMessage(name,prompt)
+					splitprompt = prompt.split(' ')
+					if splitprompt[0] == 'save':
+						rq.savestate(filename=splitprompt[1])
+					else:
+						rq.parseMessage(name,prompt)
 			rq.printState(name)
 			terminal.append(*rq.getMessages(name))
