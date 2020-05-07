@@ -1,6 +1,7 @@
 import json
 import inspect
 from .playerstate import PlayerState
+from .rqflags import RQMode
 class JSONHandler:
 	def __init__(self, filename):
 		self.loadState(filename)
@@ -39,6 +40,7 @@ class JSONHandler:
 		player.powerups = set(self.savedData["players"][playerid]["powerups"])
 		if player.state == "battle":
 			player.battle["time"] = time.monotonic()
+		player.mode = RQMode(player.mode)
 		return player
 	
 	def savePlayer(self, playerid, player):

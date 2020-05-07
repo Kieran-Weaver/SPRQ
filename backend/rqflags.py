@@ -1,10 +1,10 @@
-from enum import Enum, Flag, auto
-class RQMode(Enum):
-	M_10 = auto()   # Pre-patch 1.0 mode
-	M_11 = auto()   # Patched 1.1 mode
-	M_15 = auto()   # SP mode
-	M_COOP = auto() # SP Coop mode
-	M_RAND = auto() # SP Randomized mode
+from enum import IntEnum, Flag, auto
+class RQMode(IntEnum):
+	M_10 = 0   # Pre-patch 1.0 mode
+	M_11 = 1   # Patched 1.1 mode
+	M_15 = 2   # SP mode
+	M_COOP = 3 # SP Coop mode
+	M_RAND = 4 # SP Randomized mode
 
 class RQFlags(Flag):
 	F_REENTER_GLITCH = auto()  # Re-entering a room retriggers the NPC (1.0 mode)
