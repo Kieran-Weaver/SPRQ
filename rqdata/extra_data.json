@@ -427,6 +427,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "From behind one of the many identical trees, a shadowy figure emerges. The figure appears to be a student. They see you and are angry. They begin to charge at you.",
         "turn": "The Treasure Hunter Student stands in front of you menacingly",
@@ -446,6 +467,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "You look at the ice rink and see a person skating on it. You step onto the ice and the person notices you. Angry for losing their private skating space, they begin to skate toward you.",
         "turn": "The Skater stands in front of you menacingly",
@@ -465,6 +507,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "You look across the field and see a person running. They aren't running toward you, but rather exercising. However, when they notice you there they begin to run towards you.",
         "turn": "The Athlete stands in front of you menacingly",
@@ -484,6 +547,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "There is a duck in the middle of the open space. It sees you and flies toward you.",
         "turn": "The Duck stands in front of you menacingly",
@@ -503,6 +587,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "Out from the shadows of the identical trees comes a flock of crows.",
         "turn": "The Crow Flock stands in front of you menacingly",
@@ -522,6 +627,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "Out from the shadows of the trees in the park comes a flock of crows.",
         "turn": "The Crow Flock Redux stands in front of you menacingly",
@@ -541,6 +667,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "There is a duck in the middle of the park. It sees you and flies toward you.",
         "turn": "The Duck Redux stands in front of you menacingly",
@@ -560,6 +707,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "There is a leaf pile in front of you. It appears to be sentient and is slowly drifting toward you.",
         "turn": "The Leaf Pile stands in front of you menacingly",
@@ -579,6 +747,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "You look across the parking lot and see a single car parked at the very end. A person steps out of the car, all decked out in a costume for some sort of play. They notice you on the parking lot and are angered by your presence. They begin to run toward you.",
         "turn": "The Actor stands in front of you menacingly",
@@ -597,6 +786,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "You look across the intersection and see a person all decked out in a costume for some sort of play. They notice you and are angered by your presence. They begin to run toward you.",
         "turn": "The Actor Redux stands in front of you menacingly",
@@ -615,6 +825,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "On the other end of the driveway is a flock of pigeons. You look at them and they look at you back. Startled, they flock toward you.",
         "turn": "The Pigeon Flock stands in front of you menacingly",
@@ -633,6 +864,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "On the side of the road is a flock of seagulls. You look at them and they look at you back. Startled, they flock toward you.",
         "turn": "The Seagull Flock stands in front of you menacingly",
@@ -651,6 +903,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "Across the grassy expanse you see a flock of pigeons. The pigeons notice you across the grass and begin to fly toward you in a crazed blob.",
         "turn": "The Pigeon Flock Redux stands in front of you menacingly",
@@ -669,6 +942,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "On a nearby railing, you see a fairly large crow sitting there. The crow turns its head toward you. Astonishingly, it flies up into the air and begins to attack.",
         "turn": "The Obese Crow stands in front of you menacingly",
@@ -687,6 +981,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "On the field at the school you notice a cougar walking around. It notices you and begins to run toward you.",
         "turn": "The Cougar stands in front of you menacingly",
@@ -705,6 +1020,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "At the center of the field is a goose. It is guarding a box.",
         "turn": "The Goose stands in front of you menacingly",
@@ -723,6 +1059,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "An army of squirrels crosses your path.",
         "turn": "The Squirrel Army stands in front of you menacingly",
@@ -744,6 +1101,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "A seagull flock crosses your path. They remember you.",
         "turn": "The Seagull Flock Redux stands in front of you menacingly",
@@ -765,6 +1143,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "Out from the clouds comes a familiar dog with wings. They shoot a laser at you.",
         "turn": "The Flying Doge Redux stands in front of you menacingly",
@@ -786,6 +1185,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "Across the street you see a person holding a bunch of comic books. They remember you. They angrily run toward you.",
         "turn": "The Obsessed Comic Fan Redux stands in front of you menacingly",
@@ -807,6 +1227,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "You look across the street and see a raccoon.",
         "turn": "The Raccoon stands in front of you menacingly",
@@ -828,6 +1269,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "There is a leaf pile in front of you. It appears to be sentient and is slowly drifting toward you. You recall seeing this before.",
         "turn": "The Leaf Pile Redux stands in front of you menacingly",
@@ -849,6 +1311,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "You look across the street and see a pelican.",
         "turn": "The Pelican stands in front of you menacingly",
@@ -870,6 +1353,27 @@
       "atk": 0,
       "def": 0,
       "xp": 0,
+	  "level" : 0,
+      "attacks" : {
+        "at1" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : " "
+        },
+        "charge" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "The NPC is charged to +{} damage!"
+        },
+        "catk" : {
+          "probability" : 0,
+          "maxhp" : 0,
+          "atk" : 0,
+          "text" : "That's a lotta damage!"
+        }
+      },
       "text": {
         "entry": "You look across the street and see a pelican.",
         "turn": "The Pelican Redux stands in front of you menacingly",

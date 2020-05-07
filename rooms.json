@@ -2,9 +2,30 @@
   "bosses": {
     "Actor": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 500,
       "name": "Actor",
       "text": {
@@ -20,9 +41,30 @@
     },
     "Actor Redux": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 1000,
       "name": "Actor Redux",
       "text": {
@@ -38,9 +80,30 @@
     },
     "Athlete": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 250,
       "name": "Athlete",
       "text": {
@@ -97,9 +160,30 @@
     },
     "Cougar": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 1500,
       "name": "Cougar",
       "text": {
@@ -115,9 +199,30 @@
     },
     "Crow Flock": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 100000,
       "name": "Crow Flock",
       "text": {
@@ -134,9 +239,30 @@
     },
     "Crow Flock Redux": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 350,
       "name": "Crow Flock Redux",
       "text": {
@@ -193,9 +319,30 @@
     },
     "Duck": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 300,
       "name": "Duck",
       "text": {
@@ -212,9 +359,30 @@
     },
     "Duck Redux": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 400,
       "name": "Duck Redux",
       "text": {
@@ -271,11 +439,32 @@
     },
     "Flying Doge Redux": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {
         "glass": 256
       },
       "hp": 0,
+      "level": 0,
       "money": 50,
       "name": "Flying Doge Redux",
       "text": {
@@ -292,9 +481,30 @@
     },
     "Goose": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 0,
       "name": "Goose",
       "text": {
@@ -350,9 +560,30 @@
     },
     "Leaf Pile": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 450,
       "name": "Leaf Pile",
       "text": {
@@ -369,11 +600,32 @@
     },
     "Leaf Pile Redux": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {
         "clover": 256
       },
       "hp": 0,
+      "level": 0,
       "money": 100,
       "name": "Leaf Pile Redux",
       "text": {
@@ -430,9 +682,30 @@
     },
     "Obese Crow": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 1000,
       "name": "Obese Crow",
       "text": {
@@ -488,11 +761,32 @@
     },
     "Obsessed Comic Fan Redux": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {
         "notebook": 256
       },
       "hp": 0,
+      "level": 0,
       "money": 100,
       "name": "Obsessed Comic Fan Redux",
       "text": {
@@ -509,11 +803,32 @@
     },
     "Pelican": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {
         "fish": 256
       },
       "hp": 0,
+      "level": 0,
       "money": 50,
       "name": "Pelican",
       "text": {
@@ -530,11 +845,32 @@
     },
     "Pelican Redux": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {
         "rare fish": 256
       },
       "hp": 0,
+      "level": 0,
       "money": 100,
       "name": "Pelican Redux",
       "text": {
@@ -551,9 +887,30 @@
     },
     "Pigeon Flock": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 500,
       "name": "Pigeon Flock",
       "text": {
@@ -569,9 +926,30 @@
     },
     "Pigeon Flock Redux": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 1000,
       "name": "Pigeon Flock Redux",
       "text": {
@@ -587,11 +965,32 @@
     },
     "Raccoon": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {
         "crayon": 256
       },
       "hp": 0,
+      "level": 0,
       "money": 50,
       "name": "Raccoon",
       "text": {
@@ -608,9 +1007,30 @@
     },
     "Seagull Flock": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 1000,
       "name": "Seagull Flock",
       "text": {
@@ -626,11 +1046,32 @@
     },
     "Seagull Flock Redux": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {
         "cheese": 256
       },
       "hp": 0,
+      "level": 0,
       "money": 100,
       "name": "Seagull Flock Redux",
       "text": {
@@ -647,9 +1088,30 @@
     },
     "Skater": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 200,
       "name": "Skater",
       "text": {
@@ -666,11 +1128,32 @@
     },
     "Squirrel Army": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {
         "battery": 256
       },
       "hp": 0,
+      "level": 0,
       "money": 50,
       "name": "Squirrel Army",
       "text": {
@@ -687,9 +1170,30 @@
     },
     "Treasure Hunter Student": {
       "atk": 0,
+      "attacks": {
+        "at1": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": " "
+        },
+        "catk": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "That's a lotta damage!"
+        },
+        "charge": {
+          "atk": 0,
+          "maxhp": 0,
+          "probability": 0,
+          "text": "The NPC is charged to +{} damage!"
+        }
+      },
       "def": 0,
       "drops": {},
       "hp": 0,
+      "level": 0,
       "money": 150,
       "name": "Treasure Hunter Student",
       "text": {
@@ -1454,11 +1958,11 @@
         "none",
         "none",
         "Waterfront Station",
-        "Hastings at Granville",
         "5th at Granville",
         "Marine at Cambie",
-        "41st at Granville",
-        "Robson at Granville"
+        "Robson at Granville",
+        "Hastings at Granville",
+        "41st at Granville"
       ],
       "info": "You are in a bus running route 10. You can go to the following destinations:\n\nWaterfront Station\nHastings at Granville\nRobson at Granville\n5th at Granville\n41st at Granville\nMarine at Cambie",
       "items": {},
@@ -2208,13 +2712,13 @@
         "none",
         "none",
         "none",
-        "Lansdowne at No. 3",
         "Cook at No. 3",
-        "Westminster at No. 3",
-        "Aberdeen Station",
-        "Bridgeport Station Bus Loop",
+        "Entertainment Roundabout",
         "Granville at No. 3",
-        "Entertainment Roundabout"
+        "Lansdowne at No. 3",
+        "Westminster at No. 3",
+        "Bridgeport Station Bus Loop",
+        "Aberdeen Station"
       ],
       "info": "You are in a bus running route 403. You can go to the following destinations:\n\nEntertainment Roundabout\nGranville at No. 3\nCook at No. 3\nWestminster at No. 3\nLansdowne at No. 3\nAberdeen Station\nBridgeport Station Bus Loop",
       "items": {},
@@ -2400,9 +2904,9 @@
         "none",
         "none",
         "41st at Granville",
-        "41st at West Boulevard",
         "41st at Cambie",
-        "UBC Bus Loop"
+        "UBC Bus Loop",
+        "41st at West Boulevard"
       ],
       "info": "You are in a bus running route 43. You can go to the following destinations:\n\nUBC Bus Loop\n41st at West Boulevard\n41st at Granville\n41st at Cambie",
       "items": {},
@@ -2559,8 +3063,8 @@
         "none",
         "none",
         "none",
-        "500 Block 2nd Avenue",
-        "Lamey's Mill at Anderson"
+        "Lamey's Mill at Anderson",
+        "500 Block 2nd Avenue"
       ],
       "info": "You are in a bus running route 50. You can go to the following destinations:\n\nLamey's Mill at Anderson\n500 Block 2nd Avenue",
       "items": {},
@@ -5313,16 +5817,16 @@
         "none",
         "none",
         "none",
-        "Waterfront Station",
         "Vancouver City Centre Station",
-        "Marine Drive Station",
-        "Aberdeen Station",
-        "Oakridge-41st Station",
         "Bridgeport Station",
-        "Lansdowne Station",
+        "Waterfront Station",
+        "Oakridge-41st Station",
+        "Brighouse Station",
+        "Marine Drive Station",
         "Olympic Village Station",
+        "Lansdowne Station",
         "Broadway-City Hall Station",
-        "Brighouse Station"
+        "Aberdeen Station"
       ],
       "info": "You are in an above-ground subway train running a route called the Canada Line. You can go to the following destinations:\n\nWaterfront Station\nVancouver City Centre Station\nOlympic Village Station\nBroadway-City Hall Station\nOakridge-41st Station\nMarine Drive Station\nBridgeport Station\nAberdeen Station\nLansdowne Station\nBrighouse Station",
       "items": {},
@@ -10038,7 +10542,7 @@
         "none",
         "none",
         "Central at Olive",
-        "Central Park Path\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b"
+        "Central Park Path\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b"
       ],
       "info": "You are in a small SkyTrain station. To the west is a large central park.",
       "items": {},
