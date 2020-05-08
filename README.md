@@ -1,7 +1,7 @@
 # SPRQ
 SPRQ is a WIP re-implementation of RealityQuest, from https://repl.it/@jbrightuniverse/YuBot, rebalanced for single-player
 
-![Editor Screenshot](https://raw.githubusercontent.com/Kieran-Weaver/SPRQ/master/EditorScreenshot.png)
+![Editor Screenshot](https://raw.githubusercontent.com/Kieran-Weaver/SPRQ/master/resources/EditorScreenshot.png)
 The SPRQ Editor
 
 # What is RealityQuest?
@@ -12,7 +12,7 @@ The reference implementation of RealityQuest is playable on Discord, and focuses
 There are three ways to play SPRQ:
 - Directly from the terminal, by running `python3 main.py`,
 - Through Discord, by setting the environment variable TOKEN to your bot token and running `python3 spbot.py`, and
-- Using the editor: Either by running `python3 editor.py` or using the prepackaged files in speditor.zip.
+- Using the editor: Either by running `python3 editor.py` or using the prepackaged files in [speditor.zip](https://raw.githubusercontent.com/Kieran-Weaver/SPRQ/master/resources/speditor.zip)
 
 ## Commands
 Like other text-based adventure games and RPGs, you play SPRQ by entering commands.
@@ -122,14 +122,18 @@ Map Changes
 ## Powerups
 | Name        | Description                                    | Cost |
 |-------------|------------------------------------------------|------|
-| shield      | Does 3 damage and also acts like a free `block`| 20   |
+| bus pass    | Gives you a 50% discount on fast-travel        | 25   |
 | flashlight  | Reveals hidden exits and does 5 damage         | 50   |
-
+| repel       | Makes it impossible to encounter normal NPCs   | 50   |
+| bag         | Upgrades your inventory capacity to 20         | 100  |
+| lock        | Raises the number of items you can store       | 200  |
+| suitcase    | Upgrades your inventory capacity to 100        | 500  |
+| satellite   | Access and use stored items from anywhere      | 1000 |
 ## Special Items
 | Name        | Description                                    | Cost |
 |-------------|------------------------------------------------|------|
-| flashlight  | Reveals hidden exits and does 5 damage         | 50   |
 | key         | Does 1 damage, but pierces defense             | 1    |
+| shield      | Does 3 damage and also acts like a free `block`| 20   |
 
 # Modes
 Additionally, SPRQ allows you to experience the game in one of many modes:

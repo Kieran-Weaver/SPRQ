@@ -1,5 +1,5 @@
 import bimpy
-import rqstate
+import backend.rqstate as rqstate
 import os
 import ast
 import copy
@@ -126,7 +126,7 @@ class Debugger:
 			if shouldend:
 				bimpy.end_combo()
 
-rq = rqstate.RQState(resource_path("rooms.json"))
+rq = rqstate.RQState(resource_path("resources/rooms.json"))
 locked_fields = {}
 fields = {
 	"hp": int,

@@ -1,11 +1,11 @@
 import discord
 from discord.ext import commands
-import rqstate
+import backend.rqstate as rqstate
 import os
 bot = commands.Bot(command_prefix=",,")
 bot.remove_command("help")
 
-rq = rqstate.RQState("rooms.json")
+rq = rqstate.RQState("resources/rooms.json")
 
 @bot.event
 async def on_message(message):

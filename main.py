@@ -1,7 +1,7 @@
-import rqstate
+import backend.rqstate as rqstate
 import os
 if __name__ == '__main__':
-	rq = rqstate.RQState("rooms.json")
+	rq = rqstate.RQState("resources/rooms.json")
 	name = ''
 	if rq.players == {}:
 		while not name:
