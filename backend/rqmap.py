@@ -100,3 +100,15 @@ class RQMap:
 		elif DEBUG == 1:
 			self.players[playerid].writeMessage( f"Invalid state: {state}")
 		return True
+	
+	def getNextPlayer(self, playerid):
+		if self.players[playerid].mode == RQMode.M_COOP and self.players[playerid].state == "battle":
+			room = self.getRoom(playerid)
+			pindex = self.battles[room["name"]].index(playerid)
+			nextPlayer = self.battles[room["name"]][(pindex + 1) % len(self.battles[room["name"]])]
+			if nextPlayer != playerid:
+				return nextPlayer
+			else:
+				return None
+		else:
+			return None

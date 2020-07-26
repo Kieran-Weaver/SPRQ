@@ -32,9 +32,11 @@ class PlayerState:
 		self._outqueue = SimpleQueue() # Player messages
 		self.mode = RQMode.M_15# Mode, determines flags
 		self._items = None
+		self.frozen = False    # Frozen players don't receive output
 
 	def writeMessage(self, message):
-		self._outqueue.put(message)
+		if not self.frozen:
+			self._outqueue.put(message)
 
 	def numItems(self):
 		return sum(self.items.values())

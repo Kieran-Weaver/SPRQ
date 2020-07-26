@@ -206,11 +206,25 @@ class RQState:
 				else:
 					nonexistentItems.append(item)
 		else:
+			nextPlayer = None
+			if command == "toss":
+				nextPlayer = self.mapHandler.getNextPlayer(playerid)
+				if self.players[playerid].mode != RQMode.M_COOP or self.players[playerid].state != "battle" or not nextPlayer:
+					self.players[playerid].writeMessage(f"Error: You must be in a Co-op battle to use toss")
+					return
 			for item in items:
 				if not self.players[playerid].removeItem(item):
 					nonexistentItems.append(item)
 				elif command == "drop" and self.players[playerid].mode != RQMode.M_RAND:
 					room["items"][item] = room["items"].get(item, 0) + 1
+				elif command == "toss":
+					self.players[playerid].writeMessage(f"You used {item} on {nextPlayer}")
+					self.players[nextPlayer].frozen = True
+					self.players[nextPlayer].itemCapacity += 1
+					self.players[nextPlayer].addItem(item)
+					self.useItems(nextPlayer, item)
+					self.players[nextPlayer].itemCapacity -= 1
+					self.players[nextPlayer].frozen = False
 		if nonexistentItems:
 			self.players[playerid].writeMessage( f"Error: Items {', '.join(nonexistentItems)} not found")
 
@@ -236,6 +250,8 @@ class RQState:
 		}
 		for item in items:
 			item = aliasList.get(item, item)
+			if item in self.savedData["items"]:
+				_item = item.split(" ")
 			if item in self.players[playerid].items:
 				itemdata = self.savedData["items"][item]
 				if itemdata["type"] == "any":
@@ -343,6 +359,11 @@ class RQState:
 				return
 			elif messagelist[0] == "panic":
 				self.killPlayer(playerid)
+				return
+			elif messagelist[0] == "toss":
+				items = " ".join(messagelist[1:]).split(", ")
+				self.handleItems(playerid, messagelist[0], items)
+				self.handleBattle(playerid, message, False)
 				return
 			else:
 				if self.players[playerid].mode == RQMode.M_COOP:
