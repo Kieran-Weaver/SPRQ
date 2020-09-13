@@ -23,6 +23,7 @@ class PlayerState:
 		self.state = "map"     # Determines actions you can take
 		self.location = "UTP Lounge"
 		self.items = {}        # Dict of items in the form { "item" : count }
+		self.lockerItems = {}  # Dict of items in storage, accessible at lockers and all shops
 		self.powerups = set()  # Set of powerups
 		self.battle = {}       # Current Battle data
 		self.xp = 0            # Current xp, 100 needed until next level-up

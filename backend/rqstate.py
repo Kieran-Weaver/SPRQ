@@ -46,8 +46,10 @@ class RQState:
 
 	def checkWin(self, playerid, usedItem):
 		if self.players[playerid].state == "battle" and self.players[playerid].battle["hp"] <= 0:
-			if usedItem not in ["attack", "heal", "block"]:
+			if usedItem not in ["attack", "heal", "block", False]:
 				self.players[playerid].writeMessage( self.players[playerid].battle["text"]["iwin"].format(usedItem))
+			elif not usedItem:
+				self.players[playerid].writeMessage( self.players[playerid].battle["text"]["win"].format("trip and fall on top of"))
 			else:
 				self.players[playerid].writeMessage( self.players[playerid].battle["text"]["win"].format(usedItem))
 			self.players[playerid].money += self.players[playerid].battle["money"]
@@ -58,7 +60,7 @@ class RQState:
 			self.mapHandler.setState(playerid, "map")
 			if self.players[playerid].location in self.mapHandler.battles:
 				for newid in self.mapHandler.battles[self.players[playerid].location]:
-					self.checkWin(newid, "nothing")
+					self.checkWin(newid, "did nothing to")
 			return True
 		else:
 			return False
@@ -70,7 +72,7 @@ class RQState:
 			elif usedItem:
 				self.players[playerid].writeMessage( self.players[playerid].battle["text"]["ilose"].format(usedItem))
 			else:
-				self.players[playerid].writeMessage( self.players[playerid].battle["text"]["lose"].format(usedItem))
+				self.players[playerid].writeMessage( self.players[playerid].battle["text"]["lose"].format("trip and fall on top of"))
 			self.killPlayer(playerid)
 			return True
 		else:
@@ -147,7 +149,7 @@ class RQState:
 	def printState(self, playerid):
 		player = self.players[playerid]
 		if player.state == "map":
-			room = self.savedData["rooms"][self.players[playerid].location]
+			room = self.mapHandler.getRoom(playerid)
 			rmessage = [room["name"], room["info"], "Items:"]
 			for key in room["items"]:
 				keystr = f"{key}"
@@ -167,7 +169,7 @@ class RQState:
 			self.players[playerid].writeMessage( f"NPC HP: {self.players[playerid].battle['hp']}")
 
 	def handleShop(self, playerid, command, items):
-		room = self.savedData["rooms"][self.players[playerid].location]
+		room = self.mapHandler.getRoom(playerid)
 		if room["name"] in self.savedData["shops"]:
 			shopdata = self.savedData["shops"][room["name"]]
 			nonexistentItems = []
@@ -193,7 +195,7 @@ class RQState:
 			self.players[playerid].writeMessage(f"{room['name']} is not a shop")
 
 	def handleItems(self, playerid, command, items):
-		room = self.savedData["rooms"][self.players[playerid].location]
+		room = self.mapHandler.getRoom(playerid)
 		nonexistentItems = []
 		if command == "get":
 			for item in items:
@@ -348,9 +350,22 @@ class RQState:
 				self.levelUp(playerid, messagelist[1])
 			elif messagelist[0] == "open":
 				if len(messagelist) > 1:
-					self.openDispenser(playerid, messagelist[1])
+					if messagelist[1] == "locker":
+						if self.players[playerid].location in (*self.savedData["shops"], "UTP Lockers"):
+							self.players[playerid].battle["backupLocation"] = self.players[playerid].location
+							self.players[playerid].location = "In Locker"
+						else:
+							self.players[playerid].writeMessage("You can't open a locker here!")
+					else:
+						self.openDispenser(playerid, messagelist[1])
 				else:
 					self.players[playerid].writeMessage("You can't open nothing!")
+			elif messagelist[0] == "close":
+				if self.players[playerid].location == "In Locker":
+					self.players[playerid].location = self.players[playerid].battle["backupLocation"]
+					self.players[playerid].battle.pop("backupLocation")
+				elif self.mapHandler.movePlayer(playerid, message):
+					self.mapHandler.handleRoom(playerid)
 			elif self.mapHandler.movePlayer(playerid, message):
 				self.mapHandler.handleRoom(playerid)
 		elif self.players[playerid].state == "battle":

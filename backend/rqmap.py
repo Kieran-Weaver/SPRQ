@@ -9,7 +9,18 @@ class RQMap:
 		self.battles = {}
 
 	def getRoom(self, playerid):
-		return self.savedData["rooms"][self.players[playerid].location]
+		if self.players[playerid].location == "In Locker":
+			return {
+				"exits":["none","none","none","none"],
+				"info":"You are inside your locker",
+				"items":self.players[playerid].lockerItems,
+				"name":"In Locker",
+				"npcs":[],
+				"region":"UBC",
+				"spawner":None
+			}
+		else:
+			return self.savedData["rooms"][self.players[playerid].location]
 
 	def movePlayer(self, playerid, exitname):
 		if self.players[playerid].mode == RQMode.M_RAND:
