@@ -1,4 +1,5 @@
 from queue import SimpleQueue
+from collections import Counter
 import random
 from .rqflags import *
 levelupTable = {
@@ -22,7 +23,7 @@ class PlayerState:
 #    Game progress / Save data
 		self.state = "map"     # Determines actions you can take
 		self.location = "UTP Lounge"
-		self.items = {}        # Dict of items in the form { "item" : count }
+		self.items = Counter() # Dict of items in the form { "item" : count }
 		self.lockerItems = {}  # Dict of items in storage, accessible at lockers and all shops
 		self.powerups = set()  # Set of powerups
 		self.battle = {}       # Current Battle data
@@ -56,8 +57,7 @@ class PlayerState:
 	def removeItem(self, item):
 		if item in self.items:
 			self.items[item] -= 1
-			if self.items[item] == 0:
-				del self.items[item]
+			self.items = +(self.items)
 			return True
 		else:
 			return False
@@ -75,6 +75,9 @@ class PlayerState:
 			self.writeMessage("Type levelup STAT to increase one of your stats")
 			self.writeMessage("Stats you can level up:")
 			self.writeMessage("HP, SP, Attack, and Defense")
+			return True
+		else:
+			return False
 
 	def levelUp(self, stat):
 		if not self.levelpoints:
@@ -115,10 +118,8 @@ class PlayerState:
 			self.writeMessage(keystr)
 	
 	def reset(self):
-		items = []
-		for key in self.items:
-			items += [key] * self.items[key]
-		self.items = {}
+		items = self.items.elements()
+		self.items = Counter()
 		if self.hasFlag(RQFlags.F_DEATH_MONEY):
 			self.money = 0
 		self.hp = self.maxHP
@@ -132,7 +133,7 @@ class PlayerState:
 			else: # Piercing
 				self.battle["hp"] += atk
 		else:
-			self.writeMessage( "There is nothing to attack")
+			self.writeMessage("There is nothing to attack")
 
 	def hasFlag(self, flag):
 		return flag in getFlags(self.mode)

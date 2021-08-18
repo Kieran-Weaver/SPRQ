@@ -1,11 +1,11 @@
 # SPRQ
-SPRQ is a WIP re-implementation of RealityQuest, from https://repl.it/@jbrightuniverse/YuBot, rebalanced for single-player
+SPRQ is a re-implementation of the RealityQuest engine from https://replit.com/@jbrightuniverse/rqBot. The engine is finished but the sample data set, resources/rooms.json, is currently a demo.
 
 ![Editor Screenshot](https://raw.githubusercontent.com/Kieran-Weaver/SPRQ/master/resources/EditorScreenshot.png)
 The SPRQ Editor
 
 # What is RealityQuest?
-RealityQuest, from [the original developer's website](https://brightuniverse.weebly.com/realityquest.html), is "a multiplayer text-based adventure game," which takes place in a map based off of Metro Vancouver. It's inspired by the game *Adventure*, which was originally released in 1977 on the PDP-10 by Will Crowther and Don Woods.
+RealityQuest is a multiplayer text-based adventure game released by James Yu which takes place in a map based off of Metro Vancouver. It's inspired by the game *Adventure*, which was originally released in 1977 on the PDP-10 by Will Crowther and Don Woods.
 The reference implementation of RealityQuest is playable on Discord, and focuses on backtracking for long chains of items to find the correct weakness for a boss.
 
 # How to Play SPRQ

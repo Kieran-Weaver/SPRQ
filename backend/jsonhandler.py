@@ -16,20 +16,18 @@ class JSONHandler:
 		del self.savedData[key]
 
 	def loadState(self, filename=None):
-		if filename:
-			with open(filename, "r") as f:
-				self.savedData = json.load(f)
-			self.filename = filename
-		elif self.filename:
+		self.filename = filename or self.filename
+		if self.filename:
 			with open(self.filename, "r") as f:
 				self.savedData = json.load(f)
 #       else: fail silently
 
 	def saveState(self, filename = None):
-		if not filename:
-			filename = self.filename
-		with open(filename, "w") as f:
-			json.dump(self.savedData, f, indent=2)
+		self.filename = filename or self.filename
+		if self.filename:
+			with open(filename, "w") as f:
+				json.dump(self.savedData, f, indent=2)
+#		else: fail silently
 
 	def loadPlayer(self, playerid):
 		player = PlayerState()
